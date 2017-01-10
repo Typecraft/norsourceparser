@@ -1,5 +1,7 @@
 from typecraft_python.models import Text, Phrase, Word, Morpheme
 
+from norsourceparser.core.util import parse_lexical_entry_rule
+
 
 class AbstractSyntaxTree(object):
     """
@@ -254,6 +256,10 @@ class SyntaxTree(AbstractSyntaxTree):
         return None
 
     def get_terminal_nodes(self):
+        """
+        Returns the terminal nodes of this SyntaxTree.
+        :return:
+        """
         return list(filter(lambda x: x.is_terminal, self))
 
     def reduce(self):
@@ -276,6 +282,7 @@ class SyntaxTree(AbstractSyntaxTree):
 
             partial_branch = [node]
             partial_node = node.parent
+            # Traverse up the branch
             while partial_node is not None:
                 partial_branch.append(partial_node)
                 rules = self.get_rules_from_partial_branch(partial_branch)
@@ -297,13 +304,12 @@ class SyntaxTree(AbstractSyntaxTree):
         if len(partial_branch) == 2:
             # Here we are looking for a lexical entry
             last_node = partial_branch[-1]
-            split = last_node.name.split("_")
 
-            stem = split[0]
-            pos = split[1]
-            gloss = None
-            if len(split) > 2:
-                gloss = split[2]
+            [stem, pos, gloss] = parse_lexical_entry_rule(last_node.name)
+            if pos is not None:
+                rules.append([REDUCED_RULE_POS, pos])
+
+            if gloss is not None:
                 rules.append([REDUCED_RULE_GLOSSES, [gloss]])
 
             rules.append([REDUCED_RULE_POS, pos])
