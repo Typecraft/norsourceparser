@@ -26,6 +26,39 @@ def test_unresolved_remove_node():
     assert node_1 not in u_tree
 
 
+def test_get_terminal():
+    """
+    Test getting all terminal nodes
+    :return:
+    """
+    node_1 = SyntaxNode()
+    node_2 = SyntaxNode(is_terminal=True)
+    node_3 = SyntaxNode(is_terminal=True)
+    node_4 = SyntaxNode(is_terminal=True)
+    node_5 = SyntaxNode()
+    node_6 = SyntaxNode(is_terminal=True)
+    node_7 = SyntaxNode()
+
+    tree = SyntaxTree()
+    tree.add_node(node_1)
+    tree.add_node(node_2)
+    tree.add_node(node_3)
+    tree.add_node(node_4)
+    tree.add_node(node_5)
+    tree.add_node(node_6)
+    tree.add_node(node_7)
+
+    terminal = tree.get_terminal_nodes()
+
+    assert node_1 not in terminal
+    assert node_2 in terminal
+    assert node_3 in terminal
+    assert node_4 in terminal
+    assert node_5 not in terminal
+    assert node_6 in terminal
+    assert node_7 not in terminal
+
+
 def test_resolve_simple():
     """
     Test a simple resolve, where we have no relationships
