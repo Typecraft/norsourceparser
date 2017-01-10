@@ -19,7 +19,9 @@ class Parser(object):
         :param (String) norsource: A Norsource file as a string
         :return Text: A Typecraft Text
         """
-        pass
+        syntax_tree = self.load(norsource)
+        reduced_tree = syntax_tree.reduce()
+        return reduced_tree.convert_to_tc()
 
     def parse_file(self, norsource):
         """
@@ -28,7 +30,9 @@ class Parser(object):
         :param (String) norsource: A file path to a norsource file
         :return Text: A Typecraft Text
         """
-        pass
+        syntax_tree = self.load_file(norsource)
+        reduced_tree = syntax_tree.reduce()
+        return reduced_tree.convert_to_tc()
 
     def load(self, string=""):
         """
@@ -94,7 +98,4 @@ class Parser(object):
             pct=attributes.get('pct'),
             is_terminal=et_node.tag == 'terminal'
         )
-
-    def reduce_tree(self):
-        pass
 
