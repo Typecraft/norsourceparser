@@ -99,5 +99,44 @@ def test_resolve_parenthood_correct():
     assert node_3.parent == node_2
 
 
-def test_resolve_complex_structure():
-    pass
+def test_reduce():
+    node_1 = SyntaxNode(id="n1", name="head-subject-rule")
+    node_2 = SyntaxNode(id="n2", name="digg_n_masc", parent_id="n1")
+    node_3 = SyntaxNode(id="n3", name="digger", parent_id="n2", is_terminal=True)
+
+    u_tree = UnresolvedSyntaxTree()
+    u_tree.add_node(node_1)
+    u_tree.add_node(node_2)
+    u_tree.add_node(node_3)
+
+    reduced = u_tree.resolve().reduce()
+    node = reduced._nodes[0]
+
+    assert len(reduced) == 1
+    assert len(node.rules) == 2
+
+
+def test_reduce_and_convert():
+    node_1 = SyntaxNode(id="n1", name="head-subject-rule")
+    node_2 = SyntaxNode(id="n2", name="digg_n_masc", parent_id="n1")
+    node_3 = SyntaxNode(id="n3", name="digger", parent_id="n2", is_terminal=True)
+
+    u_tree = UnresolvedSyntaxTree()
+    u_tree.add_node(node_1)
+    u_tree.add_node(node_2)
+    u_tree.add_node(node_3)
+
+    reduced = u_tree.resolve().reduce()
+    converted = reduced.convert_to_tc()
+
+    assert converted is not None
+    assert len(converted.phrases) == 1
+
+    phrase = converted.phrases[0]
+    assert len(phrase.words) == 1
+
+    word = phrase.words[0]
+    assert word.word == "digger"
+    assert word.pos == "n"
+
+
