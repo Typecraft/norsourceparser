@@ -10,7 +10,8 @@ class SyntaxNode(object):
         num="",
         parent_id="",
         parent=None,
-        pct=""
+        pct="",
+        is_terminal=False
     ):
         """
         Initializes a syntax Node
@@ -33,6 +34,7 @@ class SyntaxNode(object):
         self.parent_id = parent_id
         self.parent = parent
         self.pct = pct
+        self.is_terminal = is_terminal
 
 
 class SyntaxTree(object):
@@ -47,6 +49,7 @@ class SyntaxTree(object):
         """
         self.top = top
         self._nodes = []
+        self._node_dict = {}  # Extra storage for quick retrieval
 
     def add_node(self, node):
         """

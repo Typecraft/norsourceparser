@@ -12,3 +12,4 @@ def test_instantiate():
     assert node.parent_id == ""
     assert node.parent is None
     assert node.pct == ""
+    assert node.is_terminal == False
