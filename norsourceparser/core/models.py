@@ -49,7 +49,6 @@ class SyntaxTree(object):
         """
         self.top = top
         self._nodes = []
-        self._node_dict = {}  # Extra storage for quick retrieval
 
     def add_node(self, node):
         """
@@ -67,7 +66,7 @@ class SyntaxTree(object):
         :return:
         """
         assert isinstance(node, SyntaxNode)
-        self._nodes = filter(lambda x: x != node, self._nodes)
+        self._nodes = list(filter(lambda x: x != node, self._nodes))
 
     def find_node_by_id(self, id):
         """
@@ -82,6 +81,17 @@ class SyntaxTree(object):
             if node.id == id:
                 return node
         return None
+
+    def get_terminal_nodes(self):
+        return list(filter(lambda x: x.is_terminal, self))
+
+    def __iter__(self):
+        """
+        Returns an iterator over the nodes of this syntax tree. The nodes
+        are iterated in order of addition.
+        :return:
+        """
+        return self._nodes.__iter__()
 
     def __len__(self):
         """
