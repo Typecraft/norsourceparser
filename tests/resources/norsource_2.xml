@@ -1,0 +1,3144 @@
+<?xml version="1.0" ?>
+<!-- Finansieringen ble igjen ordnet ved donasjoner fra stiftelser og gaver fra gode borgere. -->
+<parse>
+	<readings>10</readings>
+	<error source="crabble">NOTE: 10 readings, added 65208 / 61254 edges to chart (2716 fully instantiated, 501 actives used, 3200 passives used)	RAM: 2067762k
+</error>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="77929" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="77930" parent="n23" pct="-0.334722">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_dirtel_p" num="56" parent="n28" pct="0.493438">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="75507" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="75508" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="77931" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="77932" parent="n23" pct="0.292161">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="10" id="n23" name="pp-mod-bare-n-fixpt-rule" num="77933" parent="n22" pct="-0.042561">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.498358">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77423" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77424" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77934" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77935" parent="n22" pct="0.719739">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-fixpt-rule" num="86548" parent="n19" pct="0.776566">
+			<argument id="n23" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86549" parent="n14" pct="0.858973">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="86552" parent="n7" pct="2.489312">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="86566" parent="n2" pct="2.624238">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="88392" parent="n1" pct="3.830070">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="90737" pct="4.624578">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n26" name="donasjoner" parent="n25"/>
+		<node beg="5" end="6" id="n25" name="donasjon_n_masc" num="49" parent="n24" pct="0.000000">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="leak-pl-indef-noun-lxm-lrule" num="76828" parent="n23" pct="-0.125916">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n23" name="pl_ind_m-or-f_final-full_irule" num="76829" parent="n22" pct="-0.334722">
+			<argument id="n24" number="1"/>
+		</node>
+		<terminal id="n29" name="fra" parent="n28"/>
+		<node beg="6" end="7" id="n28" name="fra_dirtel_p" num="56" parent="n27" pct="0.498358">
+			<argument id="n29" number="1"/>
+		</node>
+		<terminal id="n34" name="stiftelser" parent="n33"/>
+		<node beg="7" end="8" id="n33" name="stiftelse_n_masc" num="60" parent="n32" pct="0.000000">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n31" pct="-0.073723">
+			<argument id="n33" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n31" name="pl_ind_m-or-f_light-e_irule" num="75507" parent="n30" pct="-0.292994">
+			<argument id="n32" number="1"/>
+		</node>
+		<terminal id="n37" name="og" parent="n36"/>
+		<node beg="8" end="9" id="n36" name="og_n-connect" num="64" parent="n35" pct="0.412505">
+			<argument id="n37" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="77421" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="77422" parent="n38" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.460199">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77423" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77424" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77425" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77426" parent="n38" pct="0.681580">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="9" end="13" id="n38" name="pp-mod-bare-n-fixpt-rule" num="77427" parent="n35" pct="0.386260">
+			<argument id="n39" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="8" end="13" id="n35" name="connect-n-comp-rule" num="77907" parent="n30" pct="0.798765">
+			<argument id="n36" number="1"/>
+			<argument id="n38" number="2"/>
+		</node>
+		<node beg="7" end="13" id="n30" name="connect-n-spr-rule" num="77908" parent="n27" pct="0.482686">
+			<argument id="n31" number="1"/>
+			<argument id="n35" number="2"/>
+		</node>
+		<node beg="6" end="13" id="n27" name="head-prep-comp-rule" num="77911" parent="n22" pct="0.978661">
+			<argument id="n28" number="1"/>
+			<argument id="n30" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-fixpt-rule" num="86542" parent="n19" pct="0.643939">
+			<argument id="n23" number="1"/>
+			<argument id="n27" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86544" parent="n14" pct="0.726346">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="86565" parent="n7" pct="2.356684">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="88391" parent="n2" pct="2.491611">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="90736" parent="n1" pct="3.697442">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91118" pct="4.491951">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="77968" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="77969" parent="n23" pct="-0.334722">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_dirtel_p" num="56" parent="n28" pct="0.460199">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="75507" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="75508" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="77970" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="77971" parent="n23" pct="0.258922">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="10" id="n23" name="pp-mod-bare-n-fixpt-rule" num="77972" parent="n22" pct="-0.075800">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_reg_p" num="85" parent="n43" pct="0.071244">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77432" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77433" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77973" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77974" parent="n22" pct="0.473716">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-index-sit-rule" num="86559" parent="n19" pct="0.397635">
+			<argument id="n23" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86560" parent="n14" pct="0.428860">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="86563" parent="n7" pct="2.059199">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91116" parent="n2" pct="2.194126">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91121" parent="n1" pct="3.399957">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91126" pct="4.194466">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="77938" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="77939" parent="n23" pct="-0.342971">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_reg_p" num="52" parent="n28" pct="0.040968">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="76047" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="76048" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="77940" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="77941" parent="n23" pct="-0.126356">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="10" id="n23" name="pp-mod-bare-n-index-sit-rule" num="77942" parent="n22" pct="-0.477576">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.498358">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77423" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77424" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77934" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77935" parent="n22" pct="0.719739">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-fixpt-rule" num="86550" parent="n19" pct="0.336585">
+			<argument id="n23" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86551" parent="n14" pct="0.418992">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="90734" parent="n7" pct="2.049331">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91120" parent="n2" pct="2.184258">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91125" parent="n1" pct="3.390089">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91130" pct="4.184598">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n26" name="donasjoner" parent="n25"/>
+		<node beg="5" end="6" id="n25" name="donasjon_n_masc" num="49" parent="n24" pct="0.000000">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="leak-pl-indef-noun-lxm-lrule" num="76828" parent="n23" pct="-0.125916">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n23" name="pl_ind_m-or-f_final-full_irule" num="76829" parent="n22" pct="-0.334722">
+			<argument id="n24" number="1"/>
+		</node>
+		<terminal id="n29" name="fra" parent="n28"/>
+		<node beg="6" end="7" id="n28" name="fra_dirtel_p" num="56" parent="n27" pct="0.498358">
+			<argument id="n29" number="1"/>
+		</node>
+		<terminal id="n34" name="stiftelser" parent="n33"/>
+		<node beg="7" end="8" id="n33" name="stiftelse_n_masc" num="60" parent="n32" pct="0.000000">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n31" pct="-0.073723">
+			<argument id="n33" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n31" name="pl_ind_m-or-f_light-e_irule" num="75507" parent="n30" pct="-0.292994">
+			<argument id="n32" number="1"/>
+		</node>
+		<terminal id="n37" name="og" parent="n36"/>
+		<node beg="8" end="9" id="n36" name="og_n-connect" num="64" parent="n35" pct="0.412505">
+			<argument id="n37" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="77430" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="77431" parent="n38" pct="-0.314815">
+			<argument id="n40" number="1"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_reg_p" num="85" parent="n43" pct="0.009145">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77432" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77433" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77434" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77435" parent="n38" pct="0.411617">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="9" end="13" id="n38" name="pp-mod-bare-n-index-sit-rule" num="77436" parent="n35" pct="0.077306">
+			<argument id="n39" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="8" end="13" id="n35" name="connect-n-comp-rule" num="77909" parent="n30" pct="0.455507">
+			<argument id="n36" number="1"/>
+			<argument id="n38" number="2"/>
+		</node>
+		<node beg="7" end="13" id="n30" name="connect-n-spr-rule" num="77910" parent="n27" pct="0.139428">
+			<argument id="n31" number="1"/>
+			<argument id="n35" number="2"/>
+		</node>
+		<node beg="6" end="13" id="n27" name="head-prep-comp-rule" num="77912" parent="n22" pct="0.635403">
+			<argument id="n28" number="1"/>
+			<argument id="n30" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-fixpt-rule" num="86543" parent="n19" pct="0.300681">
+			<argument id="n23" number="1"/>
+			<argument id="n27" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86564" parent="n14" pct="0.383088">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="91119" parent="n7" pct="2.013426">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91124" parent="n2" pct="2.148353">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91129" parent="n1" pct="3.354184">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91135" pct="4.148693">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n26" name="donasjoner" parent="n25"/>
+		<node beg="5" end="6" id="n25" name="donasjon_n_masc" num="49" parent="n24" pct="0.000000">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="leak-pl-indef-noun-lxm-lrule" num="76821" parent="n23" pct="-0.125916">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n23" name="pl_ind_m-or-f_final-full_irule" num="76822" parent="n22" pct="-0.342971">
+			<argument id="n24" number="1"/>
+		</node>
+		<terminal id="n29" name="fra" parent="n28"/>
+		<node beg="6" end="7" id="n28" name="fra_reg_p" num="52" parent="n27" pct="0.071244">
+			<argument id="n29" number="1"/>
+		</node>
+		<terminal id="n34" name="stiftelser" parent="n33"/>
+		<node beg="7" end="8" id="n33" name="stiftelse_n_masc" num="60" parent="n32" pct="0.000000">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n31" pct="-0.073723">
+			<argument id="n33" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n31" name="pl_ind_m-or-f_light-e_irule" num="76047" parent="n30" pct="-0.292994">
+			<argument id="n32" number="1"/>
+		</node>
+		<terminal id="n37" name="og" parent="n36"/>
+		<node beg="8" end="9" id="n36" name="og_n-connect" num="64" parent="n35" pct="0.412505">
+			<argument id="n37" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="77421" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="77422" parent="n38" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.460199">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77423" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77424" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77425" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77426" parent="n38" pct="0.681580">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="9" end="13" id="n38" name="pp-mod-bare-n-fixpt-rule" num="77427" parent="n35" pct="0.386260">
+			<argument id="n39" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="8" end="13" id="n35" name="connect-n-comp-rule" num="77946" parent="n30" pct="0.798765">
+			<argument id="n36" number="1"/>
+			<argument id="n38" number="2"/>
+		</node>
+		<node beg="7" end="13" id="n30" name="connect-n-spr-rule" num="77947" parent="n27" pct="0.482686">
+			<argument id="n31" number="1"/>
+			<argument id="n35" number="2"/>
+		</node>
+		<node beg="6" end="13" id="n27" name="head-prep-comp-rule" num="77950" parent="n22" pct="0.585499">
+			<argument id="n28" number="1"/>
+			<argument id="n30" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-index-sit-rule" num="86553" parent="n19" pct="0.234279">
+			<argument id="n23" number="1"/>
+			<argument id="n27" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86555" parent="n14" pct="0.265504">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="91115" parent="n7" pct="1.895843">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91128" parent="n2" pct="2.030770">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91134" parent="n1" pct="3.236601">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91138" pct="4.031110">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="76851" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="76852" parent="n23" pct="-0.342971">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_reg_p" num="52" parent="n28" pct="0.009145">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n34" name="stiftelser" parent="n33"/>
+		<node beg="7" end="8" id="n33" name="stiftelse_n_masc" num="60" parent="n32" pct="0.000000">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="leak-pl-indef-noun-lxm-lrule" num="76853" parent="n31" pct="-0.073723">
+			<argument id="n33" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n31" name="pl_ind_m-or-f_light-e_irule" num="76854" parent="n28" pct="-0.278484">
+			<argument id="n32" number="1"/>
+		</node>
+		<node beg="6" end="8" id="n28" name="head-prep-comp-rule" num="76855" parent="n23" pct="-0.269340">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="8" id="n23" name="pp-mod-bare-n-index-sit-rule" num="76856" parent="n22" pct="-0.620559">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<terminal id="n37" name="og" parent="n36"/>
+		<node beg="8" end="9" id="n36" name="og_n-connect" num="64" parent="n35" pct="0.412505">
+			<argument id="n37" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="77421" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="77422" parent="n38" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.460199">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77423" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77424" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77425" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77426" parent="n38" pct="0.681580">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="9" end="13" id="n38" name="pp-mod-bare-n-fixpt-rule" num="77427" parent="n35" pct="0.386260">
+			<argument id="n39" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="8" end="13" id="n35" name="connect-n-comp-rule" num="77428" parent="n22" pct="0.798765">
+			<argument id="n36" number="1"/>
+			<argument id="n38" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="connect-n-spr-rule" num="86533" parent="n19" pct="0.178169">
+			<argument id="n23" number="1"/>
+			<argument id="n35" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86535" parent="n14" pct="0.212656">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="86537" parent="n7" pct="1.842995">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="86539" parent="n2" pct="1.977921">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91137" parent="n1" pct="3.183753">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91144" pct="3.978261">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n26" name="donasjoner" parent="n25"/>
+		<node beg="5" end="6" id="n25" name="donasjon_n_masc" num="49" parent="n24" pct="0.000000">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="leak-pl-indef-noun-lxm-lrule" num="76828" parent="n23" pct="-0.125916">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n23" name="pl_ind_m-or-f_final-full_irule" num="76829" parent="n22" pct="-0.334722">
+			<argument id="n24" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_dirtel_p" num="56" parent="n28" pct="0.391699">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="77896" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="77897" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="77898" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="77899" parent="n27" pct="0.191182">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_advmod_dirtel_p" num="91" parent="n43" pct="-0.132388">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77900" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77901" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77902" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77903" parent="n27" pct="0.140036">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="6" end="13" id="n27" name="pp-mod-pp-fixpt-rule" num="77904" parent="n22" pct="0.297988">
+			<argument id="n28" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-fixpt-rule" num="86540" parent="n19" pct="-0.036734">
+			<argument id="n23" number="1"/>
+			<argument id="n27" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86541" parent="n14" pct="0.045673">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="91123" parent="n7" pct="1.676011">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91133" parent="n2" pct="1.810938">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91143" parent="n1" pct="3.016769">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91148" pct="3.811278">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n12" name="ble" parent="n11"/>
+		<node beg="1" end="2" id="n11" name="bli_pass" num="21" parent="n10" pct="0.035690">
+			<argument id="n12" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n10" name="pret-finalstr_infl_rule" num="75037" parent="n9" pct="0.053535">
+			<argument id="n11" number="1"/>
+		</node>
+		<terminal id="n14" name="igjen" parent="n13"/>
+		<node beg="2" end="3" id="n13" name="igjen_s-adv" num="24" parent="n9" pct="0.000000">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n9" name="s-adv-spec-v-rule" num="78781" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<terminal id="n19" name="ordnet" parent="n18"/>
+		<node beg="3" end="4" id="n18" name="ordne_tv" num="28" parent="n17" pct="0.000000">
+			<argument id="n19" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n17" name="pass-ncomps1-lrule" num="74446" parent="n16" pct="1.003942">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="ppart-nonfstr-et_infl_rule" num="75039" parent="n15" pct="1.233526">
+			<argument id="n17" number="1"/>
+		</node>
+		<terminal id="n22" name="ved" parent="n21"/>
+		<node beg="4" end="5" id="n21" name="ved_reg_p2" num="36" parent="n20" pct="-0.043448">
+			<argument id="n22" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="76828" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="76829" parent="n23" pct="-0.334722">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_dirtel_p" num="56" parent="n28" pct="0.498358">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="75507" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="75508" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="76830" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="76831" parent="n23" pct="0.297081">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="10" id="n23" name="pp-mod-bare-n-fixpt-rule" num="76832" parent="n20" pct="-0.037641">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<node beg="4" end="10" id="n20" name="head-prep-comp-rule" num="79931" parent="n15" pct="0.044766">
+			<argument id="n21" number="1"/>
+			<argument id="n23" number="2"/>
+		</node>
+		<node beg="3" end="10" id="n15" name="atelic-pp-mod-vp-index-sit-rule" num="79932" parent="n8" pct="1.362215">
+			<argument id="n16" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="10" id="n8" name="head-verb-perf-comp-rule" num="79933" parent="n7" pct="1.436098">
+			<argument id="n9" number="1"/>
+			<argument id="n15" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_dirtel_p" num="89" parent="n43" pct="0.424901">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="78387" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="78388" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="78389" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="78390" parent="n7" pct="0.536531">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="telic-pp-mod-vp-rule" num="79976" parent="n2" pct="1.972629">
+			<argument id="n8" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="80356" parent="n1" pct="2.968556">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="80767" pct="3.763065">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="finansieringen" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="finansiering_n_mascorfem" num="107" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="sg-masc-def-noun-lxm-lrule" num="74442" parent="n3" pct="-0.277946">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="sg_def_m_final-full_irule" num="74443" parent="n2" pct="0.804916">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="ble" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="bli_pass" num="21" parent="n9" pct="0.035690">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pret-finalstr_infl_rule" num="80805" parent="n8" pct="0.053535">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="igjen" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="igjen_s-adv" num="24" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="80806" parent="n7" pct="0.053535">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n18" name="ordnet" parent="n17"/>
+		<node beg="3" end="4" id="n17" name="ordne_tv" num="28" parent="n16" pct="0.000000">
+			<argument id="n18" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n16" name="pass-ncomps1-lrule" num="74446" parent="n15" pct="1.003942">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr-et_infl_rule" num="86523" parent="n14" pct="1.318309">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n21" name="ved" parent="n20"/>
+		<node beg="4" end="5" id="n20" name="ved_reg_p2" num="36" parent="n19" pct="-0.043448">
+			<argument id="n21" number="1"/>
+		</node>
+		<terminal id="n27" name="donasjoner" parent="n26"/>
+		<node beg="5" end="6" id="n26" name="donasjon_n_masc" num="49" parent="n25" pct="0.000000">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n25" name="leak-pl-indef-noun-lxm-lrule" num="77977" parent="n24" pct="-0.125916">
+			<argument id="n26" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n24" name="pl_ind_m-or-f_final-full_irule" num="77978" parent="n23" pct="-0.342971">
+			<argument id="n25" number="1"/>
+		</node>
+		<terminal id="n30" name="fra" parent="n29"/>
+		<node beg="6" end="7" id="n29" name="fra_reg_p" num="52" parent="n28" pct="0.009145">
+			<argument id="n30" number="1"/>
+		</node>
+		<terminal id="n35" name="stiftelser" parent="n34"/>
+		<node beg="7" end="8" id="n34" name="stiftelse_n_masc" num="60" parent="n33" pct="0.000000">
+			<argument id="n35" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n33" name="leak-pl-indef-noun-lxm-lrule" num="74478" parent="n32" pct="-0.073723">
+			<argument id="n34" number="1"/>
+		</node>
+		<node beg="7" end="8" id="n32" name="pl_ind_m-or-f_light-e_irule" num="76047" parent="n31" pct="-0.292994">
+			<argument id="n33" number="1"/>
+		</node>
+		<terminal id="n38" name="og" parent="n37"/>
+		<node beg="8" end="9" id="n37" name="og_n-connect" num="64" parent="n36" pct="0.412505">
+			<argument id="n38" number="1"/>
+		</node>
+		<terminal id="n42" name="gaver" parent="n41"/>
+		<node beg="9" end="10" id="n41" name="gave_n_mascorfem" num="68" parent="n40" pct="0.000000">
+			<argument id="n42" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n40" name="leak-pl-indef-noun-lxm-lrule" num="74480" parent="n39" pct="-0.099133">
+			<argument id="n41" number="1"/>
+		</node>
+		<node beg="9" end="10" id="n39" name="pl_ind_m-or-f_light-e_irule" num="74481" parent="n36" pct="-0.295319">
+			<argument id="n40" number="1"/>
+		</node>
+		<node beg="8" end="10" id="n36" name="connect-n-comp-rule" num="76048" parent="n31" pct="0.117186">
+			<argument id="n37" number="1"/>
+			<argument id="n39" number="2"/>
+		</node>
+		<node beg="7" end="10" id="n31" name="connect-n-spr-rule" num="77979" parent="n28" pct="-0.198893">
+			<argument id="n32" number="1"/>
+			<argument id="n36" number="2"/>
+		</node>
+		<node beg="6" end="10" id="n28" name="head-prep-comp-rule" num="77980" parent="n23" pct="-0.158179">
+			<argument id="n29" number="1"/>
+			<argument id="n31" number="2"/>
+		</node>
+		<node beg="5" end="10" id="n23" name="pp-mod-bare-n-index-sit-rule" num="77981" parent="n22" pct="-0.509399">
+			<argument id="n24" number="1"/>
+			<argument id="n28" number="2"/>
+		</node>
+		<terminal id="n45" name="fra" parent="n44"/>
+		<node beg="10" end="11" id="n44" name="fra_reg_p" num="85" parent="n43" pct="0.071244">
+			<argument id="n45" number="1"/>
+		</node>
+		<terminal id="n50" name="gode" parent="n49"/>
+		<node beg="11" end="12" id="n49" name="god_stndadj" num="95" parent="n48" pct="0.024852">
+			<argument id="n50" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n48" name="strong-adj-lxm-lrule" num="75025" parent="n47" pct="-0.102522">
+			<argument id="n49" number="1"/>
+		</node>
+		<node beg="11" end="12" id="n47" name="strongpl-adj-finstr_infl_rule" num="77432" parent="n46" pct="0.525238">
+			<argument id="n48" number="1"/>
+		</node>
+		<terminal id="n54" name="borgere" parent="n53"/>
+		<node beg="12" end="13" id="n53" name="borger_n_masc" num="97" parent="n52" pct="0.000000">
+			<argument id="n54" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n52" name="leak-pl-indef-noun-lxm-lrule" num="75027" parent="n51" pct="-0.119029">
+			<argument id="n53" number="1"/>
+		</node>
+		<node beg="12" end="13" id="n51" name="pl_ind_m-or-f_final-full_irule" num="77433" parent="n46" pct="-0.323938">
+			<argument id="n52" number="1"/>
+		</node>
+		<node beg="11" end="13" id="n46" name="adjective-mod-indef-rule" num="77973" parent="n43" pct="0.272424">
+			<argument id="n47" number="1"/>
+			<argument id="n51" number="2"/>
+		</node>
+		<node beg="10" end="13" id="n43" name="head-prep-comp-rule" num="77974" parent="n22" pct="0.473716">
+			<argument id="n44" number="1"/>
+			<argument id="n46" number="2"/>
+		</node>
+		<node beg="5" end="13" id="n22" name="pp-mod-bare-n-index-sit-rule" num="86561" parent="n19" pct="-0.036331">
+			<argument id="n23" number="1"/>
+			<argument id="n43" number="2"/>
+		</node>
+		<node beg="4" end="13" id="n19" name="head-prep-comp-rule" num="86562" parent="n14" pct="-0.005106">
+			<argument id="n20" number="1"/>
+			<argument id="n22" number="2"/>
+		</node>
+		<node beg="3" end="13" id="n14" name="atelic-pp-mod-vp-index-sit-rule" num="91127" parent="n7" pct="1.625232">
+			<argument id="n15" number="1"/>
+			<argument id="n19" number="2"/>
+		</node>
+		<node beg="1" end="13" id="n7" name="head-verb-perf-comp-rule" num="91142" parent="n2" pct="1.760159">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="13" id="n2" name="head-subject-rule" num="91147" parent="n1" pct="2.965990">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n56" name="." parent="n55"/>
+		<node beg="13" end="14" id="n55" name="period" num="106" parent="n1" pct="0.238627">
+			<argument id="n56" number="1"/>
+		</node>
+		<node beg="0" end="14" id="n1" name="end-punct-mod-for-v-rule" num="91153" pct="3.760499">
+			<argument id="n2" number="1"/>
+			<argument id="n55" number="2"/>
+		</node>
+	</syntax-tree>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u46"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x47"/>
+			<arg name="IARG" ref="u48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u50"/>
+			<arg name="ARG1" ref="x47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h51" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x47"/>
+			<arg name="RSTR" ref="h52"/>
+			<arg name="BODY" ref="h53"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u54"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u46" name="SORT" value="verb-act-specification"/>
+		<feature key="x47" name="WH" value="-"/>
+		<feature key="x47" name="BOUNDED" value="-"/>
+		<feature key="x47" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x47" name="PNG.NG.GEN" value="m"/>
+		<feature key="x47" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x47" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h52" label="h49" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u42"/>
+			<arg name="ARG1" ref="x43"/>
+			<arg name="ARG2" ref="x44"/>
+			<arg name="IARG" ref="u45"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u47"/>
+			<arg name="ARG1" ref="x44"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x44"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x44"/>
+			<arg name="RSTR" ref="h49"/>
+			<arg name="BODY" ref="h50"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h51" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u52"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h53" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u54"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u55"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u42" name="SORT" value="verb-act-specification"/>
+		<feature key="x44" name="WH" value="-"/>
+		<feature key="x44" name="BOUNDED" value="-"/>
+		<feature key="x44" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x44" name="PNG.NG.GEN" value="m"/>
+		<feature key="x44" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x44" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h49" label="h46" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u46"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u49"/>
+			<arg name="ARG1" ref="x47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h50" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x47"/>
+			<arg name="RSTR" ref="h51"/>
+			<arg name="BODY" ref="h52"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u53"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x47" name="WH" value="-"/>
+		<feature key="x47" name="BOUNDED" value="-"/>
+		<feature key="x47" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x47" name="PNG.NG.GEN" value="m"/>
+		<feature key="x47" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h51" label="h48" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h26" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+			<arg name="RSTR" ref="h29"/>
+			<arg name="BODY" ref="h30"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h31" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+			<arg name="RSTR" ref="h32"/>
+			<arg name="BODY" ref="h33"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h34" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+			<arg name="RSTR" ref="h38"/>
+			<arg name="BODY" ref="h39"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h40" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u41"/>
+			<arg name="ARG1" ref="x36"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x27"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u44"/>
+			<arg name="ARG1" ref="x45"/>
+			<arg name="ARG2" ref="x46"/>
+			<arg name="IARG" ref="u47"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u49"/>
+			<arg name="ARG1" ref="x46"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x46"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h50" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x46"/>
+			<arg name="RSTR" ref="h51"/>
+			<arg name="BODY" ref="h52"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u53"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="x25" name="WH" value="-"/>
+		<feature key="x27" name="WH" value="-"/>
+		<feature key="x27" name="BOUNDED" value="-"/>
+		<feature key="x27" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x27" name="PNG.NG.GEN" value="m"/>
+		<feature key="x27" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x36" name="WH" value="-"/>
+		<feature key="x36" name="BOUNDED" value="-"/>
+		<feature key="x36" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x36" name="PNG.NG.GEN" value="m"/>
+		<feature key="x36" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u44" name="SORT" value="verb-act-specification"/>
+		<feature key="x46" name="WH" value="-"/>
+		<feature key="x46" name="BOUNDED" value="-"/>
+		<feature key="x46" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x46" name="PNG.NG.GEN" value="m"/>
+		<feature key="x46" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x46" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h29" label="h26" rel="qeq"/>
+		<hcons hole="h32" label="h34" rel="qeq"/>
+		<hcons hole="h38" label="h35" rel="qeq"/>
+		<hcons hole="h51" label="h48" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u42"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x43"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x43"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x43"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x43"/>
+			<arg name="RSTR" ref="h47"/>
+			<arg name="BODY" ref="h48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u50"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h51" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u52"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u53"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x43" name="WH" value="-"/>
+		<feature key="x43" name="BOUNDED" value="-"/>
+		<feature key="x43" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x43" name="PNG.NG.GEN" value="m"/>
+		<feature key="x43" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h47" label="h44" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h26" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+			<arg name="RSTR" ref="h29"/>
+			<arg name="BODY" ref="h30"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h31" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+			<arg name="RSTR" ref="h32"/>
+			<arg name="BODY" ref="h33"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h34" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+			<arg name="RSTR" ref="h38"/>
+			<arg name="BODY" ref="h39"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u40"/>
+			<arg name="ARG1" ref="x41"/>
+			<arg name="ARG2" ref="x42"/>
+			<arg name="IARG" ref="u43"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x42"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x42"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x42"/>
+			<arg name="RSTR" ref="h47"/>
+			<arg name="BODY" ref="h48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u50"/>
+			<arg name="ARG1" ref="x36"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h51" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u52"/>
+			<arg name="ARG1" ref="x27"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u53"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="x25" name="WH" value="-"/>
+		<feature key="x27" name="WH" value="-"/>
+		<feature key="x27" name="BOUNDED" value="-"/>
+		<feature key="x27" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x27" name="PNG.NG.GEN" value="m"/>
+		<feature key="x27" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x36" name="WH" value="-"/>
+		<feature key="x36" name="BOUNDED" value="-"/>
+		<feature key="x36" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x36" name="PNG.NG.GEN" value="m"/>
+		<feature key="x36" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u40" name="SORT" value="verb-act-specification"/>
+		<feature key="x42" name="WH" value="-"/>
+		<feature key="x42" name="BOUNDED" value="-"/>
+		<feature key="x42" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x42" name="PNG.NG.GEN" value="m"/>
+		<feature key="x42" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x42" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h29" label="h26" rel="qeq"/>
+		<hcons hole="h32" label="h34" rel="qeq"/>
+		<hcons hole="h38" label="h35" rel="qeq"/>
+		<hcons hole="h47" label="h44" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x21"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h22" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x21"/>
+			<arg name="RSTR" ref="h23"/>
+			<arg name="BODY" ref="h24"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u25"/>
+			<arg name="ARG1" ref="x21"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h27" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h29"/>
+			<arg name="BODY" ref="h30"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h31" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h32"/>
+			<arg name="BODY" ref="h33"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h34" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+			<arg name="RSTR" ref="h38"/>
+			<arg name="BODY" ref="h39"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u40"/>
+			<arg name="ARG1" ref="x41"/>
+			<arg name="ARG2" ref="x42"/>
+			<arg name="IARG" ref="u43"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x42"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x42"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x42"/>
+			<arg name="RSTR" ref="h47"/>
+			<arg name="BODY" ref="h48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u50"/>
+			<arg name="ARG1" ref="x36"/>
+			<arg name="ARG2" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h51" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u52"/>
+			<arg name="ARG1" ref="x21"/>
+			<arg name="ARG2" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u53"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="x21" name="WH" value="-"/>
+		<feature key="x21" name="BOUNDED" value="-"/>
+		<feature key="x21" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x21" name="PNG.NG.GEN" value="m"/>
+		<feature key="x21" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="BOUNDED" value="-"/>
+		<feature key="x26" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x26" name="PNG.NG.GEN" value="m"/>
+		<feature key="x26" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x36" name="WH" value="-"/>
+		<feature key="x36" name="BOUNDED" value="-"/>
+		<feature key="x36" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x36" name="PNG.NG.GEN" value="m"/>
+		<feature key="x36" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u40" name="SORT" value="verb-act-specification"/>
+		<feature key="x42" name="WH" value="-"/>
+		<feature key="x42" name="BOUNDED" value="-"/>
+		<feature key="x42" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x42" name="PNG.NG.GEN" value="m"/>
+		<feature key="x42" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x42" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h23" label="h20" rel="qeq"/>
+		<hcons hole="h29" label="h27" rel="qeq"/>
+		<hcons hole="h32" label="h34" rel="qeq"/>
+		<hcons hole="h38" label="h35" rel="qeq"/>
+		<hcons hole="h47" label="h44" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x46"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h47" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u48"/>
+			<arg name="ARG1" ref="x46"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h47" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x46"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h49" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x46"/>
+			<arg name="RSTR" ref="h50"/>
+			<arg name="BODY" ref="h51"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u52"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x46" name="WH" value="-"/>
+		<feature key="x46" name="BOUNDED" value="-"/>
+		<feature key="x46" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x46" name="PNG.NG.GEN" value="m"/>
+		<feature key="x46" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h50" label="h47" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x25"/>
+			<arg name="ARG2" ref="x26"/>
+			<arg name="IARG" ref="u27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h30" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x29"/>
+			<arg name="RSTR" ref="h31"/>
+			<arg name="BODY" ref="h32"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h33" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+			<arg name="RSTR" ref="h34"/>
+			<arg name="BODY" ref="h35"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h36" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h39" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x38"/>
+			<arg name="RSTR" ref="h40"/>
+			<arg name="BODY" ref="h41"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x38"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h44" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u45"/>
+			<arg name="ARG1" ref="x29"/>
+			<arg name="ARG2" ref="x26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_fra_p-dirtel_rel" quote="true">
+			<arg name="ARG0" ref="u46"/>
+			<arg name="ARG1" ref="x47"/>
+			<arg name="ARG2" ref="x48"/>
+			<arg name="IARG" ref="u49"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h50" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u51"/>
+			<arg name="ARG1" ref="x48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h50" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x48"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h52" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x48"/>
+			<arg name="RSTR" ref="h53"/>
+			<arg name="BODY" ref="h54"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u55"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="u24" name="SORT" value="verb-act-specification"/>
+		<feature key="x26" name="WH" value="-"/>
+		<feature key="x26" name="ROLE" value="startpnt"/>
+		<feature key="x29" name="WH" value="-"/>
+		<feature key="x29" name="BOUNDED" value="-"/>
+		<feature key="x29" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x29" name="PNG.NG.GEN" value="m"/>
+		<feature key="x29" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x38" name="WH" value="-"/>
+		<feature key="x38" name="BOUNDED" value="-"/>
+		<feature key="x38" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x38" name="PNG.NG.GEN" value="m"/>
+		<feature key="x38" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u46" name="SORT" value="verb-act-specification"/>
+		<feature key="x48" name="WH" value="-"/>
+		<feature key="x48" name="BOUNDED" value="-"/>
+		<feature key="x48" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x48" name="PNG.NG.GEN" value="m"/>
+		<feature key="x48" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x48" name="ROLE" value="startpnt"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h31" label="h28" rel="qeq"/>
+		<hcons hole="h34" label="h36" rel="qeq"/>
+		<hcons hole="h40" label="h37" rel="qeq"/>
+		<hcons hole="h53" label="h50" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_finansiering_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_bli-inchoation_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_igjen_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ordne_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x12"/>
+			<arg name="ARG2" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_udef_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_understood-agent_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_ved_p-loc_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="e11"/>
+			<arg name="ARG2" ref="x18"/>
+			<arg name="IARG" ref="u19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_donasjon_n_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x18"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h26" pred="_stiftelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h28" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x27"/>
+			<arg name="RSTR" ref="h29"/>
+			<arg name="BODY" ref="h30"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h31" pred="_og-connect_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+			<arg name="RSTR" ref="h32"/>
+			<arg name="BODY" ref="h33"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h34" pred="_set_rel" quote="true">
+			<arg name="ARG0" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h35" pred="_gave_n_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h37" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x36"/>
+			<arg name="RSTR" ref="h38"/>
+			<arg name="BODY" ref="h39"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h40" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u41"/>
+			<arg name="ARG1" ref="x36"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h42" pred="_member-of-set_rel" quote="true">
+			<arg name="ARG0" ref="u43"/>
+			<arg name="ARG1" ref="x27"/>
+			<arg name="ARG2" ref="x25"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_fra_p_rel" quote="true">
+			<arg name="ARG0" ref="u44"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x45"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_god_a_rel" quote="true">
+			<arg name="ARG0" ref="u47"/>
+			<arg name="ARG1" ref="x45"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h46" pred="_borger_n_rel" quote="true">
+			<arg name="ARG0" ref="x45"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h48" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x45"/>
+			<arg name="RSTR" ref="h49"/>
+			<arg name="BODY" ref="h50"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u51"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pret"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="+"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x18" name="WH" value="-"/>
+		<feature key="x18" name="BOUNDED" value="-"/>
+		<feature key="x18" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x18" name="PNG.NG.GEN" value="m"/>
+		<feature key="x18" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u19" name="CLASS.SCALAR" value="-"/>
+		<feature key="u19" name="CLASS.TRANSITIVE" value="-"/>
+		<feature key="u19" name="CLASS.VERTICAL" value="+"/>
+		<feature key="u19" name="CLASS.UPSIDE-OF" value="bool"/>
+		<feature key="u19" name="CLASS.INTEGRATED" value="+"/>
+		<feature key="x25" name="WH" value="-"/>
+		<feature key="x27" name="WH" value="-"/>
+		<feature key="x27" name="BOUNDED" value="-"/>
+		<feature key="x27" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x27" name="PNG.NG.GEN" value="m"/>
+		<feature key="x27" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x36" name="WH" value="-"/>
+		<feature key="x36" name="BOUNDED" value="-"/>
+		<feature key="x36" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x36" name="PNG.NG.GEN" value="m"/>
+		<feature key="x36" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x45" name="WH" value="-"/>
+		<feature key="x45" name="BOUNDED" value="-"/>
+		<feature key="x45" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x45" name="PNG.NG.GEN" value="m"/>
+		<feature key="x45" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+		<hcons hole="h29" label="h26" rel="qeq"/>
+		<hcons hole="h32" label="h34" rel="qeq"/>
+		<hcons hole="h38" label="h35" rel="qeq"/>
+		<hcons hole="h49" label="h46" rel="qeq"/>
+	</mrs>
+	<status>ok</status>
+</parse>
