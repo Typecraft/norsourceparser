@@ -435,7 +435,7 @@
 	";yppe_tv ": " v-tr",
 	";yrke_intr-obl ": " v-intrObl",
 	";yrke_iv ": " v-intr",
-	";øse_tv-reg-opt ": " v-tr",;
+	";øse_tv-reg-opt ": " v-tr",
 	";øve_tr-arg12-secpred ": " v-trScpr-scObArgCsd",
 	"abandonere_tv ": " v-tr",
 	"abbreviere_tv ": " v-tr",
@@ -6560,7 +6560,7 @@
 	"legge_intr-oblLoc ": " v-intrObl-oblLoc",
 	"legge_intr-telicpartcl ": " v-intrPrtcl",
 	"legge_particleshift ": " v-trScprShft-obDir_scObArgCsd",
-	"legge_tr-arg12-secpred ": " v-trScpr-scObArgCsd",  ; removed _scLoc, to get 'legge turen mot nord'
+	"legge_tr-arg12-secpred ": " v-trScpr-scObArgCsd",
 	"legge_tr-ppshift ": " v-trScprShft-scObNrgRes_scPP-PLACEMENT",
 	"legge_tr-refl ": " v-tr-obRefl",
 	"legge_tr-refl-obl ": " v-trObl-obRefl-oblLoc",
@@ -13232,5 +13232,5 @@
 	"øydelegge_tr-refl ": " v-tr-obRefl",
 	"øydelegge_tv ": " v-tr",
 	"øye_tv ": " v-tr",
-	"øyne_tv ": " v-tr",
+	"øyne_tv ": " v-tr"
 }
