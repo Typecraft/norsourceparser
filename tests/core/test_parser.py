@@ -21,5 +21,3 @@ def test_parse_file():
 
     assert isinstance(tc_file, Text)
 
-    print(tc_file)
-

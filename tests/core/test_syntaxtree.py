@@ -137,6 +137,6 @@ def test_reduce_and_convert():
 
     word = phrase.words[0]
     assert word.word == "digger"
-    assert word.pos == "n"
+    assert word.pos == "N"
 
 
