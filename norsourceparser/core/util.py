@@ -17,6 +17,7 @@ POS_CONVERSIONS = {
     "indef-art": "DET",
     "stndadj": "ADJ",
     "n": "N",
+    "tv": "V"
 }
 
 GLOSS_CONVERSIONS = {
@@ -51,12 +52,12 @@ def parse_lexical_entry_rule(name):
     return [stem, pos, gloss]
 
 
-def get_inflectional_rules(rule):
+def get_inflectional_rules(stem, rule):
     """
     Takes an inflectional rule, and returns an array of length three (or None) with the following information
         [Stem-Suffix, Suffix, Glosses]
 
-    :param stem: 
+    :param stem:
     :param rule:
     :return:
     """
@@ -67,7 +68,9 @@ def get_inflectional_rules(rule):
     suffix_rules = inflectional_rules.get('suffix')
 
     for key in suffix_rules:
-        if re.search(key + '$', key) is not None:
+        if key == "*":
+            continue
+        if re.search(key + '$', stem) is not None:
             # We have found our proper matching end-case
             return [key, suffix_rules[key], map(lambda x: GLOSS_CONVERSIONS.get(x),
                                                 inflectional_rules.get('attributes').values())]
