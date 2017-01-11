@@ -1,0 +1,104 @@
+{
+	"sg_def_m_final-full-mm_irule":{
+		"suffix": {"am": "ammen", "em": "emmen", "om": "ommen", "um": "ummen", "øm": "ømmen"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": ""}
+	},
+	"pl_ind_m-or-f_final-full-mm_irule":{
+		"suffix": {"am": "ammer", "em": "emmer", "om": "ommer", "um": "ummer", "øm": "ømmer"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"pl_def_m-or-f_final-full-mm_irule":{
+		"suffix": {"am": "ammene", "em": "emmene", "om": "ommene", "um": "ummene", "øm": "ømmene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "m-or-f"}
+	},
+	"sg_def_f_final-full-mm_irule":{
+		"suffix": {"rem": "remma", "vom": "vomma", "skam": "skamma"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "f"}
+	},
+	"sg_def_n_final-full-mm_irule":{
+		"suffix": {"lem": "lemmet", "ram": "rammet", "jem": "jemmet", "lam": "lammet", "rom": "rommet"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_def_n_final-full-mm_irule":{
+		"suffix": {"am": "ammene", "em": "emmene", "om": "ommene", "um": "ummene", "øm": "ømmene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"sg_def_m_final-full_irule":{
+		"suffix": {"*": "en"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "m"}
+	},
+	"pl_def_m-or-f_final-full_irule":{
+		"suffix": {"*": "ene", "er": "erne", "el": "lene", "ddel": "dlene", "lder": "ldrene", "nder": "ndrene", "ffel": "flene", "kkel": "klene", "mmel": "mlene", "mmar": "mrene", "ppel": "plene", "ssel": "slene", "ttel": "tlene", "e": "ærne", "bok": "bøkene", "kraft": "kreftene", "tang": "tengene", "mann": "mennene", "tann": "tennene", "natt": "nettene", "hånd": "hendene", "finger": "fingrene", "minister": "ministrene", "seier": "seirene", "ken": "knene", "tunnel": "tunnellene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "m-or-f"}
+	},
+	"sg_def_f_final-full_irule":{
+		"suffix": {"*": "a", "el": "la", "en": "na", "er": "ra"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "f"}
+	},
+	"sg_def_m_light-e_irule":{
+		"suffix": {"e": "en"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "m"}
+	},
+	"pl_def_m-or-f_light-e_irule":{
+		"suffix": {"e": "ene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "m-or-f"}
+	},
+	"sg_def_n_light-e_irule":{
+		"suffix": {"e": "et"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_def_n_light-e_irule":{
+		"suffix": {"e": "ene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_ind_m-or-f_final-full_irule":{
+		"suffix": {"*": "er", "er": "ere", "el": "ler", "ddel": "dler", "lder": "ldre", "ffel": "fler", "kkel": "kler", "mmer": "mrer", "mmel": "mler", "ppel": "pler", "ssel": "sler", "ttel": "tler", "e": "ær", "and": "ender", "mann": "menn", "kraft": "krefter", "tang": "tenger", "tann": "tenner", "natt": "netter", "hånd": "hender", "bok": "bøker", "meter": "meter", "finger": "fingre", "minister": "ministre", "seier": "seire", "ken": "kner", "tunnel": "tunneller"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"sg_def_n_final-full_irule":{
+		"suffix": {"*": "et", "ium": "iet"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_def_n_final-full_irule":{
+		"suffix": {"*": "a", "*": "ene", "er": "erne", "tre": "trærne", "el": "lene", "ddel": "dlene", "ffel": "flene", "ffer": "frene", "kkel": "klene", "mmel": "mlene", "mmar": "mrene", "ppel": "plene", "ssel": "slene", "ttel": "tlene", "ium": "iene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_ind_m-or-f_light-e_irule":{
+		"suffix": {"e": "er"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"sg_def_f_light-e_irule":{
+		"suffix": {"e": "a"},
+		"attributes": {"NUMB": "sing", "DEFINITENESS": "def", "GEND": "f"}
+	},
+	"pl_ind_m-or-f_light_0_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"pl_ind_m-or-f_basicplur_0_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"pl_def_m-or-f_basicplur_ne_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "m-or-f"}
+	},
+	"pl_ind_m-or-f_full_0_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "m-or-f"}
+	},
+	"pl_ind_n_final-full-mm-nlong_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "n"}
+	},
+	"pl_ind_n_final-full-nlong_irule":{
+		"suffix": {"*": "er", "er": "ere", "tre": "trær", "el": "ler", "ddel": "dler", "ffel": "fler", "ffer": "fre", "kkel": "kler", "mmer": "mrer", "mmel": "mler", "ppel": "pler", "ssel": "sler", "ttel": "tler", "nter": "ntre", "ium": "ier"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "n"}
+	},
+	"pl_def_n_final-full-nlong_irule":{
+		"suffix": {"*": "a", "*": "ene", "er": "erne", "tre": "trærne", "el": "lene", "ddel": "dlene", "ffel": "flene", "kkel": "klene", "mmel": "mlene", "mmar": "mrene", "ppel": "plene", "ssel": "slene", "ttel": "tlene"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "def", "GEND": "n"}
+	},
+	"pl_ind_n_light-e-nlong_irule":{
+		"suffix": {"e": "er"},
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "n"}
+	},
+	"pl_ind_n_short_0_irule":{
+		"attributes": {"NUMB": "plur", "DEFINITENESS": "ind", "GEND": "n"}
+	}
+}

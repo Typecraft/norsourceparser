@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<!-- Bestikkelser har alltid vært et sikkert middel. -->
+<parse>
+	<readings>1</readings>
+	<error source="crabble">NOTE: 1 readings, added 26530 / 24403 edges to chart (1412 fully instantiated, 349 actives used, 1440 passives used)	RAM: 840491k
+</error>
+	<syntax-tree top="n1">
+		<terminal id="n6" name="bestikkelser" parent="n5"/>
+		<node beg="0" end="1" id="n5" name="bestikkelse_n_masc" num="63" parent="n4" pct="0.000000">
+			<argument id="n6" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n4" name="leak-pl-indef-noun-lxm-lrule" num="27558" parent="n3" pct="-0.073723">
+			<argument id="n5" number="1"/>
+		</node>
+		<node beg="0" end="1" id="n3" name="pl_ind_m-or-f_light-e_irule" num="27559" parent="n2" pct="-0.278654">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n11" name="har" parent="n10"/>
+		<node beg="1" end="2" id="n10" name="ha_perf" num="12" parent="n9" pct="0.550858">
+			<argument id="n11" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n9" name="pres-infl_rule" num="27560" parent="n8" pct="0.823415">
+			<argument id="n10" number="1"/>
+		</node>
+		<terminal id="n13" name="alltid" parent="n12"/>
+		<node beg="2" end="3" id="n12" name="alltid_s-adv" num="17" parent="n8" pct="0.000000">
+			<argument id="n13" number="1"/>
+		</node>
+		<node beg="1" end="3" id="n8" name="s-adv-spec-v-rule" num="27561" parent="n7" pct="1.055898">
+			<argument id="n9" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<terminal id="n17" name="vært" parent="n16"/>
+		<node beg="3" end="4" id="n16" name="være_copnom" num="27" parent="n15" pct="0.000000">
+			<argument id="n17" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n15" name="ppart-nonfstr_infl_rule" num="27562" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<terminal id="n20" name="et" parent="n19"/>
+		<node beg="4" end="5" id="n19" name="et_indef-art" num="50" parent="n18" pct="1.133599">
+			<argument id="n20" number="1"/>
+		</node>
+		<terminal id="n25" name="sikkert" parent="n24"/>
+		<node beg="5" end="6" id="n24" name="sikker_stndadj" num="54" parent="n23" pct="0.000000">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n23" name="strong-adj-lxm-lrule" num="27563" parent="n22" pct="-0.407491">
+			<argument id="n24" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n22" name="neutsg-adj-nonfstr_infl_rule" num="27564" parent="n21" pct="0.184451">
+			<argument id="n23" number="1"/>
+		</node>
+		<terminal id="n29" name="middel" parent="n28"/>
+		<node beg="6" end="7" id="n28" name="middel_n_neut" num="57" parent="n27" pct="0.000000">
+			<argument id="n29" number="1"/>
+		</node>
+		<node beg="6" end="7" id="n27" name="sg-indef-cum-det-noun-lxm-lrule" num="27565" parent="n26" pct="-0.129732">
+			<argument id="n28" number="1"/>
+		</node>
+		<node beg="6" end="7" id="n26" name="sg_ind_subst_irule" num="27566" parent="n21" pct="2.304182">
+			<argument id="n27" number="1"/>
+		</node>
+		<node beg="5" end="7" id="n21" name="adjective-mod-indef-rule" num="27567" parent="n18" pct="2.509495">
+			<argument id="n22" number="1"/>
+			<argument id="n26" number="2"/>
+		</node>
+		<node beg="4" end="7" id="n18" name="head-spec-art-rule" num="27568" parent="n14" pct="3.723646">
+			<argument id="n19" number="1"/>
+			<argument id="n21" number="2"/>
+		</node>
+		<node beg="3" end="7" id="n14" name="head-verb-comp-rule" num="27569" parent="n7" pct="3.165184">
+			<argument id="n15" number="1"/>
+			<argument id="n18" number="2"/>
+		</node>
+		<node beg="1" end="7" id="n7" name="head-verb-perf-comp-rule" num="27570" parent="n2" pct="4.398432">
+			<argument id="n8" number="1"/>
+			<argument id="n14" number="2"/>
+		</node>
+		<node beg="0" end="7" id="n2" name="head-subject-rule" num="27583" parent="n1" pct="4.119778">
+			<argument id="n3" number="1"/>
+			<argument id="n7" number="2"/>
+		</node>
+		<terminal id="n31" name="." parent="n30"/>
+		<node beg="7" end="8" id="n30" name="period" num="62" parent="n1" pct="0.238627">
+			<argument id="n31" number="1"/>
+		</node>
+		<node beg="0" end="8" id="n1" name="end-punct-mod-for-v-rule" num="27585" pct="4.914287">
+			<argument id="n2" number="1"/>
+			<argument id="n30" number="2"/>
+		</node>
+	</syntax-tree>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="_bestikkelse_n_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h4" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h5"/>
+			<arg name="BODY" ref="h6"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h7" pred="_ha-perfective_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="h8"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_alltid_adv_rel" quote="true">
+			<arg name="ARG0" ref="u10"/>
+			<arg name="ARG1" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_være-instantiate_rel" quote="true">
+			<arg name="ARG0" ref="e11"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_exactly_1_q_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_sikker_a_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h16" pred="_middel_n_rel" quote="true">
+			<arg name="ARG0" ref="x12"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h9" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u18"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="BOUNDED" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x2" name="PNG.NG.GEN" value="m"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u10" name="WH" value="-"/>
+		<feature key="e11" name="SORT" value="verb-act-specification"/>
+		<feature key="e11" name="SF" value="prop"/>
+		<feature key="e11" name="E.TENSE" value="tense"/>
+		<feature key="e11" name="E.MOOD" value="indicative"/>
+		<feature key="e11" name="E.ASPECT" value="semsort"/>
+		<feature key="x12" name="WH" value="-"/>
+		<feature key="x12" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x12" name="PNG.NG.GEN" value="n"/>
+		<feature key="x12" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h5" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h16" rel="qeq"/>
+	</mrs>
+	<status>ok</status>
+</parse>

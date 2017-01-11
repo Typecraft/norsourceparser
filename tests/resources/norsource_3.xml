@@ -1,0 +1,1438 @@
+<?xml version="1.0" ?>
+<!-- Island krever 16 prosent av kvoten. -->
+<parse>
+	<readings>10</readings>
+	<error source="crabble">NOTE: 10 readings, added 13449 / 11605 edges to chart (872 fully instantiated, 259 actives used, 840 passives used)	RAM: 401693k
+</error>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n8" name="krever" parent="n7"/>
+		<node beg="1" end="2" id="n7" name="kreve_tv" num="11" parent="n6" pct="0.000000">
+			<argument id="n8" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n6" name="pres-infl_rule" num="14556" parent="n5" pct="-0.109592">
+			<argument id="n7" number="1"/>
+		</node>
+		<terminal id="n11" name="16" parent="n10"/>
+		<node beg="2" end="3" id="n10" name="seksten_card-dig" num="14" parent="n9" pct="0.000000">
+			<argument id="n11" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14501" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14557" parent="n12" pct="-0.074938">
+			<argument id="n14" number="1"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_rel-p" num="28" parent="n17" pct="0.303933">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14503" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14504" parent="n17" pct="0.495740">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14558" parent="n12" pct="0.799673">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="3" end="6" id="n12" name="pp-mod-rel-n-rule" num="14559" parent="n9" pct="0.724736">
+			<argument id="n13" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="2" end="6" id="n9" name="card-mod-indef-rule" num="14560" parent="n5" pct="0.724736">
+			<argument id="n10" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-verb-comp-rule" num="14564" parent="n2" pct="1.204189">
+			<argument id="n6" number="1"/>
+			<argument id="n9" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14566" parent="n1" pct="1.204189">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14579" pct="1.998698">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n8" name="krever" parent="n7"/>
+		<node beg="1" end="2" id="n7" name="kreve_tv" num="11" parent="n6" pct="0.000000">
+			<argument id="n8" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n6" name="pres-infl_rule" num="14556" parent="n5" pct="-0.109592">
+			<argument id="n7" number="1"/>
+		</node>
+		<terminal id="n11" name="16" parent="n10"/>
+		<node beg="2" end="3" id="n10" name="seksten_card-dig" num="14" parent="n9" pct="0.000000">
+			<argument id="n11" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14501" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14557" parent="n12" pct="-0.074938">
+			<argument id="n14" number="1"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_rel-p" num="28" parent="n17" pct="0.303933">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_relinan" num="36" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14508" parent="n20" pct="-0.134208">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14509" parent="n17" pct="0.358615">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14561" parent="n12" pct="0.662548">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="3" end="6" id="n12" name="pp-mod-rel-n-rule" num="14562" parent="n9" pct="0.587610">
+			<argument id="n13" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="2" end="6" id="n9" name="card-mod-indef-rule" num="14563" parent="n5" pct="0.587610">
+			<argument id="n10" number="1"/>
+			<argument id="n12" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-verb-comp-rule" num="14565" parent="n2" pct="1.067063">
+			<argument id="n6" number="1"/>
+			<argument id="n9" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14578" parent="n1" pct="1.067063">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14677" pct="1.861572">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n8" name="krever" parent="n7"/>
+		<node beg="1" end="2" id="n7" name="kreve_tv" num="11" parent="n6" pct="0.000000">
+			<argument id="n8" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n6" name="pres-infl_rule" num="14556" parent="n5" pct="-0.109592">
+			<argument id="n7" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14516" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14567" parent="n10" pct="-0.160109">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14568" parent="n9" pct="-0.245280">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_rel-p" num="28" parent="n17" pct="0.291499">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14503" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14569" parent="n17" pct="0.495740">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14570" parent="n9" pct="0.787239">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="2" end="6" id="n9" name="pp-mod-rel-n-rule" num="14571" parent="n5" pct="0.665686">
+			<argument id="n10" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-verb-comp-rule" num="14572" parent="n2" pct="0.813514">
+			<argument id="n6" number="1"/>
+			<argument id="n9" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14577" parent="n1" pct="0.813514">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14679" pct="1.608023">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n8" name="krever" parent="n7"/>
+		<node beg="1" end="2" id="n7" name="kreve_tv" num="11" parent="n6" pct="0.000000">
+			<argument id="n8" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n6" name="pres-infl_rule" num="14556" parent="n5" pct="-0.109592">
+			<argument id="n7" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14516" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14567" parent="n10" pct="-0.160109">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14568" parent="n9" pct="-0.245280">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_rel-p" num="28" parent="n17" pct="0.291499">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_relinan" num="36" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14508" parent="n20" pct="-0.134208">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14573" parent="n17" pct="0.358615">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14574" parent="n9" pct="0.650114">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="2" end="6" id="n9" name="pp-mod-rel-n-rule" num="14575" parent="n5" pct="0.528561">
+			<argument id="n10" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-verb-comp-rule" num="14576" parent="n2" pct="0.676389">
+			<argument id="n6" number="1"/>
+			<argument id="n9" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14678" parent="n1" pct="0.676389">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14680" pct="1.470897">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-fra" num="9" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14580" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14584" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_agent" num="32" parent="n17" pct="0.099778">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14585" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14586" parent="n17" pct="0.517259">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14587" parent="n5" pct="0.617037">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14588" parent="n2" pct="0.496185">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14589" parent="n1" pct="0.496185">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14590" pct="1.290694">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-av" num="12" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14623" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14624" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_agent" num="32" parent="n17" pct="0.099778">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14585" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14586" parent="n17" pct="0.517259">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14587" parent="n5" pct="0.617037">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14637" parent="n2" pct="0.496185">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14638" parent="n1" pct="0.496185">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14639" pct="1.290694">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-av" num="12" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14623" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14624" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_sel" num="29" parent="n17" pct="-0.020946">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14585" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14586" parent="n17" pct="0.517259">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14629" parent="n5" pct="0.512772">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14630" parent="n2" pct="0.391919">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14631" parent="n1" pct="0.391919">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14632" pct="1.186428">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-av" num="12" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14623" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14624" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_agent" num="32" parent="n17" pct="0.099778">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_relinan" num="36" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14591" parent="n20" pct="-0.115345">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14592" parent="n17" pct="0.398997">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14593" parent="n5" pct="0.498776">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14640" parent="n2" pct="0.377923">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14641" parent="n1" pct="0.377923">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14642" pct="1.172432">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-fra" num="9" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14580" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14584" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_agent" num="32" parent="n17" pct="0.099778">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_relinan" num="36" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14591" parent="n20" pct="-0.115345">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14592" parent="n17" pct="0.398997">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14593" parent="n5" pct="0.498776">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14594" parent="n2" pct="0.377923">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14595" parent="n1" pct="0.377923">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14596" pct="1.172432">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<syntax-tree top="n1">
+		<terminal id="n4" name="island" parent="n3"/>
+		<node beg="0" end="1" id="n3" name="island_propername" num="42" parent="n2" pct="0.000000">
+			<argument id="n4" number="1"/>
+		</node>
+		<terminal id="n9" name="krever" parent="n8"/>
+		<node beg="1" end="2" id="n8" name="kreve_tr-obl-av" num="12" parent="n7" pct="0.000000">
+			<argument id="n9" number="1"/>
+		</node>
+		<node beg="1" end="2" id="n7" name="pres-infl_rule" num="14623" parent="n6" pct="-0.028921">
+			<argument id="n8" number="1"/>
+		</node>
+		<terminal id="n12" name="16" parent="n11"/>
+		<node beg="2" end="3" id="n11" name="seksten_card-dig" num="14" parent="n10" pct="0.000000">
+			<argument id="n12" number="1"/>
+		</node>
+		<terminal id="n16" name="prosent" parent="n15"/>
+		<node beg="3" end="4" id="n15" name="prosent_relinan" num="15" parent="n14" pct="0.000000">
+			<argument id="n16" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n14" name="cum-card-pl-indef-noun-lxm-lrule" num="14581" parent="n13" pct="0.010233">
+			<argument id="n15" number="1"/>
+		</node>
+		<node beg="3" end="4" id="n13" name="pl_ind_m-or-f_full_0_irule" num="14582" parent="n10" pct="-0.243502">
+			<argument id="n14" number="1"/>
+		</node>
+		<node beg="2" end="4" id="n10" name="card-mod-indef-rule" num="14583" parent="n6" pct="-0.412067">
+			<argument id="n11" number="1"/>
+			<argument id="n13" number="2"/>
+		</node>
+		<node beg="1" end="4" id="n6" name="head-verb-comp-rule" num="14624" parent="n5" pct="-0.284386">
+			<argument id="n7" number="1"/>
+			<argument id="n10" number="2"/>
+		</node>
+		<terminal id="n19" name="av" parent="n18"/>
+		<node beg="4" end="5" id="n18" name="av_poss" num="26" parent="n17" pct="-0.107456">
+			<argument id="n19" number="1"/>
+		</node>
+		<terminal id="n23" name="kvoten" parent="n22"/>
+		<node beg="5" end="6" id="n22" name="kvote_n_masc" num="35" parent="n21" pct="0.000000">
+			<argument id="n23" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n21" name="sg-masc-def-noun-lxm-lrule" num="14585" parent="n20" pct="0.002917">
+			<argument id="n22" number="1"/>
+		</node>
+		<node beg="5" end="6" id="n20" name="sg_def_m_light-e_irule" num="14586" parent="n17" pct="0.517259">
+			<argument id="n21" number="1"/>
+		</node>
+		<node beg="4" end="6" id="n17" name="head-prep-comp-rule" num="14625" parent="n5" pct="0.398106">
+			<argument id="n18" number="1"/>
+			<argument id="n20" number="2"/>
+		</node>
+		<node beg="1" end="6" id="n5" name="head-actv-verb-icomp-rule" num="14626" parent="n2" pct="0.277253">
+			<argument id="n6" number="1"/>
+			<argument id="n17" number="2"/>
+		</node>
+		<node beg="0" end="6" id="n2" name="head-subject-rule" num="14627" parent="n1" pct="0.277253">
+			<argument id="n3" number="1"/>
+			<argument id="n5" number="2"/>
+		</node>
+		<terminal id="n25" name="." parent="n24"/>
+		<node beg="6" end="7" id="n24" name="period" num="41" parent="n1" pct="0.238627">
+			<argument id="n25" number="1"/>
+		</node>
+		<node beg="0" end="7" id="n1" name="end-punct-mod-for-v-rule" num="14628" pct="1.071762">
+			<argument id="n2" number="1"/>
+			<argument id="n24" number="2"/>
+		</node>
+	</syntax-tree>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u12"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av_p-rel_rel" quote="true">
+			<arg name="ARG0" ref="u16"/>
+			<arg name="ARG1" ref="x9"/>
+			<arg name="ARG2" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h18" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h19" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+			<arg name="RSTR" ref="h20"/>
+			<arg name="BODY" ref="h21"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u22"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u12" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u12" name="PNG.NG.GEN" value="m"/>
+		<feature key="u12" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x17" name="WH" value="-"/>
+		<feature key="x17" name="BOUNDED" value="+"/>
+		<feature key="x17" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x17" name="PNG.NG.GEN" value="m"/>
+		<feature key="x17" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h10" rel="qeq"/>
+		<hcons hole="h20" label="h18" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u12"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av_p-rel_rel" quote="true">
+			<arg name="ARG0" ref="u16"/>
+			<arg name="ARG1" ref="x9"/>
+			<arg name="ARG2" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h18" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h19" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+			<arg name="RSTR" ref="h20"/>
+			<arg name="BODY" ref="h21"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u22"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u12" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u12" name="PNG.NG.GEN" value="m"/>
+		<feature key="u12" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x17" name="WH" value="-"/>
+		<feature key="x17" name="BOUNDED" value="+"/>
+		<feature key="x17" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x17" name="PNG.NG.GEN" value="m"/>
+		<feature key="x17" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h10" rel="qeq"/>
+		<hcons hole="h20" label="h18" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u12"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av_p-rel_rel" quote="true">
+			<arg name="ARG0" ref="u16"/>
+			<arg name="ARG1" ref="x9"/>
+			<arg name="ARG2" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h18" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h19" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+			<arg name="RSTR" ref="h20"/>
+			<arg name="BODY" ref="h21"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u22"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u12" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u12" name="PNG.NG.GEN" value="m"/>
+		<feature key="u12" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x17" name="WH" value="-"/>
+		<feature key="x17" name="BOUNDED" value="+"/>
+		<feature key="x17" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x17" name="PNG.NG.GEN" value="m"/>
+		<feature key="x17" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h10" rel="qeq"/>
+		<hcons hole="h20" label="h18" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-tr_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u12"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h13" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h14"/>
+			<arg name="BODY" ref="h15"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av_p-rel_rel" quote="true">
+			<arg name="ARG0" ref="u16"/>
+			<arg name="ARG1" ref="x9"/>
+			<arg name="ARG2" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h18" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h19" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x17"/>
+			<arg name="RSTR" ref="h20"/>
+			<arg name="BODY" ref="h21"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u22"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u12" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u12" name="PNG.NG.GEN" value="m"/>
+		<feature key="u12" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x17" name="WH" value="-"/>
+		<feature key="x17" name="BOUNDED" value="+"/>
+		<feature key="x17" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x17" name="PNG.NG.GEN" value="m"/>
+		<feature key="x17" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h14" label="h10" rel="qeq"/>
+		<hcons hole="h20" label="h18" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_performed-by_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="u18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_identical-to_rel" quote="true">
+			<arg name="ARG0" ref="u21"/>
+			<arg name="ARG1" ref="u22"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h23" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h24" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h25"/>
+			<arg name="BODY" ref="h26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u27"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h25" label="h23" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_performed-by_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="u18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_identical-to_rel" quote="true">
+			<arg name="ARG0" ref="u21"/>
+			<arg name="ARG1" ref="u22"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h23" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h24" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h25"/>
+			<arg name="BODY" ref="h26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u27"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h25" label="h23" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av_p-sel_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="u18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_performed-by_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="u18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_identical-to_rel" quote="true">
+			<arg name="ARG0" ref="u21"/>
+			<arg name="ARG1" ref="u22"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h23" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h24" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h25"/>
+			<arg name="BODY" ref="h26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u27"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h25" label="h23" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_performed-by_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="u18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_identical-to_rel" quote="true">
+			<arg name="ARG0" ref="u21"/>
+			<arg name="ARG1" ref="u22"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h23" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h24" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h25"/>
+			<arg name="BODY" ref="h26"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u27"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u17" name="SORT" value="verb-act-specification"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h25" label="h23" rel="qeq"/>
+	</mrs>
+	<mrs index="e1" ltop="h0">
+		<ep beg="-1" end="-1" label="h3" pred="named_rel" quote="false">
+			<arg name="CARG" ref="Island"/>
+			<arg name="ARG0" ref="x2"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h5" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x2"/>
+			<arg name="RSTR" ref="h6"/>
+			<arg name="BODY" ref="h7"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_kreve_v-trObl_rel" quote="true">
+			<arg name="ARG0" ref="e1"/>
+			<arg name="ARG1" ref="x2"/>
+			<arg name="ARG2" ref="x9"/>
+			<arg name="ARGOBLQ" ref="h10"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_card_rel" quote="true">
+			<arg name="CARG" ref="16-rel"/>
+			<arg name="ARG0" ref="u13"/>
+			<arg name="ARG1" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h11" pred="_prosent_n_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h14" pred="_plurindef_q_rel" quote="true">
+			<arg name="ARG0" ref="x9"/>
+			<arg name="RSTR" ref="h15"/>
+			<arg name="BODY" ref="h16"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h10" pred="_av-possessed_by_rel" quote="true">
+			<arg name="ARG0" ref="u17"/>
+			<arg name="ARG1" ref="x18"/>
+			<arg name="ARG2" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h20" pred="_kvote_n_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h21" pred="_def_q_rel" quote="true">
+			<arg name="ARG0" ref="x19"/>
+			<arg name="RSTR" ref="h22"/>
+			<arg name="BODY" ref="h23"/>
+		</ep>
+		<ep beg="-1" end="-1" label="h8" pred="_period-punctuated_rel" quote="true">
+			<arg name="ARG0" ref="u24"/>
+			<arg name="ARG1" ref="e1"/>
+		</ep>
+		<feature key="e1" name="SORT" value="verb-act-specification"/>
+		<feature key="e1" name="SF" value="prop"/>
+		<feature key="e1" name="E.TENSE" value="pres"/>
+		<feature key="e1" name="E.MOOD" value="indicative"/>
+		<feature key="e1" name="E.ASPECT" value="semsort"/>
+		<feature key="x2" name="WH" value="-"/>
+		<feature key="x2" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x2" name="PNG.NG.GEN" value="n"/>
+		<feature key="x2" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x9" name="WH" value="-"/>
+		<feature key="x9" name="BOUNDED" value="+"/>
+		<feature key="x9" name="PNG.NG.NUM" value="plur"/>
+		<feature key="x9" name="PNG.NG.GEN" value="m"/>
+		<feature key="x9" name="PNG.PERS" value="thirdpers"/>
+		<feature key="u13" name="PNG.NG.NUM" value="plur"/>
+		<feature key="u13" name="PNG.NG.GEN" value="m"/>
+		<feature key="u13" name="PNG.PERS" value="thirdpers"/>
+		<feature key="x19" name="WH" value="-"/>
+		<feature key="x19" name="BOUNDED" value="+"/>
+		<feature key="x19" name="PNG.NG.NUM" value="sing"/>
+		<feature key="x19" name="PNG.NG.GEN" value="m"/>
+		<feature key="x19" name="PNG.PERS" value="thirdpers"/>
+		<hcons hole="h6" label="h3" rel="qeq"/>
+		<hcons hole="h15" label="h11" rel="qeq"/>
+		<hcons hole="h22" label="h20" rel="qeq"/>
+	</mrs>
+	<status>ok</status>
+</parse>
