@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='norsourceparser',
-    version='0.1.1',
+    version='0.2.0',
     description="Simple conversion of Norsource-xml files into tc-xml.",
     long_description=readme + '\n\n' + history,
     author="Tormod Haugland",
