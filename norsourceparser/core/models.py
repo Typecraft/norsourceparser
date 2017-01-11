@@ -1,6 +1,8 @@
+import re
+
 from typecraft_python.models import Text, Phrase, Word, Morpheme
 
-from norsourceparser.core.util import parse_lexical_entry_rule
+from norsourceparser.core.util import parse_lexical_entry_rule, POS_CONVERSIONS, GLOSS_CONVERSIONS, get_inflectional_rules
 
 
 class AbstractSyntaxTree(object):
@@ -129,7 +131,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
             morphemes = []
             for morpheme_rule in node.rules.get(REDUCED_RULE_MORPHOLOGICAL_BREAKUP, []):
                 morpheme = Morpheme()
-                morpheme.morpheme = morpheme_rule.get('morpheme')
+                morpheme.morpheme = morpheme_rule
 
                 morphemes.append(morpheme)
                 word.add_morpheme(morpheme)
@@ -144,6 +146,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
 
             phrase.add_word(word)
 
+        phrase.phrase = " ".join(map(lambda word: word.word, phrase.words))
         text.add_phrase(phrase)
 
         return text
@@ -303,16 +306,51 @@ class SyntaxTree(AbstractSyntaxTree):
         rules = []
         if len(partial_branch) == 2:
             # Here we are looking for a lexical entry
-            last_node = partial_branch[-1]
+            last_node = partial_branch[1]
 
             [stem, pos, gloss] = parse_lexical_entry_rule(last_node.name)
             if pos is not None:
-                rules.append([REDUCED_RULE_POS, pos])
+                rules.append([REDUCED_RULE_POS, POS_CONVERSIONS.get(pos, "")])
 
             if gloss is not None:
                 rules.append([REDUCED_RULE_GLOSSES, [gloss]])
 
-            rules.append([REDUCED_RULE_POS, pos])
+        if len(partial_branch) == 3:
+            # Here we are looking for inflection rules for verbs, but nothing for nouns
+            last_node = partial_branch[2]
+            lexical_node = partial_branch[1]
+            terminal_node = partial_branch[0]
+
+            [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
+            pos = POS_CONVERSIONS.get(pos, "")
+            if pos != 'V':
+                return rules
+
+            breakup = get_inflectional_rules(stem, last_node.name)
+
+        if len(partial_branch) == 4:
+            # Here we are looking for the inflectional rules for nouns
+            last_node = partial_branch[3]
+            lexical_node = partial_branch[1]
+            terminal_node = partial_branch[0]
+
+            [stem, pos, gloss] = parse_lexical_entry_rule(lexical_node.name)
+            pos = POS_CONVERSIONS.get(pos, "")
+            if pos != 'N':
+                return rules
+
+            inf_rules = get_inflectional_rules(stem, last_node.name)
+            if inf_rules is None:
+                return rules
+
+            [current_suffix, suffix, glosses] = inf_rules
+
+            print(stem, current_suffix, suffix)
+            morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
+            glosses = [GLOSS_CONVERSIONS.get(gloss, ""), glosses]
+
+            rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
+            rules.append([REDUCED_RULE_GLOSSES, glosses])
 
         return rules
 
