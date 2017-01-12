@@ -1,11 +1,86 @@
 import os
 import xml.etree.ElementTree as ET
 
-from norsourceparser.core.models import UnresolvedSyntaxTree, SyntaxNode
+from norsourceparser.core.models import UnresolvedSyntaxTree, SyntaxNode, PosTreeContainer
 
 NORSOURCE_ROOT_TAG = 'parse'
 NORSOURCE_SYNTAXTREE_TAG = 'syntax-tree'
 NORSOURCE_NODE_TAGS = ['terminal', 'node']
+
+
+class PosTreeParser(object):
+
+    @staticmethod
+    def parse(norsource=""):
+        """
+        Parses a Norsource in string-form using the posTree pipeline.
+
+        :param norsource:
+        :return:
+        """
+        container = PosTreeParser.load_file(norsource)
+        container.resolve()
+        return container.convert_to_tc()
+
+    @staticmethod
+    def parse_file(norsource):
+        """
+        Parses a Noursource in file-form using the posTree pipeline.
+
+        :param norsource:
+        :return:
+        """
+        container = PosTreeParser.load_file(norsource)
+        container.resolve()
+        return container.convert_to_tc()
+
+    @staticmethod
+    def load(string_content):
+        """
+        Loads a Norsource in string-form into a PosTreeContainer.
+
+        :param string_content:
+        :return:
+        """
+        element_tree = ET.fromstring(string_content)
+        return PosTreeParser.create_pos_tree_container_from_etree(element_tree)
+
+    @staticmethod
+    def load_file(filename):
+        """
+        Loads a Norsource resource in file-form into a PosTreeContainer.
+
+        :param filename:
+        :return:
+        """
+        element_tree = ET.parse(filename)
+        return PosTreeParser.create_pos_tree_container_from_etree(element_tree)
+
+    @staticmethod
+    def create_pos_tree_container_from_etree(element_tree):
+        """
+        This is the first heavy-duting parsing method in the pos-tree pipeline. It takes an ElementTree, and
+        converts it into a PosTreeContainer.
+
+        :param element_tree:
+        :return:
+        """
+        pos_tree_container = PosTreeContainer()
+        root_el = element_tree.getroot()
+
+        for parse_el in root_el.iter('parse'):
+            input_el = parse_el.find('input')
+            pos_tree_el = parse_el.find('posTree')
+            if input_el is None or pos_tree_el is None:
+                continue
+
+            input = input_el.text
+            pos_tree = pos_tree_el.text
+            print(input)
+            print(pos_tree)
+            pos_tree_container.add_pair(input, pos_tree)
+
+        return pos_tree_container
 
 
 class Parser(object):

@@ -1,9 +1,12 @@
 from norsourceparser.core.models import SyntaxTree
-from norsourceparser.core.parser import Parser
+from norsourceparser.core.parser import Parser, PosTreeParser
 from typecraft_python.models import Text
+from typecraft_python.parsing.parser import Parser as TParser
+import xml.etree.ElementTree as ET
 import os
 
 file_name = os.path.join(os.path.dirname(__file__), '../resources/norsource_1.xml')
+pos_file_name = os.path.join(os.path.dirname(__file__), '../resources/norsource_pos.xml')
 
 
 def test_load_file():
@@ -21,3 +24,8 @@ def test_parse_file():
 
     assert isinstance(tc_file, Text)
 
+
+def test_parse_pos_tree_file():
+    result = PosTreeParser.parse_file(pos_file_name)
+
+    assert isinstance(result, Text)
