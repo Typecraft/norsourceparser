@@ -410,3 +410,80 @@ class UnresolvedSyntaxTree(SyntaxTree):
 
         return resolved
 
+
+# This pattern should capture what we are looking for in the pos_tree expressions
+pos_tree_pattern = '\("(\w+)" \("(\w+)"\)\)'
+
+
+class PosTreeContainer(object):
+    """
+    Class that contains pairs of
+        <input> <posTree> tag contents.
+
+    We use this class to parse the simpler input->posTree pairs
+    """
+    def __init__(self):
+        self._pairs = []
+
+    def add_pair(self, input, pos_tree):
+        self._pairs.append((input, pos_tree))
+
+    def resolve(self):
+        """
+        Resolves the PosTreeContainer.
+
+        This method simply goes through each pair, and resolves the pos_tree information into word <-> POS tuples.
+        :return:
+        """
+        pairs = self._pairs
+        self._pairs = []
+        for pair in pairs:
+            (input, pos_tree) = pair
+
+            pos_tree = PosTreeContainer.resolve_pos_tree(pos_tree)
+            self.add_pair(input, pos_tree)
+            print(input)
+            print(pos_tree)
+
+    @staticmethod
+    def resolve_pos_tree(pos_tree):
+        """
+        Resolves a pos_tree. The a posTree tag by default contains data something alike
+
+            ("S" ( "S" ( "N" ("N" ("Epic"))))) ("V" ("V" ("V" ("Running")))))
+
+        The main thing to extract here is the innermost (POS ("Word")) for each case.
+
+        A typical result of the above posTree tag would be
+
+            [ ('N', 'Epic'), ('V', 'Running') ]
+        :param pos_tree:
+        :return:
+        """
+        # The pattern should capture what we are looking for
+        return re.findall(pos_tree_pattern, pos_tree, re.UNICODE)
+
+    def convert_to_tc(self):
+        """
+        Converts the PosTreeContainer into a typecraft_python.model.Text.
+
+        This is a very straightforward process
+        :return:
+        """
+        text = Text()
+        text.title = "Converted Norsource"
+
+        for pair in self._pairs:
+            (input, pos_tree) = pair
+            phrase = Phrase()
+            phrase.phrase = input
+
+            for word_pos_entry in pos_tree:
+                word = Word()
+                word.word = word_pos_entry[1]
+                word.pos = word_pos_entry[0]
+                phrase.add_word(word)
+
+            text.add_phrase(phrase)
+
+        return text
