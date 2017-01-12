@@ -27,7 +27,5 @@ def test_parse_file():
 
 def test_parse_pos_tree_file():
     result = PosTreeParser.parse_file(pos_file_name)
-    print(unicode(result))
-    print(ET.tostring(TParser.convert_texts_to_etree([result])))
 
     assert isinstance(result, Text)

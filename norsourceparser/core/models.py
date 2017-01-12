@@ -442,8 +442,6 @@ class PosTreeContainer(object):
 
             pos_tree = PosTreeContainer.resolve_pos_tree(pos_tree)
             self.add_pair(input, pos_tree)
-            print(input)
-            print(pos_tree)
 
     @staticmethod
     def resolve_pos_tree(pos_tree):
