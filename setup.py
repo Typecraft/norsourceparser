@@ -30,6 +30,11 @@ setup(
     ],
     package_dir={'norsourceparser':
                  'norsourceparser'},
+    entry_points={
+        'console_scripts': [
+            'norsourceparser=norsourceparser.frontend:main'
+        ]
+    },
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",
