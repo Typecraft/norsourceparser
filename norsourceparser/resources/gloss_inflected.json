@@ -1,0 +1,19 @@
+{
+	"pres-infl_rule": "PRES",
+	"pret-finalstr_infl_rule": "PRET",
+	"pret-nonfstr_infl_rule": "PRET",
+	"pret-nonfstr-te_infl_rule": "PRET",
+	"pret-nonfstr-et_infl_rule": "PRET",
+	"pret-nonfstr-de_infl_rule": "PRET",
+	"ppart-finalstr-dd_infl_rule": "PRF",
+	"ppart-finalstr-tt_infl_rule": "PRF",
+	"ppart-nonfstr_infl_rule": "PRF",
+	"ppart-nonfstr-te_infl_rule": "PRF",
+	"ppart-nonfstr-et_infl_rule": "PRF",
+	"ppart-nonfstr-de_infl_rule": "PRF",
+	"inf-const_infl_rule": "INF",
+	"imp-const_infl_rule": "IMP",
+	"imp-delete_infl_rule": "IMP",
+	"s-passive_s_infl_rule": "PRES.PASS",
+	"s-passive_es_infl_rule": "PRES.PASS"
+}
