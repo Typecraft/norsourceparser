@@ -1,8 +1,11 @@
 import re
+import difflib
+
+from . import config
 
 from typecraft_python.models import Text, Phrase, Word, Morpheme
 
-from norsourceparser.core.util import parse_lexical_entry_rule, POS_CONVERSIONS, GLOSS_CONVERSIONS, get_inflectional_rules
+from norsourceparser.core.util import parse_lexical_entry_rule, get_pos, get_gloss, get_inflectional_rules
 
 
 class AbstractSyntaxTree(object):
@@ -141,8 +144,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
                 gloss_rule = gloss_rules[i]
                 if len(morphemes) <= i:
                     break
-                for gloss in gloss_rule:
-                    morphemes[i].add_gloss(gloss)
+                morphemes[i].add_gloss(gloss_rule)
 
             phrase.add_word(word)
 
@@ -303,28 +305,68 @@ class SyntaxTree(AbstractSyntaxTree):
         :param partial_branch:
         :return: A tuple with the rule type and the rule content
         """
+
+        if len(partial_branch) < 2:
+            return
+
         rules = []
+        last_node = partial_branch[1]
+        terminal = partial_branch[0]
+
+        [stem, pos, gloss] = parse_lexical_entry_rule(last_node.name)
+        converted_pos = get_pos(pos, None) or get_pos(last_node.name, None)
+        converted_gloss = get_gloss(gloss, None) or get_gloss(last_node.name, None)
+
+        if len(partial_branch) == 2:
+            if converted_pos is None:
+                print("UNABLE TO FIND POS FOR RULE: %s" % last_node.name)
+            else:
+                print("FOUND POS FOR: %s => %s" % (last_node.name, converted_pos))
+
+            if converted_gloss is None:
+                print("UNABLE TO FIND GLOSS FOR RULE: %s" % last_node.name)
+            else:
+                print("FOUND GLOSS FOR: %s => %s" % (last_node.name, converted_gloss))
+
         if len(partial_branch) == 2:
             # Here we are looking for a lexical entry
-            last_node = partial_branch[1]
+            if converted_pos is not None:
+                rules.append([REDUCED_RULE_POS, converted_pos])
 
-            [stem, pos, gloss] = parse_lexical_entry_rule(last_node.name)
-            if pos is not None:
-                rules.append([REDUCED_RULE_POS, POS_CONVERSIONS.get(pos, "")])
+            # This happens on e.g. punctuations
+            if stem is not None and pos is None and gloss is None:
+                rules.append([REDUCED_RULE_POS, converted_pos])
 
-            if gloss is not None:
-                rules.append([REDUCED_RULE_GLOSSES, [gloss]])
+            # We capture morphological breakup and glosses here.
+            # This information may get overwritten later up the tree/branch. Yet
+            # we still do this step in case we have some missing information later up the tree.
+            if converted_pos in ['N', 'V', 'ADJ']:
+                if stem != terminal.name:
+                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem, re.sub("^"+stem, "", terminal.name)]])
+                    # We do this here so we can capture the correct position
+                    if converted_gloss is not None:
+                        rules.append([REDUCED_RULE_GLOSSES, ["", converted_gloss]])
+                else:
+                    # Okey, we don't have any inflections here.
+                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem]])
+                    # We do this here so we can capture the correct position
+                    if converted_gloss is not None:
+                        rules.append([REDUCED_RULE_GLOSSES, [converted_gloss]])
+            else:
+                if converted_gloss is not None:
+                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
+                    rules.append([REDUCED_RULE_GLOSSES, [converted_gloss]])
 
-        if len(partial_branch) == 3:
-            # Here we are looking for inflection rules for verbs, but nothing for nouns
-            last_node = partial_branch[2]
-            lexical_node = partial_branch[1]
-            terminal_node = partial_branch[0]
+        # We look for the special case of a bli_pass case here
+        # And in this case, we don't want later rules to overwrite stuff.
+        if partial_branch[1].name == 'bli_pass':
+            rules.extend(SyntaxTree.get_bli_passive_rules(partial_branch))
+        else:
+            if converted_pos is "N":
+                rules.extend(SyntaxTree.get_lexical_entry_rule(partial_branch))
 
-            [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
-            pos = POS_CONVERSIONS.get(pos, "")
-            if pos != 'V':
-                return rules
+            rules.extend(SyntaxTree.get_gloss_rules_from_partial_branch(partial_branch))
+        return rules
 
     @staticmethod
     def get_lexical_entry_rule(partial_branch):
@@ -332,26 +374,26 @@ class SyntaxTree(AbstractSyntaxTree):
         if not len(partial_branch) < 3:
             return rules
 
-            # Here we are looking for the inflectional rules for nouns
+        # Here we are looking for the inflectional rules for nouns
         last_node = partial_branch[-1]
-            lexical_node = partial_branch[1]
+        lexical_node = partial_branch[1]
 
         [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
         pos = get_pos(pos, "")
-            if pos != 'N':
-                return rules
+        if pos != 'N':
+            return rules
 
-            inf_rules = get_inflectional_rules(stem, last_node.name)
-            if inf_rules is None:
-                return rules
+        inf_rules = get_inflectional_rules(stem, last_node.name)
+        if inf_rules is None:
+            return rules
 
-            [current_suffix, suffix, glosses] = inf_rules
+        [current_suffix, suffix, glosses] = inf_rules
 
-            morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
+        morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
         glosses = ["", glosses]
 
-            rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
-            rules.append([REDUCED_RULE_GLOSSES, glosses])
+        rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
+        rules.append([REDUCED_RULE_GLOSSES, glosses])
 
         return rules
 
@@ -462,7 +504,7 @@ class UnresolvedSyntaxTree(SyntaxTree):
 
 
 # This pattern should capture what we are looking for in the pos_tree expressions
-pos_tree_pattern = '\("(\w+)" \("(\w+)"\)\)'
+pos_tree_pattern = '\("([\w-]+)" \("(\w+)"\)\)'
 
 
 class PosTreeContainer(object):
@@ -472,6 +514,7 @@ class PosTreeContainer(object):
 
     We use this class to parse the simpler input->posTree pairs
     """
+
     def __init__(self):
         self._pairs = []
 
