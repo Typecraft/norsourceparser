@@ -326,16 +326,18 @@ class SyntaxTree(AbstractSyntaxTree):
             if pos != 'V':
                 return rules
 
-            breakup = get_inflectional_rules(stem, last_node.name)
+    @staticmethod
+    def get_lexical_entry_rule(partial_branch):
+        rules = []
+        if not len(partial_branch) < 3:
+            return rules
 
-        if len(partial_branch) == 4:
             # Here we are looking for the inflectional rules for nouns
-            last_node = partial_branch[3]
+        last_node = partial_branch[-1]
             lexical_node = partial_branch[1]
-            terminal_node = partial_branch[0]
 
-            [stem, pos, gloss] = parse_lexical_entry_rule(lexical_node.name)
-            pos = POS_CONVERSIONS.get(pos, "")
+        [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
+        pos = get_pos(pos, "")
             if pos != 'N':
                 return rules
 
@@ -345,12 +347,14 @@ class SyntaxTree(AbstractSyntaxTree):
 
             [current_suffix, suffix, glosses] = inf_rules
 
-            print(stem, current_suffix, suffix)
             morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
-            glosses = [GLOSS_CONVERSIONS.get(gloss, ""), glosses]
+        glosses = ["", glosses]
 
             rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
             rules.append([REDUCED_RULE_GLOSSES, glosses])
+
+        return rules
+
     @staticmethod
     def get_gloss_rules_from_partial_branch(partial_tree):
         """
