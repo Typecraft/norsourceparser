@@ -363,13 +363,18 @@ class SyntaxTree(AbstractSyntaxTree):
             rules.extend(SyntaxTree.get_bli_passive_rules(partial_branch))
         else:
             if converted_pos is "N":
-                rules.extend(SyntaxTree.get_lexical_entry_rule(partial_branch))
+                rules.extend(SyntaxTree.get_noun_inflectional_rule(partial_branch))
 
             rules.extend(SyntaxTree.get_gloss_rules_from_partial_branch(partial_branch))
         return rules
 
     @staticmethod
-    def get_lexical_entry_rule(partial_branch):
+    def get_noun_inflectional_rule(partial_branch):
+        """
+
+        :param partial_branch:
+        :return:
+        """
         rules = []
         if not len(partial_branch) < 3:
             return rules
