@@ -370,6 +370,34 @@ class SyntaxTree(AbstractSyntaxTree):
 
         return []
 
+    @staticmethod
+    def get_bli_passive_rules(partial_branch):
+        """
+        This method checks for the special case of bli_passives.
+
+        :param partial_branch:
+        :return:
+        """
+        rules = []
+
+        if len(partial_branch) == 3:
+            lexical = partial_branch[1]
+            if lexical.name == 'bli_pass':
+                terminal = partial_branch[0]
+                inflectional = partial_branch[2]
+
+                rules.append([REDUCED_RULE_POS, 'V'])
+                gloss_rules = []
+                if inflectional.name == 'pres-infl_rule':
+                    gloss_rules = ['PRES', 'PASS']
+                elif inflectional.name == 'pret-finalstr_infl_rule':
+                    gloss_rules = ['PRET', 'PASS']
+
+                if 'bli' in terminal.name:
+                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, ['bli', re.sub('^bli', '', terminal.name)]])
+                else:
+                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
+                rules.append([REDUCED_RULE_GLOSSES, [gloss_rules]])
         return rules
 
     def __iter__(self):
