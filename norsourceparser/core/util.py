@@ -27,20 +27,67 @@ pos_all_fp.close()
 POS_CONVERSIONS = {
     "copnom": "COP",
     "s-adv": "ADV",
+    "perf": "AUX",
     "indef-art": "DET",
     "stndadj": "ADJ",
     "n": "N",
-    "tv": "V"
+    "tv": "V",
+    "period": "PUN"
 }
 
 GLOSS_CONVERSIONS = {
     "ind": "INDEF",
     "m-or-f": "MASC",
+    "mascorfem": "MASC",
     "m": "MASC",
+    "masc": "MASC",
     "f": "FEM",
+    "fem": "FEM",
     "sing": "SG",
     "plur": "PL"
 }
+
+
+def get_gloss(rule, default=None):
+    if rule is None:
+        return default
+    if rule in GLOSS_CONVERSIONS:
+        return GLOSS_CONVERSIONS[rule]
+    elif rule in gloss_inflected:
+        return gloss_inflected[rule]
+    elif rule in gloss_non_inflected:
+        return gloss_non_inflected[rule]
+    else:
+        # Time for special-cases
+        if rule.rsplit("-").pop() == '-pn':
+            return ""
+        elif rule.rsplit("-").pop() == '-n1':
+            return ""
+
+        # Okey, lets try to match it against an end rule in our non-inflectional lookup
+        rule_splitted = rule.rsplit("_")
+        if len(rule_splitted) < 2:
+            return default
+
+        return gloss_non_inflected.get('_' + rule_splitted[1], default)
+
+
+def get_pos(rule, default=None):
+    if rule is None:
+        return default
+    if rule in POS_CONVERSIONS:
+        return POS_CONVERSIONS[rule]
+    elif rule in pos_all:
+        return pos_all[rule]
+    else:
+        # Time for special-cases
+
+        if rule.rsplit('-').pop() in ['-pn', '-n1']:
+            return "Np"
+        elif rule.rsplit("-").pop() in ['-comma', '-parenthesis', '-quotation', '-bracket', '-curlybracket', '-angledbracket']:
+            return "PUN"
+
+        return pos_all.get('_' + rule.rsplit("-").pop(), default)
 
 
 def parse_lexical_entry_rule(name):
