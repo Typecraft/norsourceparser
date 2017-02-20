@@ -5,11 +5,24 @@ import re
 
 lex_fp = open(os.path.join(os.path.dirname(__file__), '../resources/lex.json'), 'r')
 inflections_fp = open(os.path.join(os.path.dirname(__file__), '../resources/inflections.json'), 'r')
+gloss_inflected_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_inflected.json'), 'r')
+gloss_non_inflected_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_non_inflected.json'), 'r')
+gloss_non_inflected_meanings_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_non_inflected_meanings.json'), 'r')
+pos_all_fp = open(os.path.join(os.path.dirname(__file__), '../resources/pos_all.json'), 'r')
+
 lex = json.load(lex_fp)
 inflections = json.load(inflections_fp)
+gloss_inflected = json.load(gloss_inflected_fp)
+gloss_non_inflected = json.load(gloss_non_inflected_fp)
+gloss_non_inflected_meanings = json.load(gloss_non_inflected_meanings_fp)
+pos_all = json.load(pos_all_fp)
 
 lex_fp.close()
 inflections_fp.close()
+gloss_inflected_fp.close()
+gloss_non_inflected_fp.close()
+gloss_non_inflected_meanings_fp.close()
+pos_all_fp.close()
 
 POS_CONVERSIONS = {
     "copnom": "COP",
