@@ -10,11 +10,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'typecraft-python'
+    'typecraft_python>=0.4.1'
 ]
 
 test_requirements = [
-    'typecraft-python'
+    'typecraft_python>=0.4.1'
 ]
 
 setup(
@@ -46,7 +46,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
