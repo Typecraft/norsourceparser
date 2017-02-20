@@ -113,7 +113,7 @@ def test_reduce():
     node = reduced._nodes[0]
 
     assert len(reduced) == 1
-    assert len(node.rules) == 2
+    assert len(node.rules) == 3
 
 
 def test_reduce_and_convert():

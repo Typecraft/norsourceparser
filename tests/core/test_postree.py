@@ -1,5 +1,6 @@
 from norsourceparser.core.models import PosTreeContainer
 
+
 def test_pos_tree_resolve():
     tree = 'pos("S" ( "S" ( "N" ("N" ("Epic"))))) ("V" ("V" ("V" ("Running")))))'
 
