@@ -351,6 +351,24 @@ class SyntaxTree(AbstractSyntaxTree):
 
             rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
             rules.append([REDUCED_RULE_GLOSSES, glosses])
+    @staticmethod
+    def get_gloss_rules_from_partial_branch(partial_tree):
+        """
+        Tries to get rules for something other than a verb, noun or adjective. We do this simply by doing a lookup
+        in the non-inflectional table. This is of course all encapsulated in the get_gloss method, so we just call that,
+        fishing for luck.
+
+        :param partial_tree:
+        :return:
+        """
+        last_rule = partial_tree[-1].name
+
+        maybe_gloss = get_gloss(last_rule)
+
+        if maybe_gloss is not None:
+            return [[REDUCED_RULE_GLOSSES, maybe_gloss.split(".")]]
+
+        return []
 
         return rules
 
