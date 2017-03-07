@@ -81,12 +81,18 @@ def get_pos(rule, default=None):
     else:
         # Time for special-cases
 
-        if rule.rsplit('-').pop() in ['-pn', '-n1']:
+        if rule.rsplit('-')[-1] in ['pn', 'n1']:
             return "Np"
-        elif rule.rsplit("-").pop() in ['-comma', '-parenthesis', '-quotation', '-bracket', '-curlybracket', '-angledbracket']:
+        elif rule.rsplit("-")[-1] in ['comma', 'parenthesis', 'quotation', 'bracket', 'curlybracket', 'angledbracket']:
             return "PUN"
 
-        return pos.get('_' + rule.rsplit("-").pop(), default)
+        # Okey, lets try to match it against an end rule in our non-inflectional lookup
+        rule_splitted = rule.rsplit("_")
+
+        if len(rule_splitted) < 2:
+            return default
+
+        return pos.get('_' + rule_splitted[-1], default)
 
 
 def split_lexical_entry(name):
