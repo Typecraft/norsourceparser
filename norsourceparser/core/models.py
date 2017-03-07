@@ -139,7 +139,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
                 gloss_rule = gloss_rules[i]
                 if len(morphemes) <= i:
                     break
-                morphemes[i].add_gloss(gloss_rule)
+                morphemes[i].add_concatenated_glosses(gloss_rule)
 
             phrase.add_word(word)
 
