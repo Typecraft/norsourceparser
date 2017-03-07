@@ -123,7 +123,6 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
         Converts the Reduced SyntaxTree to a typecraft_python.models.Text object
         :return:
         """
-        text = Text()
         phrase = Phrase()
 
         for node in self._nodes:
@@ -149,9 +148,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
             phrase.add_word(word)
 
         phrase.phrase = " ".join(map(lambda word: word.word, phrase.words))
-        text.add_phrase(phrase)
-
-        return text
+        return phrase
 
     def __iter__(self):
         """
@@ -317,16 +314,16 @@ class SyntaxTree(AbstractSyntaxTree):
         converted_pos = get_pos(pos, None) or get_pos(last_node.name, None)
         converted_gloss = get_gloss(gloss, None) or get_gloss(last_node.name, None)
 
-        if len(partial_branch) == 2:
-            if converted_pos is None:
-                print("UNABLE TO FIND POS FOR RULE: %s" % last_node.name)
-            else:
-                print("FOUND POS FOR: %s => %s" % (last_node.name, converted_pos))
+        #if len(partial_branch) == 2:
+        #    if converted_pos is None:
+        #        print("UNABLE TO FIND POS FOR RULE: %s" % last_node.name)
+        #    else:
+        #        print("FOUND POS FOR: %s => %s" % (last_node.name, converted_pos))
 
-            if converted_gloss is None:
-                print("UNABLE TO FIND GLOSS FOR RULE: %s" % last_node.name)
-            else:
-                print("FOUND GLOSS FOR: %s => %s" % (last_node.name, converted_gloss))
+        #    if converted_gloss is None:
+        #        print("UNABLE TO FIND GLOSS FOR RULE: %s" % last_node.name)
+        #    else:
+                #print("FOUND GLOSS FOR: %s => %s" % (last_node.name, converted_gloss))
 
         if len(partial_branch) == 2:
             # Here we are looking for a lexical entry
@@ -568,6 +565,7 @@ class PosTreeContainer(object):
         """
         text = Text()
         text.title = "Converted Norsource"
+        text.language = 'nob'
 
         for pair in self._pairs:
             (input, pos_tree) = pair

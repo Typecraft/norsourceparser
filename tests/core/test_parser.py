@@ -13,9 +13,7 @@ def test_load_file():
     parser = Parser()
     tree = parser.load_file(file_name)
 
-    assert isinstance(tree, SyntaxTree)
-    assert len(tree) == 56   # See file for more information
-    assert len(tree.get_terminal_nodes()) == 14
+    assert isinstance(tree, ET.ElementTree)
 
 
 def test_parse_file():

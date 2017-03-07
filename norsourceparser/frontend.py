@@ -14,7 +14,7 @@ Expected usage: python frontend.py <pos|standard> <inputfile> <outputfile>
 
 
 def parse_standard(file_in, file_out):
-    tc_parse_result = Parser().parse_file(file_in)
+    tc_parse_result = Parser.parse_file(file_in)
     TParser.write_to_file(file_out, [tc_parse_result])
 
 

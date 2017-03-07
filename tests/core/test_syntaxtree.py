@@ -130,12 +130,11 @@ def test_reduce_and_convert():
     converted = reduced.convert_to_tc()
 
     assert converted is not None
-    assert len(converted.phrases) == 1
+    assert converted.phrase == "digger"
 
-    phrase = converted.phrases[0]
-    assert len(phrase.words) == 1
+    assert len(converted.words) == 1
 
-    word = phrase.words[0]
+    word = converted.words[0]
     assert word.word == "digger"
     assert word.pos == "N"
 
