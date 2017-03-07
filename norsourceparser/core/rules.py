@@ -6,7 +6,7 @@ import re
 
 from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP
 from norsourceparser.core.util import get_pos, get_inflectional_rules
-from norsourceparser.core.util import parse_lexical_entry_rule, get_gloss
+from norsourceparser.core.util import split_lexical_entry, get_gloss
 
 
 def get_rules_from_partial_branch(partial_branch):
@@ -30,7 +30,7 @@ def get_rules_from_partial_branch(partial_branch):
 
     # With the terminal and second node, we can get information
     # from the lexical entry
-    [stem, pos, gloss] = parse_lexical_entry_rule(second_node.name)
+    [stem, pos, gloss] = split_lexical_entry(second_node.name)
     pos = get_pos(pos, None) or get_pos(second_node.name, None)
     gloss = get_gloss(gloss, None) or get_gloss(second_node.name, None)
 
@@ -129,7 +129,7 @@ def get_noun_inflectional_rule(partial_branch):
     last_node = partial_branch[-1]
     lexical_node = partial_branch[1]
 
-    [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
+    [stem, pos, _] = split_lexical_entry(lexical_node.name)
     pos = get_pos(pos, "")
     if pos != 'N':
         return rules

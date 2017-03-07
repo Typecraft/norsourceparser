@@ -7,7 +7,7 @@ from . import config
 
 from typecraft_python.models import Text, Phrase, Word, Morpheme
 
-from norsourceparser.core.util import parse_lexical_entry_rule, get_pos, get_gloss, get_inflectional_rules
+from norsourceparser.core.util import split_lexical_entry, get_pos, get_gloss, get_inflectional_rules
 
 
 class AbstractSyntaxTree(object):

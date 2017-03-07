@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 import json
 import re
@@ -85,9 +86,9 @@ def get_pos(rule, default=None):
         return pos.get('_' + rule.rsplit("-").pop(), default)
 
 
-def parse_lexical_entry_rule(name):
+def split_lexical_entry(name):
     """
-    Takes a lexical_entry_rule and parses it.
+    Takes a lexical_entry_rule and splits it.
 
     :param name:
     :return:
@@ -112,9 +113,12 @@ def get_inflectional_rules(stem, rule):
     Takes an inflectional rule, and returns an array of length three (or None) with the following information
         [Stem-Suffix, Suffix, Glosses]
 
-    :param stem:
-    :param rule:
-    :return:
+    :param stem: The stem of the word to get a rule for.
+    :param rule: The rule as represented in a NorSource file.
+    :return: An array with [Stem-Suffix, Suffix, Glosses]. The stem-suffix is
+             the suffix of the stem, i.e. if we have løper as stem, we would possibly
+             find 'er' as the stem-suffix, and something like 'te' as suffix - i.e.
+             the conjugated version.
     """
     inflectional_rules = noun_inflections.get(rule, None)
     if inflectional_rules is None:
