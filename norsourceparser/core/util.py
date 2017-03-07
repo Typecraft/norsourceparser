@@ -3,26 +3,23 @@ import json
 import re
 
 
-lex_fp = open(os.path.join(os.path.dirname(__file__), '../resources/lex.json'), 'r')
-inflections_fp = open(os.path.join(os.path.dirname(__file__), '../resources/inflections.json'), 'r')
-gloss_inflected_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_inflected.json'), 'r')
-gloss_non_inflected_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_non_inflected.json'), 'r')
-gloss_non_inflected_meanings_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss_non_inflected_meanings.json'), 'r')
-pos_all_fp = open(os.path.join(os.path.dirname(__file__), '../resources/pos_all.json'), 'r')
+verb_lex_fp = open(os.path.join(os.path.dirname(__file__), '../resources/verb_lex.json'), 'r')
+noun_inflections_fp = open(os.path.join(os.path.dirname(__file__), '../resources/noun_inflections.json'), 'r')
+gloss_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss.json'), 'r')
+meanings_fp = open(os.path.join(os.path.dirname(__file__), '../resources/meanings.json'), 'r')
+pos_fp = open(os.path.join(os.path.dirname(__file__), '../resources/pos.json'), 'r')
 
-lex = json.load(lex_fp)
-inflections = json.load(inflections_fp)
-gloss_inflected = json.load(gloss_inflected_fp)
-gloss_non_inflected = json.load(gloss_non_inflected_fp)
-gloss_non_inflected_meanings = json.load(gloss_non_inflected_meanings_fp)
-pos_all = json.load(pos_all_fp)
+verb_lex = json.load(verb_lex_fp)
+noun_inflections = json.load(noun_inflections_fp)
+gloss = json.load(gloss_fp)
+meanings = json.load(meanings_fp)
+pos = json.load(pos_fp)
 
-lex_fp.close()
-inflections_fp.close()
-gloss_inflected_fp.close()
-gloss_non_inflected_fp.close()
-gloss_non_inflected_meanings_fp.close()
-pos_all_fp.close()
+verb_lex_fp.close()
+noun_inflections_fp.close()
+gloss_fp.close()
+meanings_fp.close()
+pos_fp.close()
 
 POS_CONVERSIONS = {
     "copnom": "COP",
@@ -53,10 +50,8 @@ def get_gloss(rule, default=None):
         return default
     if rule in GLOSS_CONVERSIONS:
         return GLOSS_CONVERSIONS[rule]
-    elif rule in gloss_inflected:
-        return gloss_inflected[rule]
-    elif rule in gloss_non_inflected:
-        return gloss_non_inflected[rule]
+    elif rule in gloss:
+        return gloss[rule]
     else:
         # Time for special-cases
         if rule.rsplit("-").pop() == '-pn':
@@ -69,7 +64,7 @@ def get_gloss(rule, default=None):
         if len(rule_splitted) < 2:
             return default
 
-        return gloss_non_inflected.get('_' + rule_splitted[1], default)
+        return gloss.get('_' + rule_splitted[1], default)
 
 
 def get_pos(rule, default=None):
@@ -77,8 +72,8 @@ def get_pos(rule, default=None):
         return default
     if rule in POS_CONVERSIONS:
         return POS_CONVERSIONS[rule]
-    elif rule in pos_all:
-        return pos_all[rule]
+    elif rule in pos:
+        return pos[rule]
     else:
         # Time for special-cases
 
@@ -87,7 +82,7 @@ def get_pos(rule, default=None):
         elif rule.rsplit("-").pop() in ['-comma', '-parenthesis', '-quotation', '-bracket', '-curlybracket', '-angledbracket']:
             return "PUN"
 
-        return pos_all.get('_' + rule.rsplit("-").pop(), default)
+        return pos.get('_' + rule.rsplit("-").pop(), default)
 
 
 def parse_lexical_entry_rule(name):
@@ -121,7 +116,7 @@ def get_inflectional_rules(stem, rule):
     :param rule:
     :return:
     """
-    inflectional_rules = inflections.get(rule, None)
+    inflectional_rules = noun_inflections.get(rule, None)
     if inflectional_rules is None:
         return None
 
