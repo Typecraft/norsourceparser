@@ -133,15 +133,26 @@ def get_inflectional_rules(stem, rule):
     if inflectional_rules is None:
         return None
 
-    suffix_rules = inflectional_rules.get('suffix')
+    glosses = filter(
+        lambda x: x is not None,
+        map(
+            lambda x: GLOSS_CONVERSIONS.get(x),
+            inflectional_rules.get('attributes').values()
+        )
+    )
 
+    suffix_rules = inflectional_rules.get('suffix')
+    if suffix_rules is None:
+        return [None, None, glosses]
+
+    default = None
     for key in suffix_rules:
         if key == "*":
+            default = [key, suffix_rules[key], glosses]
             continue
         if re.search(key + '$', stem) is not None:
             # We have found our proper matching end-case
-            return [key, suffix_rules[key], map(lambda x: GLOSS_CONVERSIONS.get(x),
-                                                inflectional_rules.get('attributes').values())]
+            return [key, suffix_rules[key], glosses]
 
-    return None
+    return default
 
