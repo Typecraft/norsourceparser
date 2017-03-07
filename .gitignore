@@ -64,5 +64,6 @@ target/
 .idea
 
 venv
-out*.xml
+*.xml
 ext/
+
