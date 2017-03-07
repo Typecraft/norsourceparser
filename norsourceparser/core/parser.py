@@ -141,7 +141,7 @@ class Parser(object):
         for element in root.iter('parse'):
             syntax_tree_et = element.find('syntax-tree')
             if syntax_tree_et is None:
-                print("Warning arsing file: Missing <syntax-tree> node. This node cannot be omitted")
+                print("Warning: Missing <syntax-tree> node. This node cannot be omitted")
                 continue
 
             # Okey, the document is well-formed (enough), lets start parsing
