@@ -68,7 +68,7 @@ def get_gloss(rule, default=None):
         if len(rule_splitted) < 2:
             return default
 
-        return gloss.get('_' + rule_splitted[1], default)
+        return gloss.get('_' + rule_splitted[-1], default)
 
 
 def get_pos(rule, default=None):
