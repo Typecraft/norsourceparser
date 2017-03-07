@@ -4,6 +4,7 @@ convert easily to a Typeraft compatible format.
 """
 import re
 
+from norsourceparser.core.config import DEBUG
 from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP
 from norsourceparser.core.util import get_pos, get_inflectional_rules
 from norsourceparser.core.util import split_lexical_entry, get_gloss
@@ -34,16 +35,13 @@ def get_rules_from_partial_branch(partial_branch):
     pos = get_pos(pos, None) or get_pos(second_node.name, None)
     gloss = get_gloss(gloss, None) or get_gloss(second_node.name, None)
 
-    # if len(partial_branch) == 2:
-    #    if pos is None:
-    #        print("UNABLE TO FIND POS FOR RULE: %s" % last_node.name)
-    #    else:
-    #        print("FOUND POS FOR: %s => %s" % (last_node.name, pos))
+    # If
+    if len(partial_branch) == 2 and DEBUG:
+       if pos is None:
+           print("UNABLE TO FIND POS FOR RULE: %s" % second_node.name)
 
-    #    if gloss is None:
-    #        print("UNABLE TO FIND GLOSS FOR RULE: %s" % last_node.name)
-    #    else:
-    # print("FOUND GLOSS FOR: %s => %s" % (last_node.name, gloss))
+       #if gloss is None:
+       #    print("UNABLE TO FIND GLOSS FOR RULE: %s" % second_node.name)
 
     if len(partial_branch) == 2:
         # If we only have access to the lexical entry, we return what rules
@@ -54,11 +52,12 @@ def get_rules_from_partial_branch(partial_branch):
         # We look for the special case of a bli_pass case here
         rules.extend(get_bli_passive_rules(partial_branch))
     else:
-        if pos is "N":
+        rules.extend(get_gloss_rules_from_partial_branch(partial_branch))
+
+        if pos == "N":
             # If the pos is a Noun, we look for the special noun inflectional rules
             rules.extend(get_noun_inflectional_rule(partial_branch))
 
-        rules.extend(get_gloss_rules_from_partial_branch(partial_branch))
     return rules
 
 
@@ -122,7 +121,7 @@ def get_noun_inflectional_rule(partial_branch):
     :return: An array, potentially filled with rules.
     """
     rules = []
-    if not len(partial_branch) < 3:
+    if len(partial_branch) < 3:
         return rules
 
     # Here we are looking for the inflectional rules for nouns
@@ -130,7 +129,7 @@ def get_noun_inflectional_rule(partial_branch):
     lexical_node = partial_branch[1]
 
     [stem, pos, _] = split_lexical_entry(lexical_node.name)
-    pos = get_pos(pos, "")
+    pos = get_pos(pos, None) or get_pos(lexical_node.name, None)
     if pos != 'N':
         return rules
 
@@ -139,12 +138,23 @@ def get_noun_inflectional_rule(partial_branch):
         return rules
 
     [current_suffix, suffix, glosses] = inf_rules
+    if glosses is None:
+        print("NONE GLOSSES", glosses)
 
-    morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
-    glosses = ["", glosses]
+    if current_suffix is None or suffix is None:
+        # This happens on the rule pl_ind_n_short_0_irule
+        rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem]])
+        rules.append([REDUCED_RULE_GLOSSES, [".".join(glosses)]])
+    else:
+        if current_suffix == '*':
+            morphological_breakup = [stem, suffix]
+        else:
+            morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
 
-    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
-    rules.append([REDUCED_RULE_GLOSSES, glosses])
+        glosses = ["", ".".join(glosses)]
+
+        rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
+        rules.append([REDUCED_RULE_GLOSSES, glosses])
 
     return rules
 
@@ -159,11 +169,20 @@ def get_gloss_rules_from_partial_branch(partial_tree):
     :return: An array of rules
     """
     last_rule = partial_tree[-1].name
+    lexical_rule = partial_tree[1].name
+    terminal = partial_tree[0].name
+    [stem, pos, _] = split_lexical_entry(lexical_rule)
+    pos = get_pos(pos, None) or get_pos(lexical_rule, None)
 
     maybe_gloss = get_gloss(last_rule)
 
     if maybe_gloss is not None:
-        return [[REDUCED_RULE_GLOSSES, maybe_gloss.split(".")]]
+        if pos in ['N', 'ADJ', 'V']:
+            if stem != terminal:
+                # This means we have some inflectional rule, and should
+                # add the gloss to the suffix
+                return [[REDUCED_RULE_GLOSSES, ["", maybe_gloss]]]
+        return [[REDUCED_RULE_GLOSSES, [maybe_gloss]]]
 
     return []
 
