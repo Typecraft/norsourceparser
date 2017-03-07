@@ -35,14 +35,17 @@ POS_CONVERSIONS = {
 
 GLOSS_CONVERSIONS = {
     "ind": "INDEF",
+    "def": "DEF",
     "m-or-f": "MASC",
     "mascorfem": "MASC",
     "m": "MASC",
+    "n": "NEUT",
     "masc": "MASC",
     "f": "FEM",
     "fem": "FEM",
     "sing": "SG",
-    "plur": "PL"
+    "plur": "PL",
+    "": ""
 }
 
 
