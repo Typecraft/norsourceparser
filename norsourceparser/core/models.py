@@ -1,6 +1,8 @@
 import re
 import difflib
 
+from norsourceparser.core.constants import REDUCED_RULE_MORPHOLOGICAL_BREAKUP, REDUCED_RULE_POS, REDUCED_RULE_GLOSSES
+from norsourceparser.core.rules import get_rules_from_partial_branch
 from . import config
 
 from typecraft_python.models import Text, Phrase, Word, Morpheme
@@ -30,12 +32,6 @@ class AbstractSyntaxTree(object):
 
     def __contains__(self, item):
         pass
-
-
-REDUCED_RULE_VALENCY_TOKEN = 0
-REDUCED_RULE_POS = 1
-REDUCED_RULE_MORPHOLOGICAL_BREAKUP = 2
-REDUCED_RULE_GLOSSES = 3
 
 
 class ReducedNode(object):
@@ -287,7 +283,7 @@ class SyntaxTree(AbstractSyntaxTree):
             # Traverse up the branch
             while partial_node is not None:
                 partial_branch.append(partial_node)
-                rules = self.get_rules_from_partial_branch(partial_branch)
+                rules = get_rules_from_partial_branch(partial_branch)
                 for rule in rules:
                     reduced_node.add_rule(rule[0], rule[1])
 
@@ -295,158 +291,6 @@ class SyntaxTree(AbstractSyntaxTree):
             reduced_tree.add_node(reduced_node)
 
         return reduced_tree
-
-    @staticmethod
-    def get_rules_from_partial_branch(partial_branch):
-        """
-        :param partial_branch:
-        :return: A tuple with the rule type and the rule content
-        """
-
-        if len(partial_branch) < 2:
-            return
-
-        rules = []
-        last_node = partial_branch[1]
-        terminal = partial_branch[0]
-
-        [stem, pos, gloss] = parse_lexical_entry_rule(last_node.name)
-        converted_pos = get_pos(pos, None) or get_pos(last_node.name, None)
-        converted_gloss = get_gloss(gloss, None) or get_gloss(last_node.name, None)
-
-        #if len(partial_branch) == 2:
-        #    if converted_pos is None:
-        #        print("UNABLE TO FIND POS FOR RULE: %s" % last_node.name)
-        #    else:
-        #        print("FOUND POS FOR: %s => %s" % (last_node.name, converted_pos))
-
-        #    if converted_gloss is None:
-        #        print("UNABLE TO FIND GLOSS FOR RULE: %s" % last_node.name)
-        #    else:
-                #print("FOUND GLOSS FOR: %s => %s" % (last_node.name, converted_gloss))
-
-        if len(partial_branch) == 2:
-            # Here we are looking for a lexical entry
-            if converted_pos is not None:
-                rules.append([REDUCED_RULE_POS, converted_pos])
-
-            # This happens on e.g. punctuations
-            if stem is not None and pos is None and gloss is None:
-                rules.append([REDUCED_RULE_POS, converted_pos])
-
-            # We capture morphological breakup and glosses here.
-            # This information may get overwritten later up the tree/branch. Yet
-            # we still do this step in case we have some missing information later up the tree.
-            if converted_pos in ['N', 'V', 'ADJ']:
-                if stem != terminal.name:
-                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem, re.sub("^"+stem, "", terminal.name)]])
-                    # We do this here so we can capture the correct position
-                    if converted_gloss is not None:
-                        rules.append([REDUCED_RULE_GLOSSES, ["", converted_gloss]])
-                else:
-                    # Okey, we don't have any inflections here.
-                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem]])
-                    # We do this here so we can capture the correct position
-                    if converted_gloss is not None:
-                        rules.append([REDUCED_RULE_GLOSSES, [converted_gloss]])
-            else:
-                if converted_gloss is not None:
-                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
-                    rules.append([REDUCED_RULE_GLOSSES, [converted_gloss]])
-
-        # We look for the special case of a bli_pass case here
-        # And in this case, we don't want later rules to overwrite stuff.
-        if partial_branch[1].name == 'bli_pass':
-            rules.extend(SyntaxTree.get_bli_passive_rules(partial_branch))
-        else:
-            if converted_pos is "N":
-                rules.extend(SyntaxTree.get_noun_inflectional_rule(partial_branch))
-
-            rules.extend(SyntaxTree.get_gloss_rules_from_partial_branch(partial_branch))
-        return rules
-
-    @staticmethod
-    def get_noun_inflectional_rule(partial_branch):
-        """
-
-        :param partial_branch:
-        :return:
-        """
-        rules = []
-        if not len(partial_branch) < 3:
-            return rules
-
-        # Here we are looking for the inflectional rules for nouns
-        last_node = partial_branch[-1]
-        lexical_node = partial_branch[1]
-
-        [stem, pos, _] = parse_lexical_entry_rule(lexical_node.name)
-        pos = get_pos(pos, "")
-        if pos != 'N':
-            return rules
-
-        inf_rules = get_inflectional_rules(stem, last_node.name)
-        if inf_rules is None:
-            return rules
-
-        [current_suffix, suffix, glosses] = inf_rules
-
-        morphological_breakup = [stem, re.sub("^"+current_suffix, "", suffix)]
-        glosses = ["", glosses]
-
-        rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, morphological_breakup])
-        rules.append([REDUCED_RULE_GLOSSES, glosses])
-
-        return rules
-
-    @staticmethod
-    def get_gloss_rules_from_partial_branch(partial_tree):
-        """
-        Tries to get rules for something other than a verb, noun or adjective. We do this simply by doing a lookup
-        in the non-inflectional table. This is of course all encapsulated in the get_gloss method, so we just call that,
-        fishing for luck.
-
-        :param partial_tree:
-        :return:
-        """
-        last_rule = partial_tree[-1].name
-
-        maybe_gloss = get_gloss(last_rule)
-
-        if maybe_gloss is not None:
-            return [[REDUCED_RULE_GLOSSES, maybe_gloss.split(".")]]
-
-        return []
-
-    @staticmethod
-    def get_bli_passive_rules(partial_branch):
-        """
-        This method checks for the special case of bli_passives.
-
-        :param partial_branch:
-        :return:
-        """
-        rules = []
-
-        if len(partial_branch) == 3:
-            lexical = partial_branch[1]
-            if lexical.name == 'bli_pass':
-                terminal = partial_branch[0]
-                inflectional = partial_branch[2]
-
-                rules.append([REDUCED_RULE_POS, 'V'])
-                gloss_rules = []
-                if inflectional.name == 'pres-infl_rule':
-                    gloss_rules = ['PRES', 'PASS']
-                elif inflectional.name == 'pret-finalstr_infl_rule':
-                    gloss_rules = ['PRET', 'PASS']
-
-                if 'bli' in terminal.name:
-                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, ['bli', re.sub('^bli', '', terminal.name)]])
-                else:
-                    rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
-                rules.append([REDUCED_RULE_GLOSSES, [gloss_rules]])
-        return rules
 
     def __iter__(self):
         """
