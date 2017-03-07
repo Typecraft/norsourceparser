@@ -101,8 +101,8 @@ def parse_lexical_entry(terminal, stem, pos, gloss):
             if gloss is not None:
                 rules.append([REDUCED_RULE_GLOSSES, [gloss]])
     else:
+        rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
         if gloss is not None:
-            rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
             rules.append([REDUCED_RULE_GLOSSES, [gloss]])
 
     return rules
