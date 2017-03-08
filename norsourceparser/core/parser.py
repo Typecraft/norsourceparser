@@ -144,6 +144,8 @@ class Parser(object):
                 print("Warning: Missing <syntax-tree> node. This node cannot be omitted")
                 continue
 
+            input_et = element.find('input')
+
             # Okey, the document is well-formed (enough), lets start parsing
             top = syntax_tree_et.attrib.get('top')
             u_syntax_tree = UnresolvedSyntaxTree(top=top)
@@ -153,6 +155,9 @@ class Parser(object):
                 u_syntax_tree.add_node(Parser._parse_et_node_to_syntax_node(node_et))
 
             phrase = u_syntax_tree.resolve().reduce().convert_to_tc()
+
+            if input_et is not None:
+                phrase.phrase = input_et.text
             text.add_phrase(phrase)
         return text
 
