@@ -4,7 +4,7 @@ convert easily to a Typeraft compatible format.
 """
 import re
 
-from norsourceparser.core.config import DEBUG
+from norsourceparser.core.config import config
 from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP
 from norsourceparser.core.util import get_pos, get_inflectional_rules
 from norsourceparser.core.util import split_lexical_entry, get_gloss
@@ -36,9 +36,9 @@ def get_rules_from_partial_branch(partial_branch):
     gloss = get_gloss(gloss, None) or get_gloss(second_node.name, None)
 
     # If
-    if len(partial_branch) == 2 and DEBUG:
-       if pos is None:
-           print("UNABLE TO FIND POS FOR RULE: %s" % second_node.name)
+    if len(partial_branch) == 2 and config.DEBUG:
+        if pos is None:
+            print("UNABLE TO FIND POS FOR RULE: %s" % second_node.name)
 
        #if gloss is None:
        #    print("UNABLE TO FIND GLOSS FOR RULE: %s" % second_node.name)
@@ -138,7 +138,7 @@ def get_noun_inflectional_rule(partial_branch):
         return rules
 
     [current_suffix, suffix, glosses] = inf_rules
-    if glosses is None:
+    if glosses is None and config.DEBUG:
         print("NONE GLOSSES", glosses)
 
     if current_suffix is None or suffix is None:

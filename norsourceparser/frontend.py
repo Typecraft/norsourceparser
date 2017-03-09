@@ -1,6 +1,7 @@
 import sys
 import click
 
+from norsourceparser.core.config import config
 from norsourceparser.core.parser import Parser, PosTreeParser
 from typecraft_python.parsing.parser import Parser as TParser
 
@@ -16,7 +17,7 @@ def parse_pos(file_in, file_out):
 
 
 @click.command()
-@click.option('--debug', default=False, help='Enables debug mode. Will print errors')
+@click.option('--debug/--no-debug', default=False, help='Enables debug mode. Will print errors')
 @click.option('--mode', default='standard', type=click.Choice(['standard', 'pos']))
 @click.argument('input', type=click.File('rb'))
 @click.argument('output', type=click.File('wb'))
@@ -27,6 +28,8 @@ def main(debug, mode, input, output):
     The entrypoint accepts 2-3 arguments, type, input and output respectively.
     :return: void
     """
+    if debug:
+        config.DEBUG = True
     if mode == 'standard':
         parse_standard(input, output)
     elif mode == 'pos':

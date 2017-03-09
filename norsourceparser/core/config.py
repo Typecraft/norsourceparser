@@ -1,3 +1,6 @@
 
+class Config(object):
+    DEBUG = False
 
-DEBUG = True
+
+config = Config()
