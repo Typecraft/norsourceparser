@@ -1,16 +1,8 @@
 import sys
+import click
 
 from norsourceparser.core.parser import Parser, PosTreeParser
 from typecraft_python.parsing.parser import Parser as TParser
-import xml.etree.ElementTree as ET
-
-"""
-This file contains a simple front-end entrypoint to use to convert files.
-"""
-
-expected_usage = """
-Expected usage: python frontend.py <pos|standard(DEFAULT)>? <inputfile> <outputfile>
-"""
 
 
 def parse_standard(file_in, file_out):
@@ -23,25 +15,19 @@ def parse_pos(file_in, file_out):
     TParser.write_to_file(file_out, [tc_parse_result])
 
 
-def main():
+@click.command()
+@click.option('--debug', default=False, help='Enables debug mode. Will print errors')
+@click.option('--mode', default='standard', type=click.Choice(['standard', 'pos']))
+@click.argument('input', type=click.File('rb'))
+@click.argument('output', type=click.File('wb'))
+def main(debug, mode, input, output):
     """
     Main entrypoint for the parser.
 
     The entrypoint accepts 2-3 arguments, type, input and output respectively.
     :return: void
     """
-    type, input, output = None, None, None
-    if len(sys.argv) < 2:
-        print(expected_usage)
-        return
-    if len(sys.argv) == 3:
-        type = 'default'
-        input, output = sys.argv[1:3]
-    else:
-        type, input, output = sys.argv[1:4]
-
-    if type == "pos":
-        parse_pos(input, output)
-    else:
+    if mode == 'standard':
         parse_standard(input, output)
-
+    elif mode == 'pos':
+        parse_pos(input, output)
