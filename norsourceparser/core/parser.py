@@ -122,8 +122,6 @@ class Parser(object):
         :param filename:
         :return:
         """
-        if not os.path.exists(filename):
-            raise Exception("Critical error: File %s does not exist" % filename)
         return ET.parse(filename)
 
     @staticmethod
