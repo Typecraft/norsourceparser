@@ -205,9 +205,9 @@ def get_bli_passive_rules(partial_branch):
             rules.append([REDUCED_RULE_POS, 'V'])
             gloss_rules = []
             if inflectional.name == 'pres-infl_rule':
-                gloss_rules = ['PRES', 'PASS']
+                gloss_rules = 'PRES.PASS'
             elif inflectional.name == 'pret-finalstr_infl_rule':
-                gloss_rules = ['PRET', 'PASS']
+                gloss_rules = 'PRET.PASS'
 
             if 'bli' in terminal.name:
                 rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, ['bli', re.sub('^bli', '', terminal.name)]])
