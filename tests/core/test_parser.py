@@ -22,6 +22,7 @@ def test_parse_file():
 
     assert isinstance(tc_file, Text)
 
+    print(tc_file.phrases[0].global_tags[0].name)
     print(tc_file.__str__())
 
 

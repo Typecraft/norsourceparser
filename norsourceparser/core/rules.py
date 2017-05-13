@@ -5,8 +5,9 @@ convert easily to a Typeraft compatible format.
 import re
 
 from norsourceparser.core.config import config
-from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP
-from norsourceparser.core.util import get_pos, get_inflectional_rules
+from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP, \
+    REDUCED_RULE_VALENCY
+from norsourceparser.core.util import get_pos, get_inflectional_rules, get_valency
 from norsourceparser.core.util import split_lexical_entry, get_gloss
 
 
@@ -40,13 +41,16 @@ def get_rules_from_partial_branch(partial_branch):
         if pos is None:
             print("UNABLE TO FIND POS FOR RULE: %s" % second_node.name)
 
-       #if gloss is None:
-       #    print("UNABLE TO FIND GLOSS FOR RULE: %s" % second_node.name)
-
     if len(partial_branch) == 2:
         # If we only have access to the lexical entry, we return what rules
         # we can from here.
-        return parse_lexical_entry(terminal, stem, pos, gloss)
+
+        # Verbs might yield some valency information here
+        if pos == "V":
+            rules.extend(get_verb_valency_rule(partial_branch))
+
+        rules.extend(parse_lexical_entry(terminal, stem, pos, gloss))
+        return rules
 
     if partial_branch[1].name == 'bli_pass':
         # We look for the special case of a bli_pass case here
@@ -215,3 +219,16 @@ def get_bli_passive_rules(partial_branch):
                 rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
             rules.append([REDUCED_RULE_GLOSSES, [gloss_rules]])
     return rules
+
+
+def get_verb_valency_rule(partial_branch):
+    """
+    This method tries to get a valency rule for a verb.
+
+    :param partial_branch:
+    :return:
+    """
+    valency = get_valency(partial_branch[-1].name)
+    if valency:
+        return [[REDUCED_RULE_VALENCY, valency]]
+    return []
