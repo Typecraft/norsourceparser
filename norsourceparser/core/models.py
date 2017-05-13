@@ -130,7 +130,6 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
             word = Word()
             word.word = node.get_completed_word_token()
             word.pos = node.rules.get(REDUCED_RULE_POS, "")
-            print(node.rules.get(REDUCED_RULE_VALENCY))
 
             morphemes = []
             for morpheme_rule in node.rules.get(REDUCED_RULE_MORPHOLOGICAL_BREAKUP, []):
