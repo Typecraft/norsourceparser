@@ -100,7 +100,14 @@ def get_pos(rule, default=None):
 
 
 def get_valency(rule, default=None):
-    print(rule, verb_lex.get(rule))
+    """
+    Gets valency information from a (verb) rule. We check for an entry in the verb_lex dictionary
+    for first the rule itself, and then the rule with a possible _vlxm suffix removed.
+
+    :param rule:
+    :param default:
+    :return:
+    """
     if rule is None:
         return default
     elif rule in verb_lex:
@@ -110,6 +117,14 @@ def get_valency(rule, default=None):
                 print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
             return default
         return verb_corrlist[lex_corr]
+    elif rule.replace('_vlxm', '') in verb_lex:
+        lex_corr = verb_lex[rule.replace('_vlxm', '')]
+        if not lex_corr in verb_corrlist:
+            if config.DEBUG:
+                print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
+            return default
+        return verb_corrlist[lex_corr]
+
     return default
 
 
