@@ -1,0 +1,1800 @@
+{
+    "v-intrImpers":{
+        "SAS": "EXPL",
+        "FCT": "intransImpers",
+        "SIT": "weatherProcess"
+    },
+    "v-intrImpersPrtcl":{
+        "SAS": "EXPL+adpos",
+        "FCT": "intransImpersWithParticle",
+        "SIT": "weatherProcess"
+    },
+    "v-intrImpersObl":{
+        "SAS": "EXPL+adpos",
+        "FCT": "intransImpersWithOblique",
+        "SIT": ""
+    },
+    "v-intrPresnt":{
+        "SAS": "EXPL+NP",
+        "FCT": "intransPresentational",
+        "SIT": ""
+    },
+    "v-intrPresnt-presDir":{
+        "SAS": "EXPL+NP",
+        "FCT": "intransPresentational",
+        "SIT": "directedMotion"
+    },
+    "v-trNrfPresnt-obRefl_presDir":{
+        "SAS": "EXPL+NPrefl+NP",
+        "FCT": "transPresentationalReflx",
+        "SIT": "directedMotion"
+    },
+    "v-intrPresntPath-presDir":{
+        "SAS": "EXPL+NP+adpos",
+        "FCT": "intransPresentationalWithPath",
+        "SIT": "directedMotion"
+    },
+    "v-intrPresntPathShft-presDir":{
+        "SAS": "EXPL+adpos+NP",
+        "FCT": "intransPresentationalWithPath",
+        "SIT": "directedMotion"
+    },
+    "v-trNrfPresntPath-obRefl_presDir":{
+        "SAS": "EXPL+NPrefl+NP+adpos",
+        "FCT": "transPresentationalReflxWithPath",
+        "SIT": "directedMotion"
+    },
+    "v-trNrfPresntPathShft-obRefl_presDir":{
+        "SAS": "EXPL+NPrefl+adpos+NP",
+        "FCT": "transPresentationalReflxWithPath",
+        "SIT": "directedMotion"
+    },
+    "v-intrPresntLoc":{
+        "SAS": "EXPL+NP+adpos",
+        "FCT": "intransPresentationalWithLocative",
+        "SIT": "location"
+    },
+    "v-trPresntLoc-obRefl":{
+        "SAS": "EXPL+NPrefl+NP+adpos",
+        "FCT": "transPresentationalReflxWithLocative",
+        "SIT": "location"
+    },
+    "v-trNrfPresnt-obRefl":{
+        "SAS": "EXPL+NPrefl+adpos",
+        "FCT": "transPresentationalReflx",
+        "SIT": "changePosition"
+    },
+    "v-trPresnt":{
+        "SAS": "EXPL+NP+NP",
+        "FCT": "transPresentational",
+        "SIT": ""
+    },
+    "v-intr":{
+        "SAS": "NP",
+        "FCT": "intransitive",
+        "SIT": ""
+    },
+    "v-intr-suDir":{
+        "SAS": "NP",
+        "FCT": "intransitive",
+        "SIT": "directedMotion"
+    },
+    "v-intr-suDir-suMover":{
+        "SAS": "NP",
+        "FCT": "intransitive",
+        "SIT": "directedMotion"
+    },
+    "v-intrPrtcl":{
+        "SAS": "NP+adpos",
+        "FCT": "intransWithParticle",
+        "SIT": ""
+    },
+    "v-intrPrtcl-SUSTAINEDACTIVITY":{
+        "SAS": "NP+adpos",
+        "FCT": "intransWithParticle",
+        "ASP": "sustainedActivity",
+        "SIT": ""
+    },
+    "v-intrPrtcl-COMPLETEDACTIVITY":{
+        "SAS": "NP+adpos",
+        "FCT": "intransWithParticle",
+        "ASP": "completedActivity",
+        "SIT": ""
+    },
+    "v-intrPath-suDir":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithPath",
+        "SIT": "direction"
+    },
+    "v-intrPath-suDir-PUREORIENTATION":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithPath",
+        "SIT": "direction"
+    },
+    "v-trNrf-suDir_obReflExpl":{
+        "SAS": "NP+NPrefl",
+        "FCT": "transReflx",
+        "SIT": "directedMotion"
+    },
+    "v-intr-suDECL":{
+        "SAS": "Sdecl",
+        "FCT": "intransitiveWithSentSubj",
+        "SIT": ""
+    },
+    "v-intr-suINTERR":{
+        "SAS": "Squest",
+        "FCT": "intransitiveWithSentSubj",
+        "SIT": ""
+    },
+    "v-intr-suYN":{
+        "SAS": "SquestYN",
+        "FCT": "intransitiveWithSentSubj",
+        "SIT": ""
+    },
+    "v-intr-suWH":{
+        "SAS": "SquestWH",
+        "FCT": "intransitiveWithSentSubj",
+        "SIT": ""
+    },
+    "v-intr-suAbsinf":{
+        "SAS": "INF",
+        "FCT": "intransitiveWithSentInf",
+        "SIT": ""
+    },
+    "v-intrObl":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl2":{
+        "SAS": "NP+PP+PP",
+        "FCT": "intransWith2Oblique",
+        "SIT": "ternaryRel"
+    },
+    "v-intrOblAdv":{
+        "SAS": "NP+ADVP+PP",
+        "FCT": "intransWithObliqueAndAdv",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblN":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblN-ACTIVITY":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "ASP": "activity","SIT": "binaryRel"
+    },
+    "v-intrObl-oblLoc":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "location"
+    },
+    "v-intrObl-NONCOMPLETED_MONODEVMNT":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "ASP": "noncompleted","SIT": "binaryRel"
+    },
+    "v-intrObl-ACTIVATION":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "ASP": "activation","SIT": "binaryRel"
+    },
+    "v-intrObl-oblRefl-ACTIVATION":{
+        "SAS": "NP+PP[refl]",
+        "FCT": "intransWithObliqueReflx",
+        "ASP": "activation","SIT": "unaryRel"
+    },
+    "v-intrObl-oblRefl":{
+        "SAS": "NP+PP[refl]",
+        "FCT": "intransWithObliqueReflx",
+        "SIT": "unaryRel"
+    },
+    "v-intrObl-oblPRTOFsu":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryPossessorDetachment"
+    },
+    "v-intrObl-oblPRTOFsu-PARTWHOLE_EXPERIENCING":{
+        "SAS": "NP+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryPossessorDetachment"
+    },
+    "v-intrScpr-scObimplNrgRes_scPP-PLACEMENT":{
+        "SAS": "NP+PP",
+        "FCT": "",
+        "SIT": "placement"
+    },
+    "v-intrScpr-scObimplNrgRes_scPPrefl-PLACEMENT":{
+        "SAS": "NP+PP[refl]",
+        "FCT": "",
+        "SIT": "placement"
+    },
+    "v-intrObl-oblDECL":{
+        "SAS": "NP+PP[Sdecl]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblDECL-oblSom":{
+        "SAS": "NP+PP[Sdecl:som]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblYN":{
+        "SAS": "NP+PP[SquestYN]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblWH":{
+        "SAS": "NP+PP[SquestWH]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblINTERR":{
+        "SAS": "NP+PP[Squest]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblEqSuInf":{
+        "SAS": "NP+PP[INF:equiSBJ]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblEqSuInf-SUSTAINEDACTIVITY":{
+        "SAS": "NP+PP[INF:equiSBJ]",
+        "FCT": "intransWithOblique",
+        "ASP": "sustainedActivity",
+        "SIT": "binaryRel"
+    },
+    "v-intrPrtclObl-oblEqSuInf":{
+        "SAS": "NP+adpos+PP[INF:equiSBJ]",
+        "FCT": "intransWithParticleAndOblique",
+        "ASP": "sustainedActivity",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-oblAbsinf":{
+        "SAS": "NP+PP[INF]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblRais-oblTil":{
+        "SAS": "NP+PP:til[INF:raisSBJ]",
+        "FCT": "intransWithObliqueWithRaisingcomplement",
+        "SIT": "unaryRel"
+    },
+    "v-intrObl-suDECL_oblN":{
+        "SAS": "Sdecl+PP",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suYN_oblN":{
+        "SAS": "SquestYN+PP",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suWH_oblN":{
+        "SAS": "SquestWH+PP",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suINTERR_oblN":{
+        "SAS": "Squest+PP",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suDECL_oblDECL":{
+        "SAS": "S+PP[Sdecl]",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suYN_oblYN":{
+        "SAS": "SquestYN+PP[SquestYN]",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suWH_oblYN":{
+        "SAS": "SquestWH+PP[SquestYN]",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suYN_oblWH":{
+        "SAS": "SquestYN+PP[SquestWH]",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suWH_oblWH":{
+        "SAS": "SquestWH+PP[SquestWH]",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suINTERR_oblINTERR":{
+        "SAS": "Squest+PP[Squest]",
+        "FCT": "intransWithWithSentSubjAndOblique",
+        "SIT": "binaryRel"
+    },
+    "v-intrObl-suAbsinf":{
+        "SAS": "INF+PP",
+        "FCT": "intransWithOblique",
+        "SIT": "binaryRel"
+    },
+    ";v-intrPrtclOblRais-oblTil_prtclUt":{
+        "SAS": "NP+adpos+PP:til[INF:raisSBJ]",
+        "FCT": "intransWithParticleAndObliqueWithRaisingcomplement",
+        "SIT": "unaryRel"
+    },
+    "v-intrPrtclOblRais-oblSom_prtclUt":{
+        "SAS": "NP+adpos+PP:som[S]",
+        "FCT": "intransWithParticleAndObliqueWithRaisingcomplement",
+        "SIT": "unaryRel"
+    },
+    "v-intrPrtclScpr-scSuNrg_prtclUt_scPredprtclSom":{
+        "SAS": "NP+adpos+PRTP:som[S]",
+        "FCT": "intransWithParticleAndSecondaryPredicate",
+        "SIT": "unaryRel"
+    },
+    "v-intrPrtclScpr-scSuNrg_prtclUt":{
+        "SAS": "NP+adpos+PRTP",
+        "FCT": "intransWithParticleAndSecondaryPredicate",
+        "SIT": "unaryRel"
+    },
+    "v-intrPrtclScpr-scSuNrg_scPredprtclSom_prtclUt":{
+        "SAS": "NP+adpos+PRTP",
+        "FCT": "intransWithParticleAndSecondaryPredicate",
+        "SIT": "unaryRel"
+    },
+    "v-intrAdv":{
+        "SAS": "NP+adpos",
+        "FCT": "",
+        "SIT": "unaryRel"
+    },
+    "v-intrAuxmodScpr-scSuNrg_scBareinf":{
+        "SAS": "NP+VP",
+        "FCT": "intransModauxWithSecondaryPredicate",
+        "SIT": "modalityOfAct"
+    },
+    "v-intrAuxmodScpr-suDir_scSuNrg_scAdv":{
+        "SAS": "NP+adpos",
+        "FCT": "intransModauxWithSecondaryPredicate",
+        "SIT": "modalityOfDirectedMotion"
+    },
+    "v-intrAuxperfScpr-scSuNrg_scPerf":{
+        "SAS": "NP+VPperf",
+        "FCT": "intransPerfauxWithSecondaryPredicate",
+        "SIT": "temporalityOfAct"
+    },
+    "v_peripass-intrPs-suPob":{
+        "SAS": "NP+VPpass",
+        "FCT": "intransByPassive",
+        "SIT": "binaryRel"
+    },
+    "v-intrAuxpassScpr-scSuNrg_scPass":{
+        "SAS": "NP+VPpass",
+        "FCT": "intransPassauxWithSecondaryPredicate",
+        "SIT": "binaryRel"
+    },
+    "v-intrLghtScpr-scAdj":{
+        "SAS": "NP+APpred",
+        "FCT": "intransLightWithSecondaryPredicate",
+        "SIT": "unaryRel"
+    },
+    "v-intrScpr-scSuNrg_scAdj":{
+        "SAS": "NP+APpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scN":{
+        "SAS": "NP+NPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scPP":{
+        "SAS": "NP+PPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scPredprtcl_scSomN":{
+        "SAS": "NP+PRTPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scInf":{
+        "SAS": "NP+INF:raisSBJ",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-suNrg-scInfORscAdjORscPPORscEQUAT":{
+        "SAS": "NP+XPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trNrfScpr-obReflExpl_scSuNrg_scInf":{
+        "SAS": "NP+NPrefl+INF:raisSBJ",
+        "FCT": "transReflxWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trNrfScpr-obReflExpl_scSuNrg_scBareinf_suRAISsuMob":{
+        "SAS": "NP+NPrefl+INF:raisSBJ",
+        "FCT": "transReflxWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trNrfScpr-obReflExpl_scSuNrg":{
+        "SAS": "NP+NPrefl+XP:raisSBJ",
+        "FCT": "transReflxWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trScpr-scObNrg_scBareinf_obRAISsuMob":{
+        "SAS": "NP+NP+INF:raisOBJ",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trNrfScpr-obReflExpl_scSuNrg_scAdj":{
+        "SAS": "NP+NPrefl+APpred",
+        "FCT": "transReflxWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scBareinf":{
+        "SAS": "NP+INF:raisSBJ",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScprPrtcl-scSuNrg_scAdj_prtclUt":{
+        "SAS": "NP+APpred+adpos",
+        "FCT": "intransWithParticleAndSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScprPrtcl-scSuNrg_scPredprtcl":{
+        "SAS": "NP+adpos+PRTPpred",
+        "FCT": "intransWithSecondaryPredicateAndParticle",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScprExpn-scAdj":{
+        "SAS": "EXPL+APpred+S",
+        "FCT": "intransWithSecondaryPredicateAndExtraposedClause",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScprExpn-scPredprtcl":{
+        "SAS": "EXPL+PRTPpred+S",
+        "FCT": "intransWithSecondaryPredicateAndExtraposedClause",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrgCsd_scAdj":{
+        "SAS": "NP+APpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+    "v-intrLghtScpr-scSuNrg_scPredprtcl":{
+        "SAS": "NP+PRTPpred",
+        "FCT": "intransLightWithSecondaryPredicate",
+        "SIT": ""
+    },
+    "v-intrLghtScpr-scSuNrg_scPredprtclSom":{
+        "SAS": "NP+PRTPpred:som",
+        "FCT": "intransLightWithSecondaryPredicate",
+        "SIT": ""
+    },
+    "v-intrScpr-scSuNrgCsd_scAdv":{
+        "SAS": "NP+ADVPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+    "v-intrScpr-scSuNrgCsd_scPP":{
+        "SAS": "NP+PPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+    "v-intrScpr-scSuNrgCsd":{
+        "SAS": "NP+XPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+
+    "v-intrScpr-scSuArgCsd_scAdv":{
+        "SAS": "NP+ADVPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+    "v-intrScpr-scSuArgCsd":{
+        "SAS": "NP+XPpred",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "resultative"
+    },
+    "v-intrExpn-expnDECL":{
+        "SAS": "EXPL+Sdecl",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-trNrfExpnSu-obReflExpl_expnDECL":{
+        "SAS": "EXPL+NPrefl+Sdecl",
+        "FCT": "transReflxWithSubjlinkedExtraposedClause",
+        "SIT": ""
+    },
+    "v-trExpnSu-obMeas_expnInfabs":{
+        "SAS": "EXPL+NP+INF",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "measure"
+    },
+    "v-ditrExpnSu-obMeas_expnEqInf":{
+        "SAS": "EXPL+NP+NP+INF",
+        "FCT": "ditransWithSubjlinkedExtraposedClause",
+        "SIT": "measure"
+    },
+    "v-intrScpr-scSuNrg":{
+        "SAS": "EXPL+PRTP[S]",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrExpn-expnYN":{
+        "SAS": "EXPL+SquestYN",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrExpn-expnWH":{
+        "SAS": "EXPL+SquestWH",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrExpn-expnINTERR":{
+        "SAS": "EXPL+Squest",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrExpn-expnAbsinf":{
+        "SAS": "EXPL+INF",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrPrtclExpn-expnDECL":{
+        "SAS": "EXPL+adpos+Sdecl",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrPrtclExpn-expnAbsinf":{
+        "SAS": "EXPL+adpos+INF",
+        "FCT": "intransWithExtraposedClause",
+        "SIT": ""
+    },
+    "v-intrOblExlnk-oblExlnkDECL":{
+        "SAS": "EXPL+PP[Sdecl]",
+        "FCT": "intransWithObliqueWithExtralinkedClause",
+        "SIT": ""
+    },
+    "v-intrOblExlnk-oblExlnkAbsinf":{
+        "SAS": "EXPL+PP[INF]",
+        "FCT": "intransWithObliqueWithExtralinkedClause",
+        "SIT": ""
+    },
+    "v-intrPrtclOblRais-oblTil_prtclUt":{
+        "SAS": "EXPL+adpos+PP[S]",
+        "FCT": "intransWithParticleAndObliqueWithRaisingcomplement",
+        "SIT": ""
+    },
+    "v-intrOblExpn-expnDECL":{
+        "SAS": "EXPL+PP+Sdecl",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-expnYN":{
+        "SAS": "EXPL+PP+SquestYN",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-expnWH":{
+        "SAS": "EXPL+PP+SquestWH",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-oblWH_expnWH":{
+        "SAS": "EXPL+PP[SquestWH]+SquestWH",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-oblYN_expnYN":{
+        "SAS": "EXPL+PP[SquestYN]+SquestYN",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-oblYN_expnWH":{
+        "SAS": "EXPL+PP[SquestYN]+SquestWH",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblExpn-oblWH_expnYN":{
+        "SAS": "EXPL+PP[SquestWH]+SquestYN",
+        "FCT": "intransWithObliqueAndExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-tr":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "binaryRel"
+    },
+    "v-tr-POSSESSION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "possession"
+    },
+    "v-tr-MALEFACTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "malefaction"
+    },
+    "v-tr-CAUSEEMOTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "causedEmotion"
+    },
+    "v-tr-WEIGHING":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "measure"
+    },
+    "v-tr-LASTING":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "measure"
+    },
+    "v-tr-EXTENDING":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "measure"
+    },
+    "v-tr-suDir-EXTENDING":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "measureOfExtension"
+    },
+    "v-tr-obEventunit":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "performingEventunit"
+    },
+    "v-tr-obDir-EJECTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "ejection"
+    },
+    "v-tr-COGN":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "cognizingRelated"
+    },
+    "v-tr-obRefl":{
+        "SAS": "NP+NPrefl",
+        "FCT": "transReflx",
+        "SIT": "binaryRelSelf"
+    },
+    "v-trNrf-obReflExpl":{
+        "SAS": "NP+NPrefl",
+        "FCT": "transReflx",
+        "SIT": "unaryRel"
+    },
+    "v-tr-obDir":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "directionInduced"
+    },
+    "v-tr-obDir-CAUSEMOTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "directedMotionInduced"
+    },
+    "v-trPath-obRefl_obDir":{
+        "SAS": "NP+NPrefl+ADVP",
+        "FCT": "transReflxWithDirectional",
+        "SIT": "directedMotion"
+    },
+    "v-trPath-obDir-ORIENTING":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithDirectional",
+        "SIT": "directionInduced"
+    },
+    "v-trPath-obDir-LINESITUATING":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithDirectional",
+        "SIT": "directionInduced"
+    },
+    "v-tr-suDir":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir-ENDPNTMOTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "completedAction",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir-VIAPNTMOTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "completedAction",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir-ENDPNTEXTENSION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "completedAction",
+        "SIT": "directionRelated"
+    },
+    "v-tr-suDir-VIAPNTEXTENSION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "completedAction",
+        "SIT": "directionRelated"
+    },
+    "v-tr-suDir_obDir-ALONGLINEMOTION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "sustainedActivity",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir_obDir-ACCOMPANYING":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "sustainedActivity",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir_obDir-CROSSINGMOTIONPATHS":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "ASP": "completedAction",
+        "SIT": "directedMotionRelated"
+    },
+    "v-tr-suDir_obDir-CROSSINGPATHS":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "directionRelated"
+    },
+    "v-tr-suDir_obDir-ALONGLINEEXTENSION":{
+        "SAS": "NP+NP",
+        "FCT": "transitive",
+        "SIT": "directionRelated"
+    },
+    "v-trPath-obDir-LOCOMOCONDUCTION":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithPath",
+        "SIT": "directionRelatedInduced"
+    },
+    "v-trPath-obDir-USINGPATH":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithPath",
+        "SIT": "directedMotionRelated"
+    },
+    "v-trPath-obDir-USINGVEHICLE":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithPath",
+        "SIT": "directedMotionVehicleRelated"
+    },
+    "v-tr-suAbsinf":{
+        "SAS": "INF+NP",
+        "FCT": "transitive",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suDECL":{
+        "SAS": "Sdecl+NP",
+        "FCT": "transWithSentSubj",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suYN":{
+        "SAS": "SquestYN+NP",
+        "FCT": "transWithSentSubj",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suWH":{
+        "SAS": "SquestWH+NP",
+        "FCT": "transWithSentSubj",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suINTERR":{
+        "SAS": "Squest+NP",
+        "FCT": "transWithSentSubj",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obDECL":{
+        "SAS": "NP+Sdecl",
+        "FCT": "transWithSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obDECL_obV":{
+        "SAS": "NP+Sdecl",
+        "FCT": "transWithBareSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obYN":{
+        "SAS": "NP+SquestYN",
+        "FCT": "transWithSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obWH":{
+        "SAS": "NP+SquestWH",
+        "FCT": "transWithSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-intrComp-compYN":{
+        "SAS": "NP+SquestYN",
+        "FCT": "intransWithSententialComplement",
+        "SIT": "binaryRel"
+    },
+    "v-intrComp-compWH":{
+        "SAS": "NP+SquestWH",
+        "FCT": "intransWithSententialComplement",
+        "SIT": "binaryRel"
+    },
+    "v-intrComp-compINTERR":{
+        "SAS": "NP+Squest",
+        "FCT": "intransWithSententialComplement",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obEqInf":{
+        "SAS": "NP+INF:equiSBJ",
+        "FCT": "transitive",
+        "SIT": "binaryRel"
+    },
+    "v-intrAuxmodComp-compEqBareinf":{
+        "SAS": "NP+INF:equiSBJ",
+        "FCT": "intransModauxWithSecondaryPredicate",
+        "SIT": "binaryRel"
+    },
+    "v-tr-obAbsinf":{
+        "SAS": "NP+INF",
+        "FCT": "transitive",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suDECL_obDECL":{
+        "SAS": "Sdecl+Sdecl",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suDECL_obYN":{
+        "SAS": "Sdecl+SquestYN",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suDECL_obWH":{
+        "SAS": "Sdecl+SquestWH",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suDECL_obINTERR":{
+        "SAS": "Sdecl+Squest",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suYN_obYN":{
+        "SAS": "SquestYN+S",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suYN_obWH":{
+        "SAS": "SquestYN+SquestWH",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suWH_obYN":{
+        "SAS": "SquestWH+SquestYN",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suWH_obWH":{
+        "SAS": "SquestWH+SquestWH",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-tr-suINTERR_obINTERR":{
+        "SAS": "Squest+Squest",
+        "FCT": "transWithSentSubjAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtcl":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithParticle",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtcl-COMPLETEDACTIVITY":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithParticle",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtcl-obRefl":{
+        "SAS": "NP+NPrefl+adpos",
+        "FCT": "transReflxWithParticle",
+        "SIT": "unaryRel"
+    },
+    "v-trPrtclShft":{
+        "SAS": "NP+adpos+NP",
+        "FCT": "transWithParticle",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtclShft-obCLAUSE":{
+        "SAS": "NP+adpos+S",
+        "FCT": "transWithParticleAndSentCompl",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtclShft-obEqInf":{
+        "SAS": "NP+adpos+INF:equiSBJ",
+        "FCT": "transWithParticleAndInfCompl",
+        "SIT": "binaryRel"
+    },
+    "v-trObl":{
+        "SAS": "NP+NP+PP",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblPRTOFob-PARTWHOLE_AFFECTING":{
+        "SAS": "NP+NP+PP",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryPossessorDetachment"
+    },
+    "v-trObl-oblPRTOFob":{
+        "SAS": "NP+NP+PP",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryPossessorDetachment"
+    },
+    "v-trObl-obRefl":{
+        "SAS": "NP+NPrefl+PP",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-obRefl_oblN":{
+        "SAS": "NP+NPrefl+PP",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-obRefl_oblPRTOFob":{
+        "SAS": "NP+NPrefl+PP",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryPossessorDetachment"
+    },
+    "v-trObl-obRefl_oblPRTOFob-PARTWHOLE_AFFECTING":{
+        "SAS": "NP+NPrefl+PP",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryPossessorDetachment"
+    },
+    "v-trObl-oblLoc":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithOblique",
+        "SIT": "location"
+    },
+    "v-trObl-obRefl-oblLoc":{
+        "SAS": "NP+NPrefl+adpos",
+        "FCT": "transReflxWithOblique",
+        "SIT": "location"
+    },
+    "v-trObl-oblDECL":{
+        "SAS": "NP+NP+PP[Sdecl]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-obRefl_oblDECL":{
+        "SAS": "NP+NPrefl+PP[Sdecl]",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-obRefl_oblINTERR":{
+        "SAS": "NP+NPrefl+PP[Squest]",
+        "FCT": "transReflxWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-suDECL":{
+        "SAS": "Sdecl+NP+PP",
+        "FCT": "transWithSentSubjAndOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-suDECL_oblDECL":{
+        "SAS": "Sdecl+NP+PP[Sdecl]",
+        "FCT": "transWithWithSentSubjAndOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblYN":{
+        "SAS": "NP+NP+PP[SquestYN]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblWH":{
+        "SAS": "NP+NP+PP[SquestWH]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblINTERR":{
+        "SAS": "NP+NP+PP[Squest]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-suDECL_oblINTERR":{
+        "SAS": "Sdecl+NP+PP[Squest]",
+        "FCT": "transWithSentSubjAndOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-suINTERR_oblDECL":{
+        "SAS": "Squest+NP+PP[Sdecl]",
+        "FCT": "transWithSentSubjAndOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblEqSuInf":{
+        "SAS": "NP+NP+PP[INF:equiSBJ]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-oblEqObInf":{
+        "SAS": "NP+NP+PP[INF:equiOBJ]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl-obRefl_oblEqObInf":{
+        "SAS": "NP+NPrefl+PP[INF:equiOBJ]",
+        "FCT": "transReflxWithOblique",
+        "SIT": "binaryRel"
+    },
+    "v-trObl-oblAbsinf":{
+        "SAS": "NP+NP+PP[INF]",
+        "FCT": "transWithOblique",
+        "SIT": "ternaryRel"
+    },
+    "v-trObl2":{
+        "SAS": "NP+NP+PP+PP",
+        "FCT": "transWith2Oblique",
+        "SIT": "quarternaryRel"
+    },
+    "v-trAdv":{
+        "SAS": "NP+NP+adpos",
+        "FCT": "transWithAdv",
+        "SIT": "binaryRel"
+    },
+    "v-trAdv-obRefl":{
+        "SAS": "NP+NPrefl+adpos",
+        "FCT": "transReflxWithAdv",
+        "SIT": "unaryRel"
+    },
+    "v-trScpr-scSuNrg_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scSuNrg_scN":{
+        "SAS": "NP+NP+NPpred",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trScpr-scSuNrg_scPP":{
+        "SAS": "NP+NP+PPpred",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scSuNrg_scPredprtcl":{
+        "SAS": "NP+NP+PRTPpred",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scSuNrg_scPredprtclSom":{
+        "SAS": "NP+NP+PRTPpred:som",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scSuNrg_scPredprtclSomN":{
+        "SAS": "NP+NP+PRTPpred:som",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scPredprtclSom":{
+        "SAS": "NP+NPrefl+PRTPpred:som",
+        "FCT": "transReflxWithSecondarySubjectpredicate",
+        "SIT": "unaryRel"
+    },
+    "v-trScpr-scSuNrg_scInf":{
+        "SAS": "NP+NP+INF:raisSBJ",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scSuNrg_scBareinf":{
+        "SAS": "NP+NP+INF:raisSBJ",
+        "FCT": "transWithSecondarySubjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scInf":{
+        "SAS": "NP+NP+INF:raisOBJ",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scBareinf":{
+        "SAS": "NP+NP+INF:raisOBJ",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scBareinf":{
+        "SAS": "NP+NPrefl+INF:raisOBJ",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scAdj":{
+        "SAS": "NP+NPrefl+APpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclpredFor":{
+        "SAS": "NP+NP+PRTP:for[INF:raisOBJ]",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclpredSom":{
+        "SAS": "NP+NP+PRTPpred:som",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scPredprtclFor":{
+        "SAS": "NP+NPrefl+PRTP:for[INF:raisOBJ]",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    ";v-trScpr-scObNrg_obRefl_scPredprtclSom":{
+        "SAS": "NP+NPrefl+PRTPpred:som",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "unaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scPredprtclTil":{
+        "SAS": "NP+NPrefl+PRTPpred:til",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclFor":{
+        "SAS": "NP+NP+PRTPpred:for",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclSom":{
+        "SAS": "NP+NP+PRTPpred:som",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclSomN":{
+        "SAS": "NP+NP+PRTPpred:som",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclTil":{
+        "SAS": "NP+NP+PRTPpred:til",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPcp":{
+        "SAS": "NP+NP+VPpass",
+        "FCT": "transWithSecondaryObjectpredicateAsComplexPassive",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scN":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_obRefl_scN":{
+        "SAS": "NP+NPrefl+NPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObArgConcurr_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObArgConcurr_scPP":{
+        "SAS": "NP+NP+PPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObArgConcurr_scPredprtcl":{
+        "SAS": "NP+NP+PRTPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrgRes_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgRes_scPP":{
+        "SAS": "NP+NP+PPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "unknown":{
+        "SAS": "NP+EXPL+APpred+S",
+        "FCT": "transWithSecondaryObjectpredicateAndSentCompl",
+        "SIT": "causation"
+    },
+    ";v-trScpr-scObNrgRes_scPP":{
+        "SAS": "NP+NP+PP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "placement"
+    },
+    "v-trScprShft-scObArgCsd_scPP":{
+        "SAS": "NP+adpos+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "placement"
+    },
+    "v-trScprShft-scObNrgRes_scPPrefl-PLACEMENT":{
+        "SAS": "NP+PP[refl]+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "placement"
+    },
+    "v-trScpr-scObArgCsd_scAdv":{
+        "SAS": "NP+NP+ADVP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "directedMotionInduced"
+    },
+    "v-trScprShft-scObArgCsd_scAdv":{
+        "SAS": "NP+ADVP+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "directedMotionInduced"
+    },
+    "v-trScprShft-obDir_scObArgCsd":{
+        "SAS": "NP+adpos+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "directedMotionInduced"
+    },
+    "v-trScprShft-scObNrgRes_scPP-PLACEMENT":{
+        "SAS": "NP+PP+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "placement"
+    },
+    "v-trScpr-scObArgCsd_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgCsd_scAdj":{
+        "SAS": "NP+NP+APpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgCsd_obRefl_scAdj":{
+        "SAS": "NP+NPrefl+APpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgCsd_obRefl_scPP":{
+        "SAS": "NP+NPrefl+PPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-obDir_obRefl_scObNrgCsd":{
+        "SAS": "NP+NPrefl+ADVPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "directedMotion"
+    },
+    "v-trScpr-obDir_scObNrgCsd_scAdv":{
+        "SAS": "NP+NP+ADVPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScprShft-obDir_scObNrgCsd":{
+        "SAS": "NP+ADVPpred+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrg":{
+        "SAS": "NP+NP+XPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-obRefl_scObNrg":{
+        "SAS": "NP+NPrefl+XPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-obRefl_scObArgCsd":{
+        "SAS": "NP+NPrefl+XPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObArgCsd":{
+        "SAS": "NP+NP+XPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgCsd":{
+        "SAS": "NP+NP+XPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrgCsd_obRefl":{
+        "SAS": "NP+NPrefl+XPpred",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-obRefl":{
+        "SAS": "NP+NPrefl+ADVPpred",
+        "FCT": "transReflxWithAdv",
+        "SIT": "unaryRel"
+    },
+    "v-trExpnSu-expnDECL":{
+        "SAS": "EXPL+NP+Sdecl",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnSu-expnYN":{
+        "SAS": "EXPL+NP+SquestYN",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnSu-expnWH":{
+        "SAS": "EXPL+NP+SquestWH",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnSu-expnDECL_obRefl":{
+        "SAS": "EXPL+NPrefl+Sdecl",
+        "FCT": "transReflxWithSubjlinkedExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-trExpnSu-expnYN_obRefl":{
+        "SAS": "EXPL+NPrefl+SquestYN",
+        "FCT": "transReflxWithSubjlinkedExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-trExpnSu-expnWH_obRefl":{
+        "SAS": "EXPL+NPrefl+SquestWH",
+        "FCT": "transReflxWithSubjlinkedExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-trExpnSu-expnCOND":{
+        "SAS": "EXPL+NPrefl+S",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnSu-expnEqInf":{
+        "SAS": "EXPL+NP+INF:equiOBJ",
+        "FCT": "transWithSubjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnOb-expnDECL":{
+        "SAS": "NP+EXPL+Sdecl",
+        "FCT": "transWithObjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnOb-expnCOND":{
+        "SAS": "NP+EXPL+S",
+        "FCT": "transWithObjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-trExpnOb-expnAbsinf":{
+        "SAS": "NP+EXPL+INF",
+        "FCT": "transWithObjlinkedExtraposedClause",
+        "SIT": "binaryRel"
+    },
+    "v-ditr":{
+        "SAS": "NP+NP+NP",
+        "FCT": "ditransitive",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-iobRefl":{
+        "SAS": "NP+NPrefl+NP",
+        "FCT": "ditransReflx",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-iobRefl_obDECL":{
+        "SAS": "NP+NPrefl+S",
+        "FCT": "ditransReflxWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suDECL":{
+        "SAS": "Sdecl+NP+NP",
+        "FCT": "ditransWithSentSubj",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suYN":{
+        "SAS": "SquestYN+NP+NP",
+        "FCT": "ditransWithSentSubj",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suWH":{
+        "SAS": "SquestWH+NP+NP",
+        "FCT": "ditransWithSentSubj",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suINTERR":{
+        "SAS": "Squest+NP+NP",
+        "FCT": "ditransWithSentSubj",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suAbsinf":{
+        "SAS": "INF+NP+NP",
+        "FCT": "ditransWithInfSubj",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obDECL":{
+        "SAS": "NP+NP+Sdecl",
+        "FCT": "ditransWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obDECL_iobRefl":{
+        "SAS": "NP+NPrefl+Sdecl",
+        "FCT": "ditransReflxWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obYN":{
+        "SAS": "NP+NP+SquestYN",
+        "FCT": "ditransWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obWH":{
+        "SAS": "NP+NP+SquestWH",
+        "FCT": "ditransWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obEqSuInf":{
+        "SAS": "NP+NP+INF:equiSBJ",
+        "FCT": "ditransWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obEqIobInf":{
+        "SAS": "NP+NP+INF:equiOBJ",
+        "FCT": "ditransWithInfCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-iobRefl_obEqIobInf":{
+        "SAS": "NP+NPrefl+INF:equiOBJ",
+        "FCT": "ditransReflxWithInfCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obEqIobBareinf":{
+        "SAS": "NP+NP+INF:equiOBJ",
+        "FCT": "ditransWithInfCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obYN_iobRefl":{
+        "SAS": "NP+NPrefl+SquestYN",
+        "FCT": "ditransReflxWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obWH_iobRefl":{
+        "SAS": "NP+NPrefl+SquestWH",
+        "FCT": "ditransReflxWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-obEqInf_iobRefl":{
+        "SAS": "NP+NPrefl+INF:equiSBJ",
+        "FCT": "ditransReflxWithSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suYN_obYN":{
+        "SAS": "SquestYN+NP+SquestYN",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suWH_obWH":{
+        "SAS": "SquestWH+NP+SquestWH",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suYN_obWH":{
+        "SAS": "SquestYN+NP+SquestWH",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suWH_obYN":{
+        "SAS": "SquestWH+NP+SquestYN",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suINTERR_obINTERR":{
+        "SAS": "Squest+NP+Squest",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suDECL_obDECL":{
+        "SAS": "Sdecl+NP+Sdecl",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suDECL_obYN":{
+        "SAS": "Sdecl+NP+SquestYN",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suDECL_obWH":{
+        "SAS": "Sdecl+NP+SquestWH",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditr-suDECL_obINTERR":{
+        "SAS": "Sdecl+NP+Squest",
+        "FCT": "ditransWithSentSubjAndSentCompl",
+        "SIT": "ternaryRel"
+    },
+    "v-ditrObl-oblPRTOFiob-PARTWHOLE_AFFECTING":{
+        "SAS": "NP+NP+NP+PP",
+        "FCT": "ditransWithOblique",
+        "SIT": "quarternaryPossessorDetachment"
+    },
+    "v-copAdj":{
+        "SAS": "NP+APpred",
+        "FCT": "copulaWithPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copAdj-suDECL":{
+        "SAS": "Sdecl+APpred",
+        "FCT": "copulaWithSentSubjAndPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copAdj-suAbsinf":{
+        "SAS": "INF+APpred",
+        "FCT": "copulaWithPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copAdj-suYN":{
+        "SAS": "SquestYN+APpred",
+        "FCT": "copulaWithSentSubjAndPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copAdj-suWH":{
+        "SAS": "SquestWH+APpred",
+        "FCT": "copulaWithSentSubjAndPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copAdj-suINTERR":{
+        "SAS": "Squest+APpred",
+        "FCT": "copulaWithSentSubjAndPredicativeAdjective",
+        "SIT": "unaryRel"
+    },
+    "v-copN":{
+        "SAS": "NP+NPpred",
+        "FCT": "copulaWithPredicativeNoun",
+        "SIT": "unaryRel"
+    },
+    "v-copN-suDECL":{
+        "SAS": "Sdecl+NPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeNoun",
+        "SIT": "unaryRel"
+    },
+    "v-copN-suAbsinf":{
+        "SAS": "INF+NPpred",
+        "FCT": "copulaWithPredicativeNoun",
+        "SIT": "unaryRel"
+    },
+    "v-copN-suYN":{
+        "SAS": "SquestYN+NPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeNoun",
+        "SIT": "unaryRel"
+    },
+    "v-copN-suWH":{
+        "SAS": "SquestWH+NPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeNoun",
+        "SIT": "unaryRel"
+    },
+    "v-copAdv":{
+        "SAS": "NP+ADVPpred",
+        "FCT": "copulaWithPredicativeAdv",
+        "SIT": "unaryRel"
+    },
+    "v-copPP":{
+        "SAS": "NP+PPpred",
+        "FCT": "copulaWithPredicativePP",
+        "SIT": "unaryRel"
+    },
+    "v-copPP-suDECL":{
+        "SAS": "Sdecl+PPpred",
+        "FCT": "copulaWithSentSubjAndPredicativePP",
+        "SIT": "unaryRel"
+    },
+    "v-copPP-suAbsinf":{
+        "SAS": "INF+PPpred",
+        "FCT": "copulaWithInfComplAndPredicativePP",
+        "SIT": "unaryRel"
+    },
+    "v-copPP-suYN":{
+        "SAS": "SquestYN+PPpred",
+        "FCT": "copulaWithSentSubjAndPredicativePP",
+        "SIT": "unaryRel"
+    },
+    "v-copPP-suWH":{
+        "SAS": "SquestWH+PPpred",
+        "FCT": "copulaWithSentSubjAndPredicativePP",
+        "SIT": "unaryRel"
+    },
+    "v-copPredprtcl":{
+        "SAS": "NP+PRTPpred",
+        "FCT": "copulaWithPredicativeParticlephrase",
+        "SIT": "unaryRel"
+    },
+    "v-copPredprtcl-suDECL":{
+        "SAS": "Sdecl+PRTPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeParticlephrase",
+        "SIT": "unaryRel"
+    },
+    "v-copPredprtcl-suAbsinf":{
+        "SAS": "INF+PRTPpred",
+        "FCT": "copulaWithPredicativeParticlephrase",
+        "SIT": "unaryRel"
+    },
+    "v-copPredprtcl-suYN":{
+        "SAS": "SquestYN+PRTPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeParticlephrase",
+        "SIT": "unaryRel"
+    },
+    "v-copPredprtcl-suWH":{
+        "SAS": "SquestWH+PRTPpred",
+        "FCT": "copulaWithSentSubjAndPredicativeParticlephrase",
+        "SIT": "unaryRel"
+    },
+    "v-copIdN":{
+        "SAS": "NP+NP",
+        "FCT": "copulaWithIdentityNoun",
+        "SIT": "binaryRel"
+    },
+    "v-copIdAbsinf":{
+        "SAS": "NP+INF",
+        "FCT": "copulaWithIdentityInfinitive",
+        "SIT": "binaryRel"
+    },
+    "v-copIdAbsinf-suAbsinf":{
+        "SAS": "INF+INF",
+        "FCT": "copulaWithInfSubjAndIdentityInfinitive",
+        "SIT": "binaryRel"
+    },
+    "v-copIdDECL":{
+        "SAS": "NP+Sdecl",
+        "FCT": "copulaWithIdentityDeclClause",
+        "SIT": "binaryRel"
+    },
+    "v-copIdYN":{
+        "SAS": "NP+SquestYN",
+        "FCT": "copulaWithIdentityYesNoClause",
+        "SIT": "binaryRel"
+    },
+    "v-copIdWH":{
+        "SAS": "NP+SquestWH",
+        "FCT": "copulaWithIdentityWhClause",
+        "SIT": "binaryRel"
+    },
+    "v-copIdINTERR":{
+        "SAS": "NP+Squest",
+        "FCT": "copulaWithIdentityInterrClause",
+        "SIT": "binaryRel"
+    },
+    "v-copExpnAdj-expnDECL":{
+        "SAS": "EXPL+APpred+S",
+        "FCT": "copulaWithPredicativeAdjectiveAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnAdj-expnAbsinf":{
+        "SAS": "EXPL+APpred+INF",
+        "FCT": "copulaWithPredicativeAdjectiveAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnAdj-expnYN":{
+        "SAS": "EXPL+APpred+SquestYN",
+        "FCT": "copulaWithPredicativeAdjectiveAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnAdj-expnWH":{
+        "SAS": "EXPL+APpred+SquestWH",
+        "FCT": "copulaWithPredicativeAdjectiveAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnAdj":{
+        "SAS": "EXPL+APpred+S",
+        "FCT": "copulaWithPredicativeAdjectiveAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnN-expnDECL":{
+        "SAS": "EXPL+NPpred+Sdecl",
+        "FCT": "copulaWithPredicativeNounAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnN-expnAbsinf":{
+        "SAS": "EXPL+NPpred+INF",
+        "FCT": "copulaWithPredicativeNounAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnN-expnYN":{
+        "SAS": "EXPL+NPpred+SquestYN",
+        "FCT": "copulaWithPredicativeNounAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnN-expnWH":{
+        "SAS": "EXPL+NPpred+SquestWH",
+        "FCT": "copulaWithPredicativeNounAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnPP-expnDECL":{
+        "SAS": "EXPL+PPpred+Sdecl",
+        "FCT": "copulaWithPredicativePPAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnPP-expnYN":{
+        "SAS": "EXPL+PPpred+SquestYN",
+        "FCT": "copulaWithPredicativePPAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copExpnPredprtcl-expnDECL":{
+        "SAS": "EXPL+PRTPpred+Sdecl",
+        "FCT": "copulaWithPredicativeParticleAndExtraposedClause",
+        "SIT": "unaryRel"
+    },
+    "v-copImpersAdjLoc":{
+        "SAS": "EXPL+APpred+adpos",
+        "FCT": "copulaImpersWithPredicativeAdverbAndLocative",
+        "SIT": "unaryRel"
+    },
+    "v-trScpr-scObArgCsd_scLoc":{
+        "SAS": "NP+NP+XPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "LocationInduced"
+    },
+    "v-intrSubcoord":{
+        "SAS": "NP+VP",
+        "FCT": "serialVerbWithConjunction",
+        "ASP": "sustainedActivity",
+        "SIT": ""
+    },
+    "v-trScpr-scObArgCsd_scEndpt":{
+        "SAS": "NP+NP+XPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-tr-suDir_obLengthunit":{
+        "SAS": "NP+NP",
+        "FCT": "transLengthunitObject",
+        "SIT": "unaryRel"
+    },
+    "v-trOblExpnOb-expnAbsinf":{
+        "SAS": "NP+EXPL+PP+INF",
+        "FCT": "transWithObliqueAndExtraposedClause",
+        "SIT": "ternaryRel"
+    },
+    "v-intrScpr-scSuNrg_scPredprtcl_scSomClse":{
+        "SAS": "NP+PRTPpred:som",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-intrScpr-scSuNrg_scPredprtcl_scSomOmClse":{
+        "SAS": "NP+PRTPpred:som_om",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "appearanceOfStateOfAffairs"
+    },
+    "v-trScprAdjShft-scObArgCsd_scAdj":{
+        "SAS": "NP+AP+NP",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "causation"
+    },
+    "v-trScpr-scObNrg_scPP":{
+        "SAS": "NP+NP+PPpred",
+        "FCT": "transWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trScpr-scObNrg_scPredprtclForInf":{
+        "SAS": "NP+NP+PRTP:for[INF:raisOBJ]",
+        "FCT": "transReflxWithSecondaryObjectpredicate",
+        "SIT": "binaryRel"
+    },
+    "v-trPrtcl-obEqInf":{
+        "SAS": "NP+adpos+INF:equiSBJ",
+        "FCT": "transWithParticleAndInfCompl",
+        "SIT": "binaryRel"
+    },
+    "v-copToughAdj":{
+        "SAS": "NP+APpred",
+        "FCT": "copulaWithPredicativeAdjectiveWithToughCompl",
+        "SIT": "UnaryRel"
+    },
+    "axv_intr-av1mod":{
+        "SAS": "NP+INF:equiSBJ",
+        "FCT": "intransModauxWithSecondaryPredicate",
+        "SIT": "binaryRel"
+    },
+    "v-intrOblPrtclRais-suNrg_oblRaisInf":{
+        "SAS": "NP+adpos+PP[INF:raisSBJ]",
+        "FCT": "intransWithSecondaryPredicate",
+        "SIT": "unaryRel"
+    },
+    "v-trScpr-scObNrgCsd_scAdv":{
+        "SAS": "NP+NP+ADVPpred",
+        "FCT": "transWithSecondaryPredicate",
+        "SIT": "BinaryRel"
+    }
+}
