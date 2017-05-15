@@ -5,8 +5,9 @@ convert easily to a Typeraft compatible format.
 import re
 
 from norsourceparser.core.config import config
-from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP
-from norsourceparser.core.util import get_pos, get_inflectional_rules
+from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP, \
+    REDUCED_RULE_VALENCY
+from norsourceparser.core.util import get_pos, get_inflectional_rules, get_valency
 from norsourceparser.core.util import split_lexical_entry, get_gloss
 
 
@@ -40,15 +41,18 @@ def get_rules_from_partial_branch(partial_branch):
         if pos is None:
             print("UNABLE TO FIND POS FOR RULE: %s" % second_node.name)
 
-       #if gloss is None:
-       #    print("UNABLE TO FIND GLOSS FOR RULE: %s" % second_node.name)
-
     if len(partial_branch) == 2:
         # If we only have access to the lexical entry, we return what rules
         # we can from here.
-        return parse_lexical_entry(terminal, stem, pos, gloss)
 
-    if partial_branch[1].name == 'bli_pass':
+        # Verbs might yield some valency information here
+        if pos == "V":
+            rules.extend(get_verb_valency_rule(partial_branch))
+
+        rules.extend(parse_lexical_entry(terminal, stem, pos, gloss))
+        return rules
+
+    if 'bli_pass' in partial_branch[1].name:
         # We look for the special case of a bli_pass case here
         rules.extend(get_bli_passive_rules(partial_branch))
     else:
@@ -88,14 +92,18 @@ def parse_lexical_entry(terminal, stem, pos, gloss):
     # This information may get overwritten later up the tree/branch. Yet
     # we still do this step in case we have some missing information later up the tree.
     if pos in ['N', 'V', 'ADJ']:
-        if stem != terminal.name:
+        if stem != terminal.name and stem in terminal.name:
             rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem, re.sub("^"+stem, "", terminal.name)]])
             # We do this here so we can capture the correct position
             if gloss is not None:
                 rules.append([REDUCED_RULE_GLOSSES, ["", gloss]])
         else:
-            # Okey, we don't have any inflections here.
-            rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem]])
+            if stem not in terminal.name:
+                # We have morphology, but it is non-concatenative
+                rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
+            else:
+                # We have no morpholog at all here, we don't have any inflections here.
+                rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem]])
             # We do this here so we can capture the correct position
             if gloss is not None:
                 rules.append([REDUCED_RULE_GLOSSES, [gloss]])
@@ -178,7 +186,7 @@ def get_gloss_rules_from_partial_branch(partial_tree):
 
     if maybe_gloss is not None:
         if pos in ['N', 'ADJ', 'V']:
-            if stem != terminal:
+            if stem != terminal and stem in terminal:
                 # This means we have some inflectional rule, and should
                 # add the gloss to the suffix
                 return [[REDUCED_RULE_GLOSSES, ["", maybe_gloss]]]
@@ -198,7 +206,7 @@ def get_bli_passive_rules(partial_branch):
 
     if len(partial_branch) == 3:
         lexical = partial_branch[1]
-        if lexical.name == 'bli_pass':
+        if 'bli_pass' in lexical.name:
             terminal = partial_branch[0]
             inflectional = partial_branch[2]
 
@@ -215,3 +223,16 @@ def get_bli_passive_rules(partial_branch):
                 rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [terminal.name]])
             rules.append([REDUCED_RULE_GLOSSES, [gloss_rules]])
     return rules
+
+
+def get_verb_valency_rule(partial_branch):
+    """
+    This method tries to get a valency rule for a verb.
+
+    :param partial_branch:
+    :return:
+    """
+    valency = get_valency(partial_branch[-1].name)
+    if valency:
+        return [[REDUCED_RULE_VALENCY, valency]]
+    return []

@@ -3,14 +3,17 @@ import os
 import json
 import re
 
+from norsourceparser.core.config import config
 
 verb_lex_fp = open(os.path.join(os.path.dirname(__file__), '../resources/verb_lex.json'), 'r')
+verb_corrlist_fp = open(os.path.join(os.path.dirname(__file__), '../resources/verb_corrlist.json'), 'r')
 noun_inflections_fp = open(os.path.join(os.path.dirname(__file__), '../resources/noun_inflections.json'), 'r')
 gloss_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss.json'), 'r')
 meanings_fp = open(os.path.join(os.path.dirname(__file__), '../resources/meanings.json'), 'r')
 pos_fp = open(os.path.join(os.path.dirname(__file__), '../resources/pos.json'), 'r')
 
 verb_lex = json.load(verb_lex_fp)
+verb_corrlist = json.load(verb_corrlist_fp)
 noun_inflections = json.load(noun_inflections_fp)
 gloss = json.load(gloss_fp)
 meanings = json.load(meanings_fp)
@@ -21,6 +24,7 @@ noun_inflections_fp.close()
 gloss_fp.close()
 meanings_fp.close()
 pos_fp.close()
+verb_corrlist_fp.close()
 
 POS_CONVERSIONS = {
     "copnom": "COP",
@@ -93,6 +97,35 @@ def get_pos(rule, default=None):
             return default
 
         return pos.get('_' + rule_splitted[-1], default)
+
+
+def get_valency(rule, default=None):
+    """
+    Gets valency information from a (verb) rule. We check for an entry in the verb_lex dictionary
+    for first the rule itself, and then the rule with a possible _vlxm suffix removed.
+
+    :param rule:
+    :param default:
+    :return:
+    """
+    if rule is None:
+        return default
+    elif rule in verb_lex:
+        lex_corr = verb_lex[rule]
+        if not lex_corr in verb_corrlist:
+            if config.DEBUG:
+                print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
+            return default
+        return verb_corrlist[lex_corr]
+    elif rule.replace('_vlxm', '') in verb_lex:
+        lex_corr = verb_lex[rule.replace('_vlxm', '')]
+        if not lex_corr in verb_corrlist:
+            if config.DEBUG:
+                print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
+            return default
+        return verb_corrlist[lex_corr]
+
+    return default
 
 
 def split_lexical_entry(name):

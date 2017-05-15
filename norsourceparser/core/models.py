@@ -1,11 +1,12 @@
 import re
 import difflib
 
-from norsourceparser.core.constants import REDUCED_RULE_MORPHOLOGICAL_BREAKUP, REDUCED_RULE_POS, REDUCED_RULE_GLOSSES
+from norsourceparser.core.constants import REDUCED_RULE_MORPHOLOGICAL_BREAKUP, REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, \
+    REDUCED_RULE_VALENCY
 from norsourceparser.core.rules import get_rules_from_partial_branch
 from . import config
 
-from typecraft_python.models import Text, Phrase, Word, Morpheme
+from typecraft_python.models import Text, Phrase, Word, Morpheme, GlobalTag
 
 from norsourceparser.core.util import split_lexical_entry, get_pos, get_gloss, get_inflectional_rules
 
@@ -122,6 +123,11 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
         phrase = Phrase()
 
         for node in self._nodes:
+            valency = node.rules.get(REDUCED_RULE_VALENCY)
+            if valency:
+                phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
+                phrase.comment += "\"%s\" - %s\n" % (node.get_completed_word_token(), valency['SAS'])
+
             word = Word()
             word.word = node.get_completed_word_token()
             word.pos = node.rules.get(REDUCED_RULE_POS, "")
@@ -334,7 +340,7 @@ class UnresolvedSyntaxTree(SyntaxTree):
 
     def resolve(self):
         """
-        Resolves the Unresvoled Tree, creating a new Syntax tree with everything wrapped up.
+        Resolves the Unresolved Tree, creating a new Syntax tree with everything wrapped up.
 
         A new SyntaxTree is constructed, but the Nodes are modified in-place.
         :return:

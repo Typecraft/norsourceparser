@@ -7,14 +7,14 @@ norsourceparser
         :target: https://pypi.python.org/pypi/norsourceparser
 
 .. image:: https://img.shields.io/travis/tOgg1/norsourceparser.svg
-        :target: https://travis-ci.org/tOgg1/norsourceparser
+        :target: https://travis-ci.org/Typecraft/norsourceparser
 
 .. image:: https://readthedocs.org/projects/norsourceparser/badge/?version=latest
         :target: https://norsourceparser.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/tOgg1/norsourceparser/shield.svg
-     :target: https://pyup.io/repos/github/tOgg1/norsourceparser/
+.. image:: https://pyup.io/repos/github/Typecraft/norsourceparser/shield.svg
+     :target: https://pyup.io/repos/github/Typecraft/norsourceparser/
      :alt: Updates
 
 

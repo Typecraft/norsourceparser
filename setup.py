@@ -10,11 +10,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'typecraft_python>=0.4.3'
+    'typecraft_python>=0.5.0'
 ]
 
 test_requirements = [
-    'typecraft_python>=0.4.3'
+    'typecraft_python>=0.5.0'
 ]
 
 setup(
