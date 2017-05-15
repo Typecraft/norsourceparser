@@ -125,7 +125,8 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
         for node in self._nodes:
             valency = node.rules.get(REDUCED_RULE_VALENCY)
             if valency:
-                phrase.add_global_tag(GlobalTag(valency['SAS'], 1))
+                phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
+                phrase.comment += "\"%s\" - %s\n" % (node.get_completed_word_token(), valency['SAS'])
 
             word = Word()
             word.word = node.get_completed_word_token()
@@ -339,7 +340,7 @@ class UnresolvedSyntaxTree(SyntaxTree):
 
     def resolve(self):
         """
-        Resolves the Unresvoled Tree, creating a new Syntax tree with everything wrapped up.
+        Resolves the Unresolved Tree, creating a new Syntax tree with everything wrapped up.
 
         A new SyntaxTree is constructed, but the Nodes are modified in-place.
         :return:
