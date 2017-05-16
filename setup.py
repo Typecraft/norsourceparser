@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -25,9 +25,7 @@ setup(
     author="Tormod Haugland",
     author_email='tormod.haugland@gmail.com',
     url='https://github.com/tOgg1/norsourceparser',
-    packages=[
-        'norsourceparser',
-    ],
+    packages=find_packages(),
     package_dir={'norsourceparser':
                  'norsourceparser'},
     entry_points={
