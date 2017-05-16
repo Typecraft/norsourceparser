@@ -25,7 +25,7 @@ setup(
     author="Tormod Haugland",
     author_email='tormod.haugland@gmail.com',
     url='https://github.com/tOgg1/norsourceparser',
-    packages=find_packages(),
+    packages=find_packages(exclude=['tests', 'tests.*']),
     package_dir={'norsourceparser':
                  'norsourceparser'},
     entry_points={
