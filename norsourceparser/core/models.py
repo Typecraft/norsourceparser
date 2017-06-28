@@ -125,8 +125,10 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
         for node in self._nodes:
             valency = node.rules.get(REDUCED_RULE_VALENCY)
             if valency:
-                phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
-                phrase.comment += "\"%s\" - %s\n" % (node.get_completed_word_token(), valency['SAS'])
+                # phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
+                phrase.comment += "\"%s\"\n\tSAS: %s\n" % (node.get_completed_word_token(), valency['SAS'])
+                phrase.comment += "\tFCT: %s\n" % valency['FCT']
+                phrase.comment += "\tSIT: %s\n" % valency['SIT']
 
             word = Word()
             word.word = node.get_completed_word_token()
