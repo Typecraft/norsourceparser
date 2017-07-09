@@ -311,7 +311,7 @@
     "deg_refl": "PNrefl",
     "dere_refl": "PNrefl",
     "seg_refl": "PNrefl",
-    "hverandre_recip": "PNrec  NEW",
+    "hverandre_recip": "PNrec",
     "hinannen_recip": "PNrec",
     "_pre-poss": "PNposs",
     "_post-poss": "PNposs",
