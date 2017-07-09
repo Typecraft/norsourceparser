@@ -2,7 +2,7 @@ import re
 import difflib
 
 from norsourceparser.core.constants import REDUCED_RULE_MORPHOLOGICAL_BREAKUP, REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, \
-    REDUCED_RULE_VALENCY
+    REDUCED_RULE_VALENCY, REDUCED_RULE_CITATION_FORM, REDUCED_RULE_CONSTRUCTION_FORM
 from norsourceparser.core.rules import get_rules_from_partial_branch
 from . import config
 
@@ -124,11 +124,13 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
 
         for node in self._nodes:
             valency = node.rules.get(REDUCED_RULE_VALENCY)
+            construction_label = node.rules.get(REDUCED_RULE_CONSTRUCTION_FORM)
             if valency:
                 # phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
                 phrase.comment += "\"%s\"\n\tSAS: %s\n" % (node.get_completed_word_token(), valency['SAS'])
                 phrase.comment += "\tFCT: %s\n" % valency['FCT']
                 phrase.comment += "\tSIT: %s\n" % valency['SIT']
+                phrase.comment += "\tConstructionLabel: %s\n" % construction_label
 
             word = Word()
             word.word = node.get_completed_word_token()
@@ -142,11 +144,16 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
                 morphemes.append(morpheme)
                 word.add_morpheme(morpheme)
 
+            if len(morphemes) > 0:
+                morphemes[0].baseform = node.rules.get(REDUCED_RULE_CITATION_FORM, "")
+
             gloss_rules = node.rules.get(REDUCED_RULE_GLOSSES, [])
             for i in range(len(gloss_rules)):
                 gloss_rule = gloss_rules[i]
                 if len(morphemes) <= i:
                     break
+                if isinstance(gloss_rule, list):
+                    print(node.get_completed_word_token(), gloss_rule)
                 morphemes[i].add_concatenated_glosses(gloss_rule)
 
             phrase.add_word(word)
