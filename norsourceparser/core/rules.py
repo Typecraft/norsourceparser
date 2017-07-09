@@ -6,7 +6,7 @@ import re
 
 from norsourceparser.core.config import config
 from norsourceparser.core.constants import REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, REDUCED_RULE_MORPHOLOGICAL_BREAKUP, \
-    REDUCED_RULE_VALENCY
+    REDUCED_RULE_VALENCY, REDUCED_RULE_CITATION_FORM, REDUCED_RULE_CONSTRUCTION_FORM
 from norsourceparser.core.util import get_pos, get_inflectional_rules, get_valency
 from norsourceparser.core.util import split_lexical_entry, get_gloss
 
@@ -92,6 +92,7 @@ def parse_lexical_entry(terminal, stem, pos, gloss):
     # This information may get overwritten later up the tree/branch. Yet
     # we still do this step in case we have some missing information later up the tree.
     if pos in ['N', 'V', 'ADJ']:
+        rules.append([REDUCED_RULE_CITATION_FORM, stem])
         if stem != terminal.name and stem in terminal.name:
             rules.append([REDUCED_RULE_MORPHOLOGICAL_BREAKUP, [stem, re.sub("^"+stem, "", terminal.name)]])
             # We do this here so we can capture the correct position
@@ -211,7 +212,7 @@ def get_bli_passive_rules(partial_branch):
             inflectional = partial_branch[2]
 
             rules.append([REDUCED_RULE_POS, 'V'])
-            gloss_rules = []
+            gloss_rules = ""
             if inflectional.name == 'pres-infl_rule':
                 gloss_rules = 'PRES.PASS'
             elif inflectional.name == 'pret-finalstr_infl_rule':
@@ -232,7 +233,15 @@ def get_verb_valency_rule(partial_branch):
     :param partial_branch:
     :return:
     """
-    valency = get_valency(partial_branch[-1].name)
+    valency, lex_corr = get_valency(partial_branch[-1].name)
     if valency:
-        return [[REDUCED_RULE_VALENCY, valency]]
+        return [[REDUCED_RULE_VALENCY, valency], [REDUCED_RULE_CONSTRUCTION_FORM, lex_corr]]
+    return []
+
+
+def get_verb_citform(partial_branch):
+    lex = partial_branch[1].name
+
+    if 'vlxm' in lex:
+        return [[REDUCED_RULE_CITATION_FORM, lex.split("_")[0]]]
     return []

@@ -108,24 +108,25 @@ def get_valency(rule, default=None):
     :param default:
     :return:
     """
+    lex_corr = None
     if rule is None:
-        return default
+        return default, lex_corr
     elif rule in verb_lex:
         lex_corr = verb_lex[rule]
         if not lex_corr in verb_corrlist:
             if config.DEBUG:
                 print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
-            return default
-        return verb_corrlist[lex_corr]
+            return default, lex_corr
+        return verb_corrlist[lex_corr], lex_corr
     elif rule.replace('_vlxm', '') in verb_lex:
         lex_corr = verb_lex[rule.replace('_vlxm', '')]
         if not lex_corr in verb_corrlist:
             if config.DEBUG:
                 print("UNABLE TO FIND VALENCY_MAPPING FOR %s in CORRLIST" % lex_corr)
-            return default
-        return verb_corrlist[lex_corr]
+            return default, lex_corr
+        return verb_corrlist[lex_corr], lex_corr
 
-    return default
+    return default, lex_corr
 
 
 def split_lexical_entry(name):
