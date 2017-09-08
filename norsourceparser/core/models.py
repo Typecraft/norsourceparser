@@ -72,7 +72,7 @@ class ReducedNode(object):
                     return
 
                 # Remove duplicates and prune concatenation
-                new_value = map(lambda (x, y): x + "." + y, zip(current_rule.value, rule.value))
+                new_value = map(lambda val_tuple: val_tuple[0] + "." + val_tuple[1], zip(current_rule.value, rule.value))
                 new_value = map(lambda x: ".".join(sorted(set(x.split(".")))), new_value)
                 new_value = map(prune_common_concatenation_superfluity, new_value)
                 current_rule.value = new_value
@@ -178,7 +178,7 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
             if len(morphemes) > 0:
                 morphemes[0].baseform = node.get(REDUCED_RULE_CITATION_FORM, "")
 
-            gloss_rules = node.get(REDUCED_RULE_GLOSSES, [])
+            gloss_rules = list(node.get(REDUCED_RULE_GLOSSES, []))
             for i in range(len(gloss_rules)):
                 gloss_rule = gloss_rules[i]
                 if len(morphemes) <= i:
