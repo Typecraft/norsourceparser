@@ -3,7 +3,9 @@ import xml.etree.ElementTree as ET
 
 from typecraft_python.models import Text
 
+from norsourceparser.core.config import config
 from norsourceparser.core.models import UnresolvedSyntaxTree, SyntaxNode, PosTreeContainer
+from norsourceparser.core.util import chunks
 
 NORSOURCE_ROOT_TAG = 'parse'
 NORSOURCE_SYNTAXTREE_TAG = 'syntax-tree'
@@ -136,6 +138,7 @@ class Parser(object):
         root = element_tree.getroot()
         text = Text()
         text.language = 'nob'
+        phrases = []
         for element in root.iter('parse'):
             syntax_tree_et = element.find('syntax-tree')
             if syntax_tree_et is None:
@@ -156,8 +159,21 @@ class Parser(object):
 
             if input_et is not None:
                 phrase.phrase = input_et.text
-            text.add_phrase(phrase)
-        return text
+            phrases.append(phrase)
+
+        # Create texts
+
+        phrases_per_text = config.MAX_PHRASES_PER_TEXT if config.MAX_PHRASES_PER_TEXT != -1 else len(phrases)
+        chunked_phrases = chunks(phrases, phrases_per_text)
+        texts = []
+        for chunk in chunked_phrases:
+            text = Text()
+            text.language = 'nob'
+            for phrase in chunk:
+                text.add_phrase(phrase)
+            texts.append(text)
+
+        return texts
 
     @staticmethod
     def _parse_et_node_to_syntax_node(et_node):
