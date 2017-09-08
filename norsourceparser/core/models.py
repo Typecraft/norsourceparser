@@ -2,13 +2,15 @@ import re
 import difflib
 
 from norsourceparser.core.constants import REDUCED_RULE_MORPHOLOGICAL_BREAKUP, REDUCED_RULE_POS, REDUCED_RULE_GLOSSES, \
-    REDUCED_RULE_VALENCY, REDUCED_RULE_CITATION_FORM, REDUCED_RULE_CONSTRUCTION_FORM
-from norsourceparser.core.rules import get_rules_from_partial_branch
+    REDUCED_RULE_VALENCY, REDUCED_RULE_CITATION_FORM, REDUCED_RULE_CONSTRUCTION_FORM, REDUCED_RULE_PRIORITY_MERGE, \
+    REDUCED_RULE_PRIORITY_DOMINATE
+from norsourceparser.core.rules import get_rules_from_partial_branch, Rule
 from . import config
 
 from typecraft_python.models import Text, Phrase, Word, Morpheme, GlobalTag
 
-from norsourceparser.core.util import split_lexical_entry, get_pos, get_gloss, get_inflectional_rules
+from norsourceparser.core.util import split_lexical_entry, get_pos, get_gloss, get_inflectional_rules, \
+    prune_common_concatenation_superfluity
 
 
 class AbstractSyntaxTree(object):
@@ -48,14 +50,43 @@ class ReducedNode(object):
         self.base_token = base_token
         self.rules = {}
 
-    def add_rule(self, rule_id, rule):
+    def add_rule(self, rule):
         """
         Adds a rule to this node
         :param rule_id:
         :param rule:
         :return:
         """
-        self.rules[rule_id] = rule
+        if rule.rule_id not in self.rules:
+            self.rules[rule.rule_id] = rule
+        else:
+            # Here we need to perform some logic dependent on the rule priority
+            current_rule = self.rules[rule.rule_id]
+            if rule.priority == REDUCED_RULE_PRIORITY_DOMINATE:
+                self.rules[rule.rule_id] = rule
+            elif current_rule.priority == REDUCED_RULE_PRIORITY_DOMINATE:
+                return
+            elif current_rule.priority == REDUCED_RULE_PRIORITY_MERGE or rule.priority == REDUCED_RULE_PRIORITY_MERGE:
+                if current_rule.rule_id != REDUCED_RULE_GLOSSES:
+                    print(u"Warning: Found merge for non-gloss: %s %s" % (unicode(rule), unicode(current_rule)))
+                    return
+
+                # Remove duplicates and prune concatenation
+                new_value = map(lambda (x, y): x + "." + y, zip(current_rule.value, rule.value))
+                new_value = map(lambda x: ".".join(sorted(set(x.split(".")))), new_value)
+                new_value = map(prune_common_concatenation_superfluity, new_value)
+                current_rule.value = new_value
+            else:
+                self.rules[rule.rule_id] = rule
+
+    def get(self, rule_id, default=None):
+        """
+        Gets a rule by its id.
+        :param rule_id: A id of the rule to fetch
+        :param default: The default to return if nothing is fetched
+        :return:
+        """
+        return self.rules.get(rule_id, Rule(rule_id, default)).value
 
     def remove_rule(self, rule_id):
         """
@@ -81,7 +112,7 @@ class ReducedNode(object):
         :return:
         """
         if REDUCED_RULE_MORPHOLOGICAL_BREAKUP in self.rules:
-            return "".join(self.rules[REDUCED_RULE_MORPHOLOGICAL_BREAKUP])
+            return "".join(self.rules[REDUCED_RULE_MORPHOLOGICAL_BREAKUP].value)
         else:
             return self.base_token
 
@@ -122,9 +153,9 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
         """
         phrase = Phrase()
 
-        for node in self._nodes:
-            valency = node.rules.get(REDUCED_RULE_VALENCY)
-            construction_label = node.rules.get(REDUCED_RULE_CONSTRUCTION_FORM)
+        for node in self:
+            valency = node.get(REDUCED_RULE_VALENCY)
+            construction_label = node.get(REDUCED_RULE_CONSTRUCTION_FORM)
             if valency:
                 # phrase.add_global_tag(GlobalTag(valency['SAS'], 7))
                 phrase.comment += "\"%s\"\n\tSAS: %s\n" % (node.get_completed_word_token(), valency['SAS'])
@@ -134,10 +165,10 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
 
             word = Word()
             word.word = node.get_completed_word_token()
-            word.pos = node.rules.get(REDUCED_RULE_POS, "")
+            word.pos = node.get(REDUCED_RULE_POS, "")
 
             morphemes = []
-            for morpheme_rule in node.rules.get(REDUCED_RULE_MORPHOLOGICAL_BREAKUP, []):
+            for morpheme_rule in node.get(REDUCED_RULE_MORPHOLOGICAL_BREAKUP, []):
                 morpheme = Morpheme()
                 morpheme.morpheme = morpheme_rule
 
@@ -145,9 +176,9 @@ class ReducedSyntaxTree(AbstractSyntaxTree):
                 word.add_morpheme(morpheme)
 
             if len(morphemes) > 0:
-                morphemes[0].baseform = node.rules.get(REDUCED_RULE_CITATION_FORM, "")
+                morphemes[0].baseform = node.get(REDUCED_RULE_CITATION_FORM, "")
 
-            gloss_rules = node.rules.get(REDUCED_RULE_GLOSSES, [])
+            gloss_rules = node.get(REDUCED_RULE_GLOSSES, [])
             for i in range(len(gloss_rules)):
                 gloss_rule = gloss_rules[i]
                 if len(morphemes) <= i:
@@ -300,7 +331,7 @@ class SyntaxTree(AbstractSyntaxTree):
                 partial_branch.append(partial_node)
                 rules = get_rules_from_partial_branch(partial_branch)
                 for rule in rules:
-                    reduced_node.add_rule(rule[0], rule[1])
+                    reduced_node.add_rule(rule)
 
                 partial_node = partial_node.parent
             reduced_tree.add_node(reduced_node)

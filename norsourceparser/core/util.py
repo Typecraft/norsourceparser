@@ -5,31 +5,22 @@ import re
 
 from norsourceparser.core.config import config
 
-verb_lex_fp = open(os.path.join(os.path.dirname(__file__), '../resources/verb_lex.json'), 'r')
-verb_corrlist_fp = open(os.path.join(os.path.dirname(__file__), '../resources/verb_corrlist.json'), 'r')
-noun_inflections_fp = open(os.path.join(os.path.dirname(__file__), '../resources/noun_inflections.json'), 'r')
-gloss_fp = open(os.path.join(os.path.dirname(__file__), '../resources/gloss.json'), 'r')
-meanings_fp = open(os.path.join(os.path.dirname(__file__), '../resources/meanings.json'), 'r')
-pos_fp = open(os.path.join(os.path.dirname(__file__), '../resources/pos.json'), 'r')
+def open_resources_file(name):
+    fp = open(os.path.join(os.path.dirname(__file__), '../resources/%s.json' % name), 'r')
+    return json.load(fp)
 
-verb_lex = json.load(verb_lex_fp)
-verb_corrlist = json.load(verb_corrlist_fp)
-noun_inflections = json.load(noun_inflections_fp)
-gloss = json.load(gloss_fp)
-meanings = json.load(meanings_fp)
-pos = json.load(pos_fp)
-
-verb_lex_fp.close()
-noun_inflections_fp.close()
-gloss_fp.close()
-meanings_fp.close()
-pos_fp.close()
-verb_corrlist_fp.close()
+verb_lex = open_resources_file('verb_lex')
+verb_corrlist = open_resources_file('verb_corrlist')
+noun_inflections = open_resources_file('noun_inflections')
+gloss = open_resources_file('gloss')
+meanings = open_resources_file('meanings')
+pos = open_resources_file('pos')
+concatenation_superfluity = open_resources_file('concatenation_superfluity')
+dominating_mappings = open_resources_file('dominating_mappings')
 
 POS_CONVERSIONS = {
     "copnom": "COP",
     "s-adv": "ADV",
-    "perf": "AUX",
     "indef-art": "DET",
     "stndadj": "ADJ",
     "n": "N",
@@ -190,3 +181,26 @@ def get_inflectional_rules(stem, rule):
 
     return default
 
+
+def get_dominating_pos_rule(name, default=None):
+    return dominating_mappings['pos'].get(name, default)
+
+
+def get_dominating_gloss_rule(name, default=None):
+    if name in dominating_mappings['pos']:
+        return dominating_mappings['pos'].get(name, default)
+
+
+def get_dominating_gloss_rule(name, default=None):
+    if name in dominating_mappings['gloss']:
+        return dominating_mappings['gloss'].get(name, default)
+
+
+def prune_common_concatenation_superfluity(value):
+    return concatenation_superfluity.get(value, value)
+
+
+def chunks(l, n):
+    """Yield successive n-sized chunks from l."""
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
