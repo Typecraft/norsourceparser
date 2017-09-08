@@ -18,7 +18,7 @@ def test_load_file():
 
 def test_parse_file():
     parser = Parser()
-    tc_file = parser.parse_file(file_name)
+    tc_file = parser.parse_file(file_name)[0]
 
     assert isinstance(tc_file, Text)
 
